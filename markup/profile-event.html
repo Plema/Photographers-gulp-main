@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка проекта для заказчика</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project_card.css">
+    <!-- <link rel="stylesheet" href="../css/profile_menu.css"> -->
+    <!-- <link rel="stylesheet" href="../css/profile.css"> -->
+    <link rel="stylesheet" href="../css/publication.css">
+</head>
+
+<body>
+
+    <!-- попап подтвердить выбор исполнителя -->
+    <div class="overlay-prjPopup overlayPopup">
+        <div class="close"></div>
+        <div class="prjPopup__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <p>Выбрать пользователя <strong>Иван Иванов</strong> исполнителем Вашего проекта “Необходимо снять на видео 8 мероприятий”?</p>
+                <div class="btns-wrap">
+                    <a href="javascript:void(0)" class="accept closeBtn open-prjPopup2">Подтвердить</a>
+                    <a href="javascript:void(0)" class="closeBtn cancel">Отмена</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец попап подтвердить выбор исполнителя -->
+
+    <!-- попап выбор исполнителя подтвержден -->
+    <div class="overlay-prjPopup2 overlayPopup">
+        <div class="close"></div>
+        <div class="prjPopup2__popup">
+            <span class="close-popup closeBtn"></span>
+            <div class="content">
+                <p>Вы выбрали <strong>Иван Иванов </strong>
+                    исполнителем Вашего проекта. </p>
+                <p>Вы можете оформить проект в сделку <a href="project-editing.html">здесь</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- конец попап выбор исполнителя подтвержден -->
+
+
+
+
+
+
+
+    <header>
+        <div class="header-content">
+            <div class="container clearfix">
+                <div class="check-entrance clearfix">
+                    <a class="check" href="sign-in.html"><i class="icon-icon36"></i>Вход</a>
+                    <a class="entrance" href="register-form.html"><i class="icon-icon5"></i>Регистрация</a>
+                </div>
+                <div class="menu-logo clearfix">
+                    <span class="open-menu">
+                        <span></span>
+                    </span>
+                    <div class="mobile-mainMenu" id="mobile-mainMenu">
+                        <span class="closeBtn"></span>
+                        <div class="mobile-content">
+                            <nav>
+                                <ul>
+                                    <li class="active"><a href="specialists.html">Специалисты</a></li>
+                                    <li><a href="organizations.html">Организации</a></li>
+                                    <li><a href="events.html">События</a></li>
+                                    <li><a href="score.html">Магазин</a></li>
+                                    <li><a href="projects.html">Проекты</a></li>
+                                </ul>
+                            </nav>
+                            <ul class="social">
+                                <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+                    <form>
+                        <input type="text">
+                        <button><i class="icon-icon25"></i></button>
+                    </form>
+                    <nav class="desktop-mainMenu">
+                        <ul>
+                            <li class="active"><a href="specialists.html">Специалисты</a></li>
+                            <li><a href="organizations.html">Организации</a></li>
+                            <li><a href="events.html">События</a></li>
+                            <li><a href="score.html">Магазин</a></li>
+                            <li><a href="projects.html">Проекты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Проекты</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="projectsCard">
+        <div class="container">
+            <h2 class="projectsCard__heading">Воркшоп по фотографии</h2>
+
+            <!-- если исполнитель подтвердил участие, то показывать следующий блок (только на мобильном) -->
+            <div class="projectsCard__notification mobile">
+                <p>Пользователь <span>Иван Иванов</span>
+                    подтвердил свое участие в этом
+                    проекте. Вы можете оформить
+                    Ваш проект в сделку <a href="project-editing.html">здесь</a></p>
+            </div>
+            <!----->
+
+            <div class="projectsCard__content">
+                <div class="projectsCard__content-top">
+                    <div class="author">
+                        <div class="author-avatar">
+                            <a href="javascript:void(0)">
+                                <img src="../img/projects_page/avatar.png" alt="avatar">
+                                <span class="status active"></span>
+                            </a>
+                        </div>
+                        <div class="author-info">
+                            <a href="javascript:void(0)" class="name">Иван Иванов </a>
+                            <p class="city">Новосибирск</p>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <p>
+                            Иван Иванов
+                            <span>(5826 <i class="icon-icon1"></i>)</span>
+                        </p>
+                        <p>Положительных отзывов 100%</p>
+                    </div>
+                </div>
+                <div class="projectsCard__content-text">
+                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                    <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                </div>
+            </div>
+
+            <div class="projectsCard__documents">
+                <div class="projectsCard__documents-top">
+                    <p class="label">
+                        <img src="../img/projects_page/docs.png" alt="image">
+                        Приклепленные документы
+                    </p>
+                    <a href="javascript:void(0)" class="downloadBtn">Скачать все</a>
+                </div>
+                <div class="projectsCard__documents-slider">
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc1.jpg" target="_blank">
+                                <img src="../img/projects_page/doc1.jpg" alt="image">
+                            </a>
+                            <p>jpg. Пример_1</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc2.png" target="_blank">
+                                <img src="../img/projects_page/doc2.png" alt="image">
+                            </a>
+                            <p>jpg. Пример_2</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc3.png" target="_blank">
+                                <img src="../img/projects_page/doc3.png" alt="image">
+                            </a>
+                            <p>pdf. Каталог Фирмы</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc4.png" target="_blank">
+                                <img src="../img/projects_page/doc4.png" alt="image">
+                            </a>
+                            <p>jpg. Пример_3</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc5.png" target="_blank">
+                                <img src="../img/projects_page/doc5.png" alt="image">
+                            </a>
+                            <p>jpg. Пример_4</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc6.png" target="_blank">
+                                <img src="../img/projects_page/doc6.png" alt="image">
+                            </a>
+                            <p>jpg. Пример_5</p>
+                        </div>
+                    </div>
+                    <div class="documets-item">
+                        <div class="item">
+                            <span class="close" style="display: block;">✖</span>
+                            <a href="../img/projects_page/doc5.png" target="_blank">
+                                <img src="../img/projects_page/doc5.png" alt="image">
+                            </a>
+                            <p>jpg. Пример_4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="profile">
+                <div class="postItem">
+                    <div class="write comment">
+                        <div class="avatar">
+                            <img src="../img/year-item-img4.png" alt="avatar">
+                        </div>
+                        <form>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                <button class="writeComment" name="data" type="button">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item">
+                        <div class="item-content">
+                            <div class="avatar clearfix">
+                                <a href="profile-expert.html">
+                                    <img src="../img/messages-item1.png" alt="">
+                                </a>
+                                <div class="avatar-text mobile">
+                                    <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                    <span>18 декабря в 18:09 </span>
+                                </div>
+                            </div>
+                            <div class="messages-text">
+                                <div class="avatar-text desctop">
+                                    <h4><a href="profile-expert.html"></a>Иван Иванов</h4>
+                                    <span>18 декабря в 18:09 </span>
+                                </div>
+                                <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem
+                                    Ipsum
+                                    є, фактично,
+                                    стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                    гранку та
+                                    склав на ній
+                                    підбірку зразків шрифтів. "Риба" не тільки успішно пережила пять століть, але й
+                                    прижилася
+                                    в електронному верстуванні, залишаючись по суті незмінною.</p>
+                                <a href="javascript:void(0)" class="addcomment">Ответить</a>
+                            </div>
+                        </div>
+                        <div class="write comment2">
+                            <div class="avatar">
+                                <img src="../img/year-item-img4.png" alt="avatar">
+                            </div>
+                            <form>
+                                <div class="writeMessage-text">
+                                    <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                                    <button name="data" type="button">Отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+                <div class="footer-content clearfix">
+                    <nav>
+                        <ul>
+                            <li><a href="specialists.html">Специалисты</a></li>
+                            <li><a href="organizations.html">Организации</a></li>
+                            <li><a href="events.html">События</a></li>
+                            <li><a href="score.html">Магазин</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="sosial">
+                        <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                    </ul>
+                    <p>© 2018 Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/project_сard-customer.min.js"></script>
+</body>
+
+</html>

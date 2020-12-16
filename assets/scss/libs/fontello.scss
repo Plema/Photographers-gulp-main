@@ -1,0 +1,434 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?20768969');
+  src: url('../fonts/fontello.eot?20768969#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff2?20768969') format('woff2'),
+    url('../fonts/fontello.woff?20768969') format('woff'),
+    url('../fonts/fontello.ttf?20768969') format('truetype'),
+    url('../fonts/fontello.svg?20768969#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?20768969#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-icon1:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-icon3:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-icon2:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-icon5:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-icon4:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-icon6:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-icon7:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-icon8:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-icon9:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-icon10:before {
+  content: '\e809';
+}
+
+/* '' */
+.icon-icon11:before {
+  content: '\e80a';
+}
+
+/* '' */
+.icon-icon12:before {
+  content: '\e80b';
+}
+
+/* '' */
+.icon-icon13:before {
+  content: '\e80c';
+}
+
+/* '' */
+.icon-icon14:before {
+  content: '\e80d';
+}
+
+/* '' */
+.icon-icon15:before {
+  content: '\e80e';
+}
+
+/* '' */
+.icon-icon16:before {
+  content: '\e80f';
+}
+
+/* '' */
+.icon-icon17:before {
+  content: '\e810';
+}
+
+/* '' */
+.icon-icon18:before {
+  content: '\e811';
+}
+
+/* '' */
+.icon-icon19:before {
+  content: '\e812';
+}
+
+/* '' */
+.icon-icon20:before {
+  content: '\e813';
+}
+
+/* '' */
+.icon-icon21:before {
+  content: '\e814';
+}
+
+/* '' */
+.icon-icon22:before {
+  content: '\e815';
+}
+
+/* '' */
+.icon-icon23:before {
+  content: '\e816';
+}
+
+/* '' */
+.icon-close-envelope:before {
+  content: '\e817';
+}
+
+/* '' */
+.icon-icon25:before {
+  content: '\e818';
+}
+
+/* '' */
+.icon-icon27:before {
+  content: '\e819';
+}
+
+/* '' */
+.icon-icon28:before {
+  content: '\e81a';
+}
+
+/* '' */
+.icon-icon26:before {
+  content: '\e81b';
+}
+
+/* '' */
+.icon-icon29:before {
+  content: '\e81c';
+}
+
+/* '' */
+.icon-icon30:before {
+  content: '\e81d';
+}
+
+/* '' */
+.icon-icon31:before {
+  content: '\e81e';
+}
+
+/* '' */
+.icon-icon32:before {
+  content: '\e81f';
+}
+
+/* '' */
+.icon-icon33:before {
+  content: '\e820';
+}
+
+/* '' */
+.icon-icon34:before {
+  content: '\e821';
+}
+
+/* '' */
+.icon-icon36:before {
+  content: '\e822';
+}
+
+/* '' */
+.icon-icon35:before {
+  content: '\e823';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e824';
+}
+
+/* '' */
+.icon-phone-1:before {
+  content: '\e825';
+}
+
+/* '' */
+.icon-base:before {
+  content: '\e826';
+}
+
+/* '' */
+.icon-checked:before {
+  content: '\e827';
+}
+
+/* '' */
+.icon-add-people:before {
+  content: '\e828';
+}
+
+/* '' */
+.icon-rocket:before {
+  content: '\e829';
+}
+
+/* '' */
+.icon-lock:before {
+  content: '\e82a';
+}
+
+/* '' */
+.icon-pro:before {
+  content: '\e82c';
+}
+
+/* '' */
+.icon-loading:before {
+  content: '\e82d';
+}
+
+/* '' */
+.icon-search:before {
+  content: '\e82e';
+}
+
+/* '' */
+.icon-settings:before {
+  content: '\e82f';
+}
+
+/* '' */
+.icon-top:before {
+  content: '\e830';
+}
+
+/* '' */
+.icon-world:before {
+  content: '\e831';
+}
+
+/* '' */
+.icon-write-icon:before {
+  content: '\e832';
+}
+
+/* '' */
+.icon-card:before {
+  content: '\e833';
+}
+
+/* '' */
+.icon-calendar:before {
+  content: '\e839';
+}
+
+/* '' */
+.icon-collective:before {
+  content: '\e83a';
+}
+
+/* '' */
+.icon-growth:before {
+  content: '\e83b';
+}
+
+/* '' */
+.icon-highlighter:before {
+  content: '\e83c';
+}
+
+/* '' */
+.icon-invisible:before {
+  content: '\e83e';
+}
+
+/* '' */
+.icon-pin:before {
+  content: '\e83f';
+}
+
+/* '' */
+.icon-file:before {
+  content: '\e840';
+}
+
+/* '' */
+.icon-link:before {
+  content: '\e841';
+}
+
+/* '' */
+.icon-paperclip:before {
+  content: '\e845';
+}
+
+/* '' */
+.icon-pencil-edit-button:before {
+  content: '\e846';
+}
+
+/* '' */
+.icon-add-people-1:before {
+  content: '\e847';
+}
+
+/* '' */
+.icon-camera:before {
+  content: '\e848';
+}
+
+/* '' */
+.icon-check:before {
+  content: '\e849';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\e886';
+}
+
+/* '' */
+.icon-insta:before {
+  content: '\e887';
+}
+
+/* '' */
+.icon-viber:before {
+  content: '\e889';
+}
+
+/* '' */
+.icon-vk:before {
+  content: '\e88a';
+}
+
+/* '' */
+.icon-whatssup:before {
+  content: '\e88b';
+}
+
+/* '' */
+.icon-quote:before {
+  content: '\e88c';
+}
+
+/* '' */
+.icon-at-sign:before {
+  content: '\e88d';
+}
+
+/* '' */
+.icon-menu-button:before {
+  content: '\e88e';
+}
+
+/* '' */
+.icon-stop:before {
+  content: '\e88f';
+}
+
+/* '' */
+.icon-font:before {
+  content: '\e890';
+}
+
+/* '' */
+.icon-bell-alt:before {
+  content: '\f0f3';
+}
+
+/* '' */

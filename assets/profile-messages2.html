@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photographers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
+    <link rel="stylesheet" href="../css/many-img-messages.min.css">
+</head>
+
+<body class="body">
+    <include src="assets/templates/header-notification-popup.html"></include>
+    <include src="assets/templates/popup-to-delete-single-message.html"></include>
+    <include src="assets/templates/user-header.html"></include>
+    <include src="assets/templates/popup-attachments.html"></include>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Профиль</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="profile-messages.html"><i
+                                class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                    <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="profile-messages">
+                <div class="projects-nav">
+                    <div class="nav">
+                        <ul>
+                            <li class="filter-items filter-items active" data-tab="allTab"><a
+                                    href="javascript:void(0)">Все сообщение</a></li>
+                            <li class="filter-items filter-items" data-tab="unreadTab"><a
+                                    href="javascript:void(0)">Непрочитанные 3</a></li>
+                            <li class="filter-items filter-items" data-tab="importantTab"><a
+                                    href="javascript:void(0)">Важные сообщения</a></li>
+                        </ul>
+                    </div>
+                    <div class="heading">
+                        <div class="heading-top">
+                            <a href="profile-messages.html" class="back"><i class="icon-icon28"></i> Назад</a>
+                            <div class="user-name">
+                                <h3>Иван Иванов</h3>
+                                <p class="active">Был в сети 1 час назад</p>
+                            </div>
+                            <div class="form">
+                                <div class="show-search"><i class="icon-icon25"></i></div>
+                                <form class="clearfix">
+                                    <div class="search">
+                                        <input type="text" placeholder="Имя друга">
+                                        <button><i class="icon-icon25"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="options">
+                                <a href="javascript:void(0)" class="openBtn">Параметры <i class="icon-icon28"></i></a>
+                                <div class="optionsList">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Добавить собеседника</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="attachments-on">Показать вложения</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Отключить уведомления</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Поиск по истории сообщения</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Очистить историю сообщений</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="heading-bottom">
+                            <p class="active">Был в сети 1 час назад</p>
+                            <div class="options">
+                                <a href="javascript:void(0)" class="openBtn">Параметры <i class="icon-icon28"></i></a>
+                                <div class="optionsList">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">Добавить собеседника</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="attachments-on">Показать вложения</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Отключить уведомления</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">Поиск по истории сообщения</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">чистить историю сообщений</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages-content active tab-item allTab">
+                    <div class="writeMessage">
+                        <form class="form-add-file">
+                            <div class="writeMessage-file no-list">
+                                <label for="file"><i class="icon-icon26"></i></label>
+                            </div>
+                            <div class="writeMessage-file no-list">
+                                <label for="file"><i class="icon-icon19"></i></label>
+                            </div>
+                            <div class="writeMessage-file">
+                                <i class="icon-paperclip paperclip"></i>
+                                <div class="dropdown-list" style="background-image: url(../img/dropdown.png)">
+                                    <ul>
+                                        <li>
+                                            <label for="file">Фотография</label>
+                                        </li>
+                                        <li>
+                                            <label for="file">Видеозапись</label>
+
+                                        </li>
+                                        <li>
+                                            <label for="file">Аудиозапись</label>
+                                        </li>
+                                        <li>
+                                            <label for="file">Документ</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text"></textarea>
+                                <button><i class="icon-icon29"></i></button>
+                                <div class="text-file">Вы цитируете: 
+                                    <span>1 сообщение</span>
+                                    <strong class="stop-citat">x</strong>
+                                </div>
+                            </div>
+                            <div class="files">
+                                <div class="input-foto">
+                                    <div class="files">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" id="file" name="file" multiple>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item delete">
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Удалено.</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                        <div class="all-vn-citat">
+                            <div class="messages-item">
+                                <div class="avatar clearfix">
+                                    <img src="../img/messages-item1.png" alt="">
+                                    <a href="profile-expert.html"></a>
+                                    <div class="avatar-text">
+                                        <h4>
+                                            <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18:09</span>
+                                    </div>
+                                </div>
+                                <div class="messages-text">
+                                    <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                                </div>
+                            </div>
+                            <div class="messages-item">
+                                <div class="avatar clearfix">
+                                    <img src="../img/messages-item1.png" alt="">
+                                    <a href="profile-expert.html"></a>
+                                    <div class="avatar-text">
+                                        <h4>
+                                            <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                        <span>18:09</span>
+                                    </div>
+                                </div>
+                                <div class="messages-text">
+                                    <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                                </div>
+                            </div>
+                            <div class="messages-item">
+                                <div class="avatar clearfix">
+                                    <img src="../img/company-foto6-1.png" alt="">
+                                    <a href="profile-expert.html"></a>
+                                    <div class="avatar-text">
+                                        <h4>
+                                            <a href="profile-expert.html"></a>Я</h4>
+                                        <span>18:09</span>
+                                    </div>
+                                </div>
+                                <div class="messages-text">
+                                    <p>Моё сообщение</p>
+                                    <div class="mess-img">
+                                        <img src="../img/bookmarks-item-img1.png" alt="">
+                                        <img src="../img/bookmarks-item-img1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                гранку та склав на ній підбірку зразків шрифтів.
+                                "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному
+                                верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                гранку та склав на ній підбірку зразків шрифтів.
+                                "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному
+                                верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                гранку та склав на ній підбірку зразків шрифтів.
+                                "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному
+                                верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/company-foto6-1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Я</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Моё сообщение</p>
+                            <div class="mess-img">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                                <img src="../img/bookmarks-item-img1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <include src="assets/templates/pagination.html"></include>
+                </div>
+
+                <div class="messages-content tab-item unreadTab">
+                    <div class="writeMessage">
+                        <form class="form-add-file">
+                            <div class="writeMessage-file no-list">
+                                <label for="file1"><i class="icon-icon26"></i></label>
+                            </div>
+                            <div class="writeMessage-file no-list">
+                                <label for="file1"><i class="icon-icon19"></i></label>
+                            </div>
+                            <div class="writeMessage-file">
+                                <i class="icon-paperclip paperclip"></i>
+                                <div class="dropdown-list" style="background-image: url(../img/dropdown.png)">
+                                    <ul>
+                                        <li>
+                                            <label for="file1">Фотография</label>
+                                        </li>
+                                        <li>
+                                            <label for="file1">Видеозапись</label>
+
+                                        </li>
+                                        <li>
+                                            <label for="file1">Аудиозапись</label>
+                                        </li>
+                                        <li>
+                                            <label for="file1">Документ</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text"></textarea>
+                                <button><i class="icon-icon29"></i></button>
+                                <div class="text-file">Вы цитируете: 
+                                    <span>1 сообщение</span>
+                                    <strong class="stop-citat">x</strong>
+                                </div>
+                            </div>
+                            <div class="files">
+                                <div class="input-foto">
+                                    <div class="files">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" id="file1" name="file" multiple>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет222. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову
+                                гранку та склав на ній підбірку зразків шрифтів.
+                                "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному
+                                верстуванні, залишаючись по суті незмінною.</p>
+                        </div>
+                    </div>
+
+                    <include src="assets/templates/pagination.html"></include>
+                </div>
+
+                <div class="messages-content tab-item importantTab">
+                    <div class="writeMessage">
+                        <form class="form-add-file">
+                            <div class="writeMessage-file no-list">
+                                <label for="file2"><i class="icon-icon26"></i></label>
+                            </div>
+                            <div class="writeMessage-file no-list">
+                                <label for="file2"><i class="icon-icon19"></i></label>
+                            </div>
+                            <div class="writeMessage-file">
+                                <i class="icon-paperclip paperclip"></i>
+                                <div class="dropdown-list" style="background-image: url(../img/dropdown.png)">
+                                    <ul>
+                                        <li>
+                                            <label for="file2">Фотография</label>
+                                        </li>
+                                        <li>
+                                            <label for="file2">Видеозапись</label>
+
+                                        </li>
+                                        <li>
+                                            <label for="file2">Аудиозапись</label>
+                                        </li>
+                                        <li>
+                                            <label for="file2">Документ</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="writeMessage-text">
+                                <textarea class="checkTextarea" type="text"></textarea>
+                                <button><i class="icon-icon29"></i></button>
+                                <div class="text-file">Вы цитируете: 
+                                    <span>1 сообщение</span>
+                                    <strong class="stop-citat">x</strong>
+                                </div>
+                            </div>
+                            <div class="files">
+                                <div class="input-foto">
+                                    <div class="files">
+                                        <div class="file-loading">
+                                            <input class="file-add" type="file" id="file2" name="file" multiple>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет333. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>
+                    <div class="messages-item">
+                        <div class="options">
+                            <a href="javascript:void(0)" class="openBtn"></a>
+                            <div class="optionsList">
+                                <ul>
+                                    <li class="li-add-citat">
+                                        <a href="javascript:void(0)" class="add-citat">Добавить цитирование</a>
+                                    </li>
+                                    <li class="remove-citat">
+                                        <a href="javascript:void(0)" class='stop-citat '>Отменить цитирование</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="open-deleteMsg">Удалить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Сохранить</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Пожаловаться</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <img src="../img/messages-item1.png" alt="">
+                            <a href="profile-expert.html"></a>
+                            <div class="avatar-text">
+                                <h4>
+                                    <a href="profile-expert.html"></a>Иван Иванов</h4>
+                                <span>18:09</span>
+                            </div>
+                        </div>
+                        <div class="messages-text">
+                            <p>Привет. Рад был с вами работать. Фотосессия прошла на отлично!</p>
+                        </div>
+                    </div>    
+
+                    <include src="assets/templates/pagination.html"></include>
+                </div>
+
+            </div>
+        </div>
+        <div class="cookies-holder">
+            <p>
+                Файлы cookie этого сайта применяются для анализа трафика и эффективности рекламы.
+                Подробнее о том,
+                <a href="#" target="_blank">как мы используем файлы cookie …</a>
+            </p>
+            <button class="button">Ok</button>
+        </div>
+    </section>
+    <include src="assets/templates/footer.html"></include>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/video-js.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/profile.min.js"></script>
+    <script src="../js/profile-messages.min.js"></script>
+
+</body>
+
+</html>

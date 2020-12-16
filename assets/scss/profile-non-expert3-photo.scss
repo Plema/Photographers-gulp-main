@@ -1,0 +1,30 @@
+.profile__tab-item{
+  .gallery__img{
+    &:nth-child(9),
+    &:nth-child(10),
+    &:nth-child(11),
+    &:nth-child(12),
+    &:nth-child(13),
+    &:nth-child(14),
+    &:nth-child(15){
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .profile__tab-item{
+    .gallery__img{
+      width: 31.8%;
+      margin: 0.75%;
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(11),
+      &:nth-child(12),
+      &:nth-child(13),
+      &:nth-child(14),
+      &:nth-child(15){
+        display: block;
+      }
+    }
+  }
+}

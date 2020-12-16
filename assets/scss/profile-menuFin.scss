@@ -1,0 +1,182 @@
+.profile-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-menu {
+    width: 25%;
+    float: left;
+    display: block;
+    margin-top: 10px;
+    ul {
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                width: 100%;
+                color: #222222;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                padding-left: 30px;
+                padding-right: 35px;
+                position: relative;
+                display: inline-block;
+                -webkit-transition: all 0.5s;
+                -moz-transition: all 0.5s;
+                -ms-transition: all 0.5s;
+                -o-transition: all 0.5s;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: #54559c;
+
+                    i {
+                        color: #54559c;
+                    }
+                }
+
+                i {
+                    top: 50%;
+                    left: 0;
+                    font-size: 16px;
+                    position: absolute;
+                    -webkit-transform: translate(0, -50%);
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+                }
+
+                span {
+                    top: 50%;
+                    right: 15px;
+                    display: none;
+                    color: #ffffff;
+                    font-size: 13px;
+                    line-height: 16px;
+                    position: absolute;
+                    -webkit-transform: translate(0, -50%);
+                    -moz-transform: translate(0, -50%);
+                    -ms-transform: translate(0, -50%);
+                    -o-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+
+                    &::after {
+                        content: '';
+                        top: 50%;
+                        left: 50%;
+                        width: 19px;
+                        z-index: -1;
+                        height: 19px;
+                        position: absolute;
+                        border-radius: 50%;
+                        background-color: #54559c;
+                        -webkit-transform: translate(-50%, -50%);
+                        -moz-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        -o-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+        li.active {
+            a {
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .banner {
+        display: block;
+        margin-top: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    header{
+        .menu-logo {
+            float: left;
+            padding: 0;
+            display: flex;
+            width: calc(100% - 275px);
+    
+            .logo {
+                float: none;
+                order: 1;
+            }
+    
+            nav {
+                &.desktop-mainMenu {
+                    margin-right: 30px;
+                    float: none;
+                    order: 2;
+                }
+            }
+    
+            form {
+                width: 178px;
+                margin-left: 0;
+                float: none;
+                order: 3;
+    
+                &.full {
+                    right: inherit;
+                    left: 50px;
+                    width: calc(100% - 80px);
+                }
+            }
+        }
+    }
+    .profile-menu {
+        width: 18%;
+        margin-top: 13px;
+        ul {
+            li {
+                margin-bottom: 14px;
+
+                a {
+                    padding-right: 45px;
+
+                    span {
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+    header .header-content .menu-logo form {
+        width: 178px;
+    }
+}
+
+@media screen and (min-width: 1188px) {
+  .profile-menu {
+    width: 16%;
+  }
+}
+
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .profile-menu ul li a span::after {
+        top: 49%;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    .profile-menu ul li a span::after {
+        top: 49%;
+    }
+}

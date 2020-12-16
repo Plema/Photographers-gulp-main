@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photographers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
+    <!-- css просмотр фото -->
+    <link rel="stylesheet" href="../css/viewPhoto.min.css">
+</head>
+
+<body>
+
+    <!-- попап просмотр фото -->
+    <div class="overlay-viewPhoto overlayPopup">
+        <div class="close"></div>
+        <span class="close-popup closeBtn"></span>
+        <div class="viewPhoto__popup mCustomScrollbar">
+            <div class="media">
+                <button class="prevArrow">
+                    <i class="icon-icon28"></i>
+                </button>
+                <button class="nextArrow">
+                    <i class="icon-icon28"></i>
+                </button>
+                <img src="../img/viewPhoto.jpg" alt="photo">
+                <a href="javascript:void(0)" class="mark"><i class="icon-icon5"></i></a>
+            </div>
+            <div class="content mCustomScrollbar">
+                <div class="heading">
+                    <div class="actions">
+                        <a href="javascript:void(0)">
+                            <i class="icon-icon3"></i>
+                            <span>17</span>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="icon-icon10"></i>
+                            <span>3</span>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <i class="icon-icon9"></i>
+                        </a>
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>WEDDING PROMO</h3>
+                </div>
+                <div class="description">
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный
+                        печатник <a href="javascript:void(0)">@nikolas_nikolas</a></p>
+                </div>
+                <div class="hashtags">
+                    <a href="javascript:void(0)">Havanacuba</a>
+                    <a href="javascript:void(0)">beachwedding</a>
+                    <a href="javascript:void(0)">weddingplanner</a>
+                    <a href="javascript:void(0)">destinationweddingplanner</a>
+                    <a href="javascript:void(0)">beachwedding</a>
+                    <a href="javascript:void(0)">weddingplanner</a>
+                    <a href="javascript:void(0)">weddingplanner</a>
+                    <a href="javascript:void(0)">destinationweddingplanner</a>
+                    <a href="javascript:void(0)">beachwedding</a>
+                </div>
+                <div class="author">
+                    <a href="javascript:void(0)" class="author__avatar">
+                        <span>И</span>
+                    </a>
+                    <div class="author__info">
+                        <a href="javascript:void(0)">Иван Иванов </a>
+                        <span><i class="icon-icon35"></i> 10 ноября 2018</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="addComment">
+                        <div class="left">
+                            <div class="user">
+                                <a href="javascript:void(0)" class="user__avatar">
+                                    <img src="../img/pa-project.png" alt="avatar">
+                                </a>
+                                <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                            </div>
+
+                            <div class="form__textarea">
+                                <textarea placeholder="Введите Ваш комментарий"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="form__button">
+                            <!-- при пустом поле, кнопка неактивная, когда в поле вводится текст, клас .disable 
+                            удаляется -->
+                            <button class="disable">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="comment">
+                    <div class="left">
+                        <div class="user">
+                            <a href="javascript:void(0)" class="user__avatar">
+                                <img src="../img/pa-project.png" alt="avatar">
+                            </a>
+                            <div class="user__info">
+                                <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                                <span>30 октября </span>
+                            </div>
+                        </div>
+                        <div class="comment__text">
+                            <p>Потрясающе!</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <div class="option-cintent">
+                            <ul>
+                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                <li><a href="javascript:void(0)">Изменить</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец просмотр фото -->
+
+    <!-- создание альбома -->
+    <div class="overlay-creatingAlbum overlayPopup">
+        <div class="close"></div>
+        <div class="creatingAlbum__popup mCustomScrollbar">
+            <span class="close-popup closeBtn"></span>
+            <div class="heading">
+                <p>Создание альбома</p>
+            </div>
+            <div class="mainInfo">
+                <form>
+                    <div class="form__input">
+                        <label for="album_name">Название альбома</label>
+                        <input type="text" id="album_name">
+                    </div>
+                    <div class="form__textarea">
+                        <label for="album_description">Описание альбома</label>
+                        <textarea id="album_description"></textarea>
+                    </div>
+                    <div class="form__select">
+                        <label for="album_comments">Кто может комментировать фотографии?</label>
+                        <div class="select">
+                            <select id="album_comments"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__select">
+                        <label for="album_view">Кто может просматривать этот альбом?</label>
+                        <div class="select">
+                            <select id="album_view"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__button">
+                        <button>Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- конец создание альбома -->
+
+    <!-- build:section layout.header_notification_popup-->
+    <!-- /build -->
+
+    <!-- build:section layout.userHeader-->
+    <!-- /build -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Профиль</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="profile-messages.html"><i
+                                class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                    <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="profile-foto">
+                <div class="projects-nav">
+                    <div class="nav">
+                        <ul>
+                            <li class="active"><a href="javascript:void(0)">Мои альбомы 12</a></li>
+                        </ul>
+                        <a class="desc create-project open-creatingAlbum" href="javascript:void(0)">Создать альбом</a>
+                        <a class="desc create-project" href="javascript:void(0)">Добавить фотографии</a>
+                    </div>
+                    <a class="mabile create-project open-creatingAlbum open-creatingAlbum"
+                        href="javascript:void(0)">Создать альбом</a>
+                    <a class="mabile create-project" href="javascript:void(0)">Добавить фотографии</a>
+                </div>
+                <div class="foto-content clearfix">
+                    <div class="album">
+                        <div class="album-items clearfix">
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img1.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Пейзажи</p>
+                            </div>
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img2.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Art</p>
+                            </div>
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img3.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Свадьбы</p>
+                            </div>
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img4.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Портреты</p>
+                            </div>
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img5.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Ню</p>
+                            </div>
+                            <div class="album-item"
+                                style="background: url('../img/album-item-img6.png') no-repeat 50% 50%; background-size: cover;">
+                                <a href="javascript:void(0)"></a>
+                                <p>Детские</p>
+                            </div>
+                        </div>
+                        <a class="album-link" href="javascript:void(0)">Показать все 41 альбом</a>
+                    </div>
+                    <div class="foto-year">
+                        <h5>2019 год</h5>
+                        <div class="year-items">
+                            <!-- класс .open-viewPhoto открывает popup (можно навешать на блок, а не на картинку) -->
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img1.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img2.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img3.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img4.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img5.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img6.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img7.png" alt="image">
+                            </div>
+                            <div class="year-item-img">
+                                <img class="open-viewPhoto" src="../img/year-item-img8.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- просмотр фото -->
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/viewPhoto.min.js"></script>
+
+
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/profile.min.js"></script>
+
+
+</body>
+
+</html>

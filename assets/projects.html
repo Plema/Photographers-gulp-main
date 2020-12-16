@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Проекты</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/projects.min.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Проекты</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="container">
+            <div class="page-content clearfix">
+                <div class="top-tabs">
+                    <div class="filter-slider" id="filter-slider">
+                        <div class="filter-items js-item active" data-items="photographers">
+                            <p>Фотографы</p>
+                        </div>
+                        <div class="filter-items js-item" data-items="videographers">
+                            <p>Видеографы</p>
+                        </div>
+                        <div class="filter-items js-item" data-items="models">
+                            <p>Модели</p>
+                        </div>
+                        <div class="filter-items js-item" data-items="stylists">
+                            <p>Beauty-стилисты</p>
+                        </div>
+                        <div class="filter-items js-item" data-items="weddingSpecialist">
+                            <p>Support/Wedding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects_page clearfix">
+                    <div class="page-left">
+                        <div class="projects_page-filter">
+                            <div class="filterTop">
+                                <div class="filterTop__search">
+                                    <input type="text" placeholder="Поиск....">
+                                    <button><i class="icon-icon25"></i></button>
+                                </div>
+                                <p class="openBtn">Фильтры</p>
+                                <span class="open-close"></span>
+                            </div>
+                            <form>
+                                <div class="search">
+                                    <input type="text" placeholder="Поиск....">
+                                    <button><i class="icon-icon25"></i></button>
+                                </div>
+                                <div class="filter-input">
+                                    <div class="input">
+                                        <label class="heading">Выберите город:</label>
+                                        <input id="tags" type="input">
+                                    </div>
+                                </div>
+
+                                <div class="sum">
+                                    <label class="heading">Бюджет</label>
+                                    <div class="sum-number">
+                                        <input type="text" class="amount" id="amount" readonly>
+                                        <input type="text" class="amount2" id="amount2" readonly>
+                                    </div>
+                                    <div id="slider-range"></div>
+                                </div>
+
+                                <div class="filter-drop">
+                                    <div class="drop-item active">
+                                        <div class="drop-item_heading">
+                                            <p>Фотографы<i class="icon-icon28"></i></p>
+                                        </div>
+                                        <div class="drop-item_sub">
+                                            <div class="checkbox">
+                                                <div class="checkbox-item">
+                                                    <input id="a1_1" type="checkbox">
+                                                    <label for="a1_1">Все</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_2" type="checkbox">
+                                                    <label for="a1_2">Репортажная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_3" type="checkbox">
+                                                    <label for="a1_3">Свадебная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_4" type="checkbox" checked>
+                                                    <label for="a1_4">Студийная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_5" type="checkbox">
+                                                    <label for="a1_5">Уличная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_6" type="checkbox">
+                                                    <label for="a1_6">Жанровая</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_7" type="checkbox">
+                                                    <label for="a1_7">Гламур</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_8" type="checkbox">
+                                                    <label for="a1_8">Ню</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_9" type="checkbox" checked>
+                                                    <label for="a1_9">Lovestory</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_10" type="checkbox">
+                                                    <label for="a1_10">Детская</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_11" type="checkbox">
+                                                    <label for="a1_11">Семейная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_12" type="checkbox">
+                                                    <label for="a1_12">Предметная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_13" type="checkbox" checked>
+                                                    <label for="a1_13">Коммерческая</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_14" type="checkbox">
+                                                    <label for="a1_14">Интерьерная</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_15" type="checkbox">
+                                                    <label for="a1_15">Пейзаж/архитектура</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_16" type="checkbox">
+                                                    <label for="a1_16">Аэрофотосъемка</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_17" type="checkbox">
+                                                    <label for="a1_17">Макросъемка</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a1_18" type="checkbox">
+                                                    <label for="a1_18">Ретушь/обработка</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-drop">
+                                    <div class="drop-item active">
+                                        <div class="drop-item_heading">
+                                            <p>Дополнительные опции<i class="icon-icon28"></i></p>
+                                        </div>
+                                        <div class="drop-item_sub">
+                                            <div class="checkbox">
+                                                <div class="checkbox-item">
+                                                    <input id="a2_1" type="checkbox">
+                                                    <label for="a2_1">Проекты</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a2_2" type="checkbox">
+                                                    <label for="a2_2">Вакансии</label>
+                                                </div>
+                                                <div class="checkbox-item">
+                                                    <input id="a2_3" type="checkbox">
+                                                    <label for="a2_3">Конкурсы</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="page-right">
+                        <div class="projects_page-content active js-content" id="content-photographers">
+                            <!-- отображение проекта со всеми отметками -->
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <!-- отметки -->
+                                <div class="project__status">
+                                    <div class="project__status-item">
+                                        <span><i class="icon-pin"></i></span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                    <div class="project__status-item">
+                                        <span><i class="icon-collective"></i></span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                    <div class="project__status-item">
+                                        <span><i class="icon-icon5"></i></span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                    <div class="project__status-item">
+                                        <span class="border">pro</span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                    <div class="project__status-item">
+                                        <span class="border">top</span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                    <div class="project__status-item">
+                                        <span><i class="icon-invisible"></i></span>
+                                        <div class="status-text">
+                                            <p>доступно только для специалистов со статусом “Pro” и “Top” </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- конец -->
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец -->
+
+                            <!-- отображение проекта, выделенного цветом
+                        добавляем клас .highlight-color -->
+                            <div class="project highlight-color">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец -->
+
+                            <!-- отображение проекта, выделенного рамкой
+                        добавляем клас .highlight-border -->
+                            <div class="project highlight-border">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- конец -->
+
+                            <!-- отображение проекта, выделенного цветом и рамкой
+                        добавляем классы: .highlight-border, .highlight-color -->
+                            <div class="project highlight-color highlight-border">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- build:section layout.pagination-->
+                            <!-- /build -->
+                        </div>
+                        <div class="projects_page-content js-content" id="content-videographers">
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов2 </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_card.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_card.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- build:section layout.pagination-->
+                            <!-- /build -->
+                        </div>
+                        <div class="projects_page-content js-content" id="content-models">
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов3 </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- build:section layout.pagination-->
+                            <!-- /build -->
+                        </div>
+                        <div class="projects_page-content js-content" id="content-stylists">
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов4 </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- build:section layout.pagination-->
+                            <!-- /build -->
+                        </div>
+                        <div class="projects_page-content js-content" id="content-weddingSpecialist">
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов5 </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <a href="project_сard.html" class="showProject"></a>
+                                <div class="project__heading">
+                                    <div class="project__heading-author">
+                                        <div class="author-avatar">
+                                            <img src="../img/search_page/project-avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="author-info">
+                                            <p class="name">Иван Иванов </p>
+                                            <p class="city">Новосибирск</p>
+                                        </div>
+                                    </div>
+                                    <div class="project__heading-btn">
+                                        <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                        <a href="javascript:void(0)" class="likeBtn"></a>
+                                    </div>
+                                </div>
+                                <div class="project_content">
+                                    <div class="project_content-left">
+                                        <p class="project_content-title">
+                                            Необходимо снять на видео 8 мероприятий
+                                        </p>
+                                        <div class="project_content-text">
+                                            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                                                вэб-дизайне.
+                                                Lorem Ipsum является стандартной "рыбой" для текстов на латинице с
+                                                начала XVI века.
+                                                В то время некий безымянный печатник создал большую коллекцию размеров и
+                                                форм шрифтов,
+                                                используя Lorem Ipsum для распечатки образцов. </p>
+                                        </div>
+                                    </div>
+                                    <div class="project_content-right">
+                                        <div class="project_content-btn">
+                                            <a href="project_сard.html" class="offerService">Предложить услугу</a>
+                                            <a href="javascript:void(0)" class="likeBtn"></a>
+                                        </div>
+                                        <div class="project_content-info">
+                                            <div class="about-blk">
+                                                <p class="daysOpen">Открыт 17 дней</p>
+                                                <p class="requests">24 заявки</p>
+                                            </div>
+                                            <div class="price-blk">
+                                                <p class="price">3000 RUB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- build:section layout.pagination-->
+                            <!-- /build -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.touch-punch.min.js"></script>
+    <script src="../js/jquery-ui.autocomplete.min.js"></script>
+
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/projects.min.js"></script>
+</body>
+
+</html>

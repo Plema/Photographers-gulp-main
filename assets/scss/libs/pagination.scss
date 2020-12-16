@@ -1,0 +1,97 @@
+.pagination {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .arrow-next {
+        margin-left: auto;
+
+        &:hover {
+            i {
+                color: #54559c;
+            }
+        }
+
+        i {
+            font-size: 26px;
+            color: #cfcfcf;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+    }
+
+    .arrow-prev {
+        margin-right: auto;
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: translate(0, -50%) rotate(180deg);
+        transform: rotate(180deg);
+
+        &:hover {
+            i {
+                color: #54559c;
+            }
+        }
+
+        i {
+            font-size: 26px;
+            color: #cfcfcf;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+    }
+
+    ul {
+        text-align: center;
+
+        li {
+            margin: 0 18px;
+            display: inline-block;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                font-size: 18px;
+                color: #575757;
+                line-height: 22px;
+                display: inline-block;
+
+                &:hover,
+                &.active {
+                    color: #222222;
+                    text-shadow: 0 0 0.65px #222222, 0 0 0.65px #222222;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pagination {
+        margin: 50px 0;
+
+        .arrow-prev {
+            margin-right: 30px;
+        }
+
+        .arrow-next {
+            margin-left: 30px;
+        }
+    }
+}

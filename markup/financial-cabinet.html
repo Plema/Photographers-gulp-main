@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Финансовый кабинет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.header_notification_popup-->
+    <!-- /build -->
+
+    <!-- build:section layout.userHeader-->
+    <!-- /build -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="javascript:void(0)">Профиль</a></li>
+                <li><span>Продвижение</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="javascript:void(0)"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="javascript:void(0)"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="profile-promotion">
+                <div class="sidebar">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Мой профиль</a>
+                        </li>
+                        <li class="has-child">
+                            <a href="javascript:void(0)">Мои организации</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">Моя группа 1</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Моя группа с длинным названием</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Моя группа 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <a href="javascript:void(0)">Финансовый кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="financial">
+                    <h3>Финансовый кабинет</h3>
+                    <div class="financial-top">
+                        <ul>
+                            <li data-tab="tab-item1" id="tab-item1" class="filter-items active">
+                                <p>Текущий статус</p>
+                            </li>
+                            <li data-tab="tab-item2" id="tab-item2" class="filter-items">
+                                <p>История пополнения</p>
+                            </li>
+                            <li data-tab="tab-item3" id="tab-item3" class="filter-items">
+                                <p>История расходования</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-item tab-item1 active">
+                        <form>
+                            <p class="balance">Ваш баланс: <span>7 050 RUB</span></p>
+                            <h4>Пополнить счет</h4>
+                            <div class="form__input">
+                                <p>01. Введите сумму пополнения:</p>
+                                <input type="text">
+                                <div class="currency">
+                                    <span>RUB</span>
+                                    <span class="tooltip">?</span>
+                                    <div class="tooltip-info">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa unde
+                                            in quod </p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="form__radioBtns">
+                                <p>02. Выберите способ оплаты:</p>
+
+                                <div class="form__radio-btns">
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/bank_card.svg" alt="">
+                                        </label>
+                                        <p>Банковская карта</p>
+                                    </div>
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/yandex_money.jpg" alt="">
+                                        </label>
+                                        <p>Яндекс Деньги</p>
+                                    </div>
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/qiwi_wallet.png" alt="">
+                                        </label>
+                                        <p>Qiwi</p>
+                                    </div>
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/sberbank.png" alt="">
+                                        </label>
+                                        <p>Сбербанк Онлайн</p>
+                                    </div>
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/webmoney.png" alt="">
+                                        </label>
+                                        <p>WebMoney</p>
+                                    </div>
+                                    <div class="radioBtn">
+                                        <label class="wrap">
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            <img src="../img/paypal.png" alt="">
+                                        </label>
+                                        <p>PayPal</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__checkbox">
+                                <label class="wrap">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                    с условиями договора-оферты ознакомлен(а)
+                                </label>
+                            </div>
+                            <div class="form__button">
+                                <button>Перейти к оплате</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-item tab-item2">
+                        <div class="table">
+                            <div class="row heading">
+                                <div class="col">
+                                    <p>Дата</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                </div>
+                                <div class="col">
+                                    <p>Статус</p>
+                                </div>
+                                <div class="col">
+                                    <p>Чек</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Статус</p>
+                                    <p>оплачен</p>
+                                </div>
+                                <div class="col">
+                                    <p>Чек</p>
+                                    <p><a href="javascript:void(0)">OFD</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Статус</p>
+                                    <p>оплачен</p>
+                                </div>
+                                <div class="col">
+                                    <p>Чек</p>
+                                    <p><a href="javascript:void(0)">OFD</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Статус</p>
+                                    <p>оплачен</p>
+                                </div>
+                                <div class="col">
+                                    <p>Чек</p>
+                                    <p><a href="javascript:void(0)">OFD</a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Статус</p>
+                                    <p>оплачен</p>
+                                </div>
+                                <div class="col">
+                                    <p>Чек</p>
+                                    <p><a href="javascript:void(0)">OFD</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-item tab-item3">
+                        <div class="table">
+                            <div class="row heading">
+                                <div class="col">
+                                    <p>Дата</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                </div>
+                                <div class="col">
+                                    <p>Услуга</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Услуга</p>
+                                    <p>Публикация вакансии Стандарт 1</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Услуга</p>
+                                    <p>Публикация вакансии Стандарт 1</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Услуга</p>
+                                    <p>Публикация вакансии Стандарт 1</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Дата</p>
+                                    <p>27/04/2019</p>
+                                </div>
+                                <div class="col">
+                                    <p>Сумма</p>
+                                    <p><strong>10 000 RUB</strong></p>
+                                </div>
+                                <div class="col">
+                                    <p>Услуга</p>
+                                    <p>Публикация вакансии Стандарт 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/profile.min.js"></script>
+</body>
+
+</html>

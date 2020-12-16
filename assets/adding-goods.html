@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
+    <link rel="stylesheet" href="../css/adding-goods.min.css">
+
+</head>
+
+<body>
+
+    <!-- build:section layout.header_notification_popup-->
+    <!-- /build -->
+
+    <!-- build:section layout.userHeader-->
+    <!-- /build -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Профиль</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="profile-messages.html"><i
+                                class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="profile-createProject">
+                <div class="create-heading">
+                    <p>Добавление товара </p>
+                </div>
+                <form>
+                    <div class="attached-doc">
+                        <p>Вы можете добавить до 7 (?) фотографий. Первое загруженное фото станет обложкой товара.</p>
+                        <div class="files" id="files">
+                            <p><i class="icon-icon26"></i> Загрузить фото</p>
+                            <div class="file-loading">
+                                <input id="file-1" type="file" name="file-1[]" multiple placeholder="Загрузить фото">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-body">
+                        <div class="form-input">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-input row">
+                            <label>Цена</label>
+                            <div class="wrap">
+                                <input type="text">
+                                <span>руб.</span>
+                            </div>
+                        </div>
+                        <div class="form-input address">
+                            <label>Адрес продажи</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-flex">
+                            <div class="form-select item">
+                                <label>Производитель</label>
+                                <select
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>CANNON</option>
+                                    <option>NIKON</option>
+                                    <option>PENTAX</option>
+                                    <option>SONY</option>
+                                </select>
+                            </div>
+                            <div class="form-select item">
+                                <label>Категория</label>
+                                <select
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                            <div class="form-select item">
+                                <label>Категория</label>
+                                <select
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Все</option>
+                                    <option>Все</option>
+                                </select>
+                            </div>
+                            <div class="form-input item">
+                                <label>Другое</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create-heading">
+                        <p>Продвижение</p>
+                    </div>
+                    <div class="create-promotion">
+                        <div class="flex-wrap">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <img src="../img/icon.png" alt="">
+                                    </div>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="title">
+                                    <p>Сделать VIP</p>
+                                    <span class="tooltip"></span>
+                                    <div class="tooltip-text">
+                                        <ul>
+                                            <li>закрепление в ТОП на 24 часа </li>
+                                            <li>7 поднятий </li>
+                                            <li>выделение цветом на 7 дней</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-growth"></i>
+                                    </div>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="title">
+                                    <p>Поднять в поиске</p>
+                                    <span class="tooltip"></span>
+                                    <div class="tooltip-text">
+                                        <ul>
+                                            <li>закрепление в ТОП на 24 часа </li>
+                                            <li>7 поднятий </li>
+                                            <li>выделение цветом на 7 дней</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-highlighter"></i>
+                                    </div>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="title">
+                                    <p>Выделить цветом</p>
+                                    <span class="tooltip"></span>
+                                    <div class="tooltip-text">
+                                        <ul>
+                                            <li>закрепление в ТОП на 24 часа </li>
+                                            <li>7 поднятий </li>
+                                            <li>выделение цветом на 7 дней</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>от 500 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-icon17"></i>
+                                    </div>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="title">
+                                    <p>Турбо продвижение</p>
+                                    <span class="tooltip"></span>
+                                    <div class="tooltip-text">
+                                        <ul>
+                                            <li>закрепление в ТОП на 24 часа </li>
+                                            <li>7 поднятий </li>
+                                            <li>выделение цветом на 7 дней</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>500 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-check">
+                                <div class="block">
+                                    <label><input type="checkbox" checked>Я соглашаюсь с правилами сайта и обработкой
+                                        персональных данных</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <p>Всего к оплате: <span>500 руб.</span></p>
+                            <button>Опубликовать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+
+
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/create-project.min.js"></script>
+
+</body>
+
+</html>

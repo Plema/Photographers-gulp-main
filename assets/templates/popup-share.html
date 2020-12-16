@@ -1,0 +1,136 @@
+<div class="overlayPopup share_popup-overlay">
+    <div class="close"></div>
+    <div class="share_popup mCustomScrollbar">
+        <div class="closeBtn"></div>
+        <div class="heading">
+            <p>Поделиться</p>
+        </div>
+        <div class="checkbox">
+            <input id="profile" type="checkbox">
+            <label for="profile">
+                на моей странице
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="message" type="checkbox" checked>
+            <label for="message">
+                в личном сообщении
+            </label>
+        </div>
+        <div class="recipients">
+            <div class="name">
+                <span>Иван Иванов</span>
+                <div class="remove"></div>
+            </div>
+            <div class="recipient">
+                <div class='dropdown' id='dropdown'>Введите имя получателя </div>
+                <div class="content">
+                    <div class="usersList mCustomScrollbar">
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user1">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user1" type="checkbox" checked>
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user2">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user2" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user3">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user3" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user4">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user4" type="checkbox">
+                        </div>
+                        <div class="checkbox-item">
+                            <label for="user5">
+                                <img src="../img/messages-item1.png" alt="">
+                                Иван Иванов
+                            </label>
+                            <input id="user5" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="content-action">
+                        <a href="javascript:void(0)" class="add-name">Выбрать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="actions">
+            <form>
+                <label for="text">
+                    Ваше сообщение
+                </label>
+                <textarea id="text"></textarea>
+                <div class="write">
+                    <div class="write-file">
+                        <input type="file" name="file" id="file" class="inputfile" accept="image/*">
+                        <label for="file" class="labelfile"><i class="icon-icon26"></i></label>
+                    </div>
+                    <div class="write-file">
+                        <i class="icon-paperclip paperclip"></i>
+                        <div class="dropdown-list" style="background-image: url(../img/dropdown.png)">
+                            <ul>
+                                <li>
+                                    <input type="file" name="file" id="file01" class="inputfile" accept="image/*">
+                                    <label for="file01">Фотография</label>
+                                </li>
+                                <li>
+                                    <input type="file" name="file" id="file02" class="inputfile" accept="video/*">
+                                    <label for="file02">Видеозапись</label>
+                                </li>
+                                <li>
+                                    <input type="file" name="file" id="file03" class="inputfile" accept="audio/*">
+                                    <label for="file03">Аудиозапись</label>
+                                </li>
+                                <li>
+                                    <input type="file" name="file" id="file04" class="inputfile">
+                                    <label for="file04">Документ</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-wrap">
+                    <div class="form-button">
+                        <button class="button-send" type="button">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="overlayPopupThanks">
+    <div class="close"></div>
+    <div class="popup-thanks">
+        <p>Публикация успешно отправлена.</p>
+    </div>
+</div>

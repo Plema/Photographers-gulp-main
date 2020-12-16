@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/style.min.css">
+    <!-- создание альбома -->
+    <link rel="stylesheet" href="../css/creatingAlbum.min.css">
+    <!-- end styles -->
+    <title>creatingAlbum</title>
+</head>
+
+<body>
+    <!-- popups -->
+    <!-- .closeBtn - закрывает попап -->
+    <!-- .open-* - открывает попап -->
+    <ul>
+        <li><a href="javascript:void(0)" class="open-creatingAlbum">Создание альбома</a></li>
+
+        <!-- создание альбома -->
+        <div class="overlay-creatingAlbum overlayPopup">
+            <div class="close"></div>
+            <div class="creatingAlbum__popup">
+                <span class="close-popup closeBtn"></span>
+                <div class="heading">
+                    <p>Создание альбома</p>
+                </div>
+                <div class="mainInfo">
+                    <form>
+                        <div class="form__input">
+                            <label for="album_name">Название альбома</label>
+                            <input type="text" id="album_name">
+                        </div>
+                        <div class="form__textarea">
+                            <label for="album_description">Описание альбома</label>
+                            <textarea id="album_description"></textarea>
+                        </div>
+                        <div class="form__select">
+                            <label for="album_comments">Кто может комментировать фотографии?</label>
+                            <div class="select">
+                                <select id="album_comments"
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Только друзья</option>
+                                    <option>Все пользователи</option>
+                                    <option>Только друзья</option>
+                                    <option>Только специалисты</option>
+                                    <option>Только я</option>
+                                    <option>Только зарегистрированные пользователи</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__select">
+                            <label for="album_view">Кто может просматривать этот альбом?</label>
+                            <div class="select">
+                                <select id="album_view"
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Только друзья</option>
+                                    <option>Все пользователи</option>
+                                    <option>Только друзья</option>
+                                    <option>Только специалисты</option>
+                                    <option>Только я</option>
+                                    <option>Только зарегистрированные пользователи</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form__button">
+                            <button>Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- конец создание альбома -->
+
+
+        <!-- скрипты -->
+        <script src="../js/jquery.min.js"></script>
+
+        <!--  для попапов 'создание альбома', 'добавление описания фото'  -->
+        <script src="../js/jcf.min.js"></script>
+        <script src="../js/jcf.select.min.js"></script>
+        <!---->
+
+        <!-- создание альбома -->
+        <script src="../js/creatingAlbum.min.js"></script>
+
+        <!--конец скрипты -->
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+footer {
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    // position: absolute;
+    background-color: #27283c;
+
+    .footer-container {
+        padding: 20px 0 16px;
+    }
+
+    .footer-content {
+        position: relative;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        display: inline-block;
+
+        img {
+            width: 31px;
+            display: inline-block;
+        }
+    }
+
+    nav {
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+        ul {
+            li {
+                padding: 0 18px;
+                margin-bottom: 15px;
+                display: inline-block;
+                width: calc(50% - 10px);
+
+                a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    position: relative;
+                    display: inline-block;
+
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        left: 0;
+                        width: 0;
+                        height: 3px;
+                        bottom: -3px;
+                        position: absolute;
+                        background: #54559c;
+                        -webkit-transition: all 0.5s;
+                        -moz-transition: all 0.5s;
+                        -ms-transition: all 0.5s;
+                        -o-transition: all 0.5s;
+                        transition: all 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .sosial {
+        text-align: center;
+        margin-bottom: 24px;
+
+        li {
+            margin: 0 12px;
+            display: inline-block;
+
+            a {
+                display: inline-block;
+
+                &:hover {
+                    i {
+                        color: #54559c;
+                    }
+                }
+
+                i {
+                    color: #d9dfea;
+                    font-size: 26px;
+                    -webkit-transition: all 0.5s;
+                    -moz-transition: all 0.5s;
+                    -ms-transition: all 0.5s;
+                    -o-transition: all 0.5s;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        nav {
+            text-align: center;
+
+            ul {
+                li {
+                    width: auto;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    footer {
+        .footer-container {
+            padding: 22px 0 16px;
+        }
+
+        .logo {
+            margin-bottom: 31px;
+
+            img {
+                width: 36px;
+            }
+        }
+
+        nav {
+            z-index: 0;
+            position: relative;
+        }
+
+        .sosial {
+            top: -8px;
+            z-index: 1;
+            right: -10px;
+            margin-bottom: 0;
+            position: absolute;
+
+            li {
+                margin: 0 7px;
+            }
+        }
+
+        p {
+            top: 0;
+            left: 0;
+            font-size: 16px;
+            position: absolute;
+        }
+
+    }
+
+}

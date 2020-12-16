@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/registration.min.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.header-->
+    <!-- /build -->
+
+    <section class="register-form">
+        <div class="container">
+            <h2>Регистрация</h2>
+            <p>Выберите, как вы регистрируетесь:</p>
+            <form class="form">
+                <div class="form__radio-btns">
+                    <label class="wrap">
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                        <i class="icon-icon20"></i>
+                        <span class="label">Я - специалист</span>
+                    </label>
+                    <label class="wrap">
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                        <i class="icon-search"></i>
+                        <span class="label">Я ищу специалиста</span>
+                    </label>
+                </div>
+                <div class="form__input">
+                    <i class="icon-icon5"></i>
+                    <input type="text" placeholder="Имя" required="">
+                </div>
+                <div class="form__input">
+                    <i class="icon-close-envelope"></i>
+                    <input type="email" placeholder="Email" required="">
+                </div>
+                <div class="form__input password">
+                    <i class="icon-lock"></i>
+                    <input type="password" placeholder="Пароль" required="">
+                </div>
+                <div class="form__input password">
+                    <i class="icon-lock"></i>
+                    <input type="password" placeholder="Подтвердите пароль" required="">
+                </div>
+                <div class="form__checkbox addPassword">
+                    <label class="wrap">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Сгенерировать пароль автоматически
+                    </label>
+                </div>
+                <div class="form__recaptcha">
+                    <!-- enter here the code of the recaptcha and delete the image -->
+                    <img src="../img/recaptcha.jpg" alt="recaptcha">
+                </div>
+                <div class="form__checkbox">
+                    <label class="wrap">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                        Я соглашаюсь с правилами сайта и обработкой персональных данных
+                    </label>
+                </div>
+                <div class="form__button">
+                    <button>Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="signIn-socials">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Войти через социальные сети:</h3>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="icon-icon18"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="icon-icon2"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.min.js"></script>
+
+</body>
+
+</html>

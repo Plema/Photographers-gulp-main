@@ -1,0 +1,142 @@
+.bread-crumbs {
+  padding: 25px  0 15px;
+}
+.page-content{
+  padding-bottom: 150px;
+}
+.top-block-album{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .one-button{
+    width: 233px;
+    background-color: #27283c;
+    text-align: center;
+    margin: 0 auto 15px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    @media screen and (min-width: 465px){
+      margin: 0 5px 25px;
+    }
+  }
+  h4{
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    width: 100%;
+    &:before{
+      content: '';
+      bottom: 0;
+      left: 15px;
+      position: absolute;
+      width: 71px;
+      height: 1px;
+      background-color: #54559c;;
+    }
+  }
+}
+
+h5{
+  color: #022222;
+	font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.description{
+  color: #222222;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.album-photo{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -0.75% -1.5%;
+  .gallery__img{
+    overflow: hidden;
+    width: 48%;
+    margin: .75%;
+    display: flex;
+    img{
+      object-fit: cover;
+      flex: 1;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .bread-crumbs {
+    padding: 40px 0 15px;
+  }
+  .profile-album{
+    width: 74%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-album{
+    width: 80%;
+    margin: 0;
+  }
+  h5{
+    margin-bottom: 25px;
+  }
+  .album-photo{
+    .w28{
+      width: 27%;
+    }
+    .w21{
+      width: 20%;
+    }
+  }
+  .top-block-album{
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    h4{
+      width: auto;
+      border: none;
+    }
+    .buttons{
+      margin: 0 0 15px;
+    }
+    .one-button{
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1188px) {
+  .profile-album{
+    width: 83%;
+  }
+  .album-photo{
+    width: 83%;
+    margin: 0;
+  }
+  .description{
+    width: 83%;
+  }
+}

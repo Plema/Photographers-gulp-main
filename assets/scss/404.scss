@@ -1,0 +1,62 @@
+@import "libs/header";
+
+.error {
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 146px 26px 56px;
+
+    &-text {
+        margin-top: 48px;
+
+        h2 {
+            font-size: 36px;
+            color: #222222;
+
+            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+            text-transform: uppercase;
+            margin-bottom: 27px;
+        }
+
+        p {
+            color: #9b9b9b;
+            font-size: 16px;
+
+            &.withLinks {
+                color: #222222;
+                width: 207px;
+                margin: 23px auto 0;
+
+                a {
+                    color: #54559c;
+                    font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .error {
+        padding-top: 199px;
+
+        &-text {
+            margin-top: 26px;
+
+            h2 {
+                margin-bottom: 14px;
+            }
+
+            p.withLinks {
+                margin: 19px auto 0;
+            }
+        }
+    }
+}

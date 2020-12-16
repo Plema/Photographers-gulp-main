@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль фотографии содержание альбома</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile-menuFin.min.css">
+    <link rel="stylesheet" href="../css/profile-tovar.min.css">
+</head>
+
+<body>
+
+  <include src="assets/templates/user-header.html"></include>
+
+<div class="bread-crumbs">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="profile-expert.html">Профиль</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-content clearfix">
+        <div class="profile-menu">
+        <ul>
+            <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+            <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+            <li class="active"><a href="profile-messages.html"><i
+                        class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+            <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+            <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+            <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+            <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+            <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+            <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+            <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+            <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+            <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a></li>
+        </ul>
+        <a href="javascript:void(0)" class="banner">
+            <img src="../img/banner.jpg" alt="banner">
+        </a>
+        <a href="javascript:void(0)" class="banner">
+            <img src="../img/banner2.png" alt="banner">
+        </a>
+        </div>
+
+        <div class="profile-tovar">
+            <div class="top-tabsTovar">
+                <div class="filter-slider2" id="filter-slider">
+                    <div class="filter-items js-item active" data-items="act">
+                        <p>Активные</p>
+                    </div>
+                    <div class="filter-items js-item" data-items="notActive">
+                        <p>Не активные</p>
+                    </div>
+                    <div class="filter-items js-item" data-items="deleted">
+                        <p>Удалённые</p>
+                    </div>
+                    <div class="filter-items js-item" data-items="moderat">
+                        <p>На модерации</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tovar_page-content js-content active" id="act">
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                    <form class="open-sett block">
+                        <div class="options">
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers.png" alt="">
+                                <h4>Поднять в поиске</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers2.png" alt="">
+                                <h4>Выделить цветом</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox" checked>
+                                <img src="../img/pin22.png" alt="">
+                                <h4>Сделать VIP</h4>
+                                <p  class="open-priceServ"><strong>от 190 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/raketa.png" alt="">
+                                <h4>Турбо продвижение</h4>
+                                <p  class="open-priceServ"><strong>1 550 руб.</strong> вместо <span>2 590 руб.</span></p>
+                            </div>
+                        </div>
+                        <div class="price-butt">
+                            <p>Всего к оплате:<strong>500 руб.</strong></p>
+                            <button>Оплатить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                    <form class="open-sett block">
+                        <div class="options">
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers.png" alt="">
+                                <h4>Поднять в поиске</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers2.png" alt="">
+                                <h4>Выделить цветом</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox" checked>
+                                <img src="../img/pin22.png" alt="">
+                                <h4>Сделать VIP</h4>
+                                <p  class="open-priceServ"><strong>от 190 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/raketa.png" alt="">
+                                <h4>Турбо продвижение</h4>
+                                <p  class="open-priceServ"><strong>1 550 руб.</strong> вместо <span>2 590 руб.</span></p>
+                            </div>
+                        </div>
+                        <div class="price-butt">
+                            <p>Всего к оплате:<strong>500 руб.</strong></p>
+                            <button>Оплатить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                    <div class="ready-options">
+                        <div class="one-roption">
+                            <img src="../img/pin22.png" alt="">
+                            <h4>Закрепить в ТОП</h4>
+                            <p>на 5 дней <a href="">продлить</a></p>
+                        </div>
+                        <div class="one-roption">
+                            <img src="../img/3-layers.png" alt="">
+                            <h4>Поднять в поиске</h4>
+                        </div>
+                        <div class="one-text">
+                            <h5>Открыто только для специалистов</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="tovar_page-content js-content" id="notActive">
+
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="tovar_page-content js-content" id="deleted">
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+            <div class="tovar_page-content js-content" id="moderat">
+                <div class="one-tovar">
+                    <div class="tovar">
+                        <div class="left-text">
+                            <div class="name">
+                                <div class="left-name-photo">
+                                    <a href="profile-expert.html">
+                                        <img src="../img/projects-item-img.png" alt="">
+                                    </a>
+                                    <div>
+                                        <h5>Иван Иванов</h5>
+                                        <span>Новосибирск</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="sett">
+                                    <img src="../img/settings.png" alt="">
+                                    <span>Подключить опции</span>
+                                </a>
+                            </div>
+                            <h4>Фотоапарат J50/A4 Sony</h4>
+                            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною.</p>
+                            <a href="javascript:void(0)" class="change">Редактировать</a>
+                        </div>
+                        <div class="right-photo">
+                            <div class="img-tovar">
+                                <img src="../img/product-for-item.png" alt="">
+                            </div>
+                            <h6 class="price">3000 RUB</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        
+        
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<include src="assets/templates/footer.html"></include>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/profile-messages.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/profile-tovar.min.js"></script>
+
+</body>
+
+</html>

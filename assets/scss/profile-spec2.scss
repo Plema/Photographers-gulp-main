@@ -1,0 +1,12 @@
+.profile__heading{
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-album{
+    width: 100%;
+  }
+  .album-photo{
+    max-width: 970px;
+  }
+}

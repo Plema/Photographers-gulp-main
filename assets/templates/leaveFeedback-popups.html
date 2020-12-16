@@ -1,0 +1,72 @@
+<!-- оставить отзыв -->
+<div class="overlay-leaveFeedback overlayPopup">
+    <div class="close"></div>
+    <div class="leaveFeedback__popup">
+        <span class="close-popup closeBtn"></span>
+        <div class="content">
+            <h4>Ваш отзыв</h4>
+            <form onsubmit="return false">
+                <div class="form-textarea">
+                    <textarea placeholder="Расскажите о вашем опыте в данном проекте"></textarea>
+                </div>
+                <p>Насколько Вы оцениваете работу с данным пользователем? </p>
+                <div class="rating">
+                    <label>
+                        <input type="radio" name="stars" value="1" />
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="2" />
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="3" checked />
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="4" />
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="stars" value="5" />
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                        <span class="icon"><i class="icon-icon1"></i></span>
+                    </label>
+                </div>
+                <div class="rating-label">
+                    <span class="value1">Низкий</span>
+                    <span class="value2">Ниже среднего</span>
+                    <span class="value3" style="display:inline;">Средний</span>
+                    <span class="value4">Выше среднего</span>
+                    <span class="value5">Высокий</span>
+                </div>
+                <div class="form-button">
+                    <button class="open-publishedPopup closeBtn">Опубликовать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="overlay-publishedPopup overlayPopup">
+    <div class="close"></div>
+    <div class="publishedPopup__popup">
+        <span class="close-popup closeBtn"></span>
+        <div class="content">
+            <p>Ваш отзыв успешно опубликован.</p>
+        </div>
+    </div>
+</div>
+
+<!--  -->

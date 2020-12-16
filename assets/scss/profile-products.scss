@@ -1,0 +1,57 @@
+.sum {
+    display: flex;
+    align-items: center;
+
+    img {
+        border: 1px solid silver;
+        border-radius: 3px;
+        margin-right: 20px;
+        width: 120px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .profile .projects .projects-nav .nav ul li {
+        margin-right: 94px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile-products {
+        width: 100%;
+        float: right;
+    }
+
+    .sum {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        img {
+            width: 89%;
+            margin-bottom: 20px;
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .profile .projects .projects-nav .nav ul li {
+        text-align: left;
+        margin-right: 16px;
+    }
+}
+
+@media screen and (min-width: 1188px) {
+    .profile .profile-products {
+        width: 100%;
+    }
+
+    .profile .projects .projects-nav .nav ul li {
+        text-align: left;
+        margin-right: 37px;
+    }
+}
