@@ -137,6 +137,7 @@
 		}
 
 		&_info{
+			min-width: 200px;
 			.notification__name{
 				font-size: 17px;
 				font-weight: 600;
@@ -145,6 +146,7 @@
 				padding-bottom: 10px;
 			}
 			.notification__date{
+
 				font-size: 14px;
 				font-weight: 300;
 				color: #a7a7a7;
@@ -227,6 +229,9 @@
 			  img{
 				  margin-right: 15px;
 			  }
+		  }
+		  &_info{
+			  min-width: 0px;
 		  }
 	  }
 	  &__body{

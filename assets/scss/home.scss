@@ -5,6 +5,7 @@
 @import "libs/slick";
 
 .banner {
+    height: 717px;
     overflow: hidden;
     position: relative;
     margin-top: -1px;
@@ -16,6 +17,11 @@
         width: 100%;
         height: 100%;
         position: absolute;
+
+        background-image: url("../img/banner-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         &::after {
             content: '';

@@ -14,9 +14,11 @@
 <body>
 
     <!-- build:section layout.header_notification_popup-->
+    <include src="assets/templates/header-notification-popup.html"></include>
     <!-- /build -->
 
     <!-- build:section layout.userHeader-->
+    <include src="assets/templates/user-header.html"></include>
     <!-- /build -->
 
     <!-- Попап Удалить -->
@@ -114,13 +116,25 @@
                             <p><i class="icon-icon4"></i> Приклепленные документы</p>
                             <div class="files" id="files">
                                 <div class="file-list">
-                                    <div class="item-file" style="background-image: url(../img/event-img.jpg)">
-                                        <a class="close" href="javascript:void(0)"></a>
-                                        <span>jpg. Пример_1</span>
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/event-img.jpg)">
+                                            <a class="close" href="javascript:void(0)"></a>
+                                            <span>jpg. Пример_1</span>
+                                        </div>
+                                        <div class="item-description" id="item-description">
+                                            <textarea placeholder="Описание"></textarea>
+                                            <p>0 из 50</p>
+                                        </div>
                                     </div>
-                                    <div class="item-file" style="background-image: url(../img/event-img-1.jpg)">
-                                        <a class="close" href="javascript:void(0)"></a>
-                                        <span>jpg. Пример_1</span>
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/event-img-1.jpg)">
+                                            <a class="close" href="javascript:void(0)"></a>
+                                            <span>jpg. Пример_1</span>
+                                        </div>
+                                        <div class="item-description" id="item-description">
+                                            <textarea placeholder="Описание"></textarea>
+                                            <p>0 из 50</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="file-loading">
@@ -349,6 +363,7 @@
     </section>
 
     <!-- build:section layout.footer-->
+    <include src="assets/templates/footer.html"></include>
     <!-- /build -->
 
     <script src="../js/jquery.min.js"></script>

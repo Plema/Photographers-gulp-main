@@ -16,6 +16,17 @@ $(document).ready(function(){
         $(this).toggleClass('close');
     });
 
-
+    $('.switch-btn').click(function(){
+        $(this).toggleClass('switch-on');
+        if ($(this).hasClass('switch-on')) {
+            $(this).trigger('on.switch');
+        } else {
+            $(this).trigger('off.switch');
+        }
+    });
     
+    $('.explain-img').on('click', function () {
+        $('.explain-text').addClass('show');
+        $('.explain-text').removeClass('hide');
+    });
 });

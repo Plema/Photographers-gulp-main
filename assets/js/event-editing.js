@@ -25,13 +25,6 @@ $(document).ready(function () {
     }
     iOSversion();
 
-    // добавление описания фото
-    $('.open-photoDescr').on("click", function () {
-        $('.overlay-photoDescr').addClass('active');
-    });
-    $('.overlay-photoDescr .closeBtn, .overlay-photoDescr .close').on("click", function () {
-        $('.overlay-photoDescr').removeClass('active');
-    });
 
     (function ($) {
         $(document).on("load", function () {
@@ -49,7 +42,11 @@ $(document).ready(function () {
 
     $('.add-image#files2, .add-video#files3, .add-files#files4').on('click', function () {
         $('#file-1').trigger('click');
-    })
+    });
+
+    /* $("#file-1").on("click", function () {
+        $('.file-preview').append('<div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div>');
+    }); */
 
     //hover on mobile
     $('.create-promotion .item .title .tooltip').on('click', function () {
@@ -57,9 +54,12 @@ $(document).ready(function () {
         $(this).toggleClass('close');
     });
 
+    //Remove added photo and textarea
     $('.item-file .close').on('click', function () {
-        $(this).parent().css('display', 'none');
+        $(this).parents(".item-file").css('display', 'none');
     });
+
+    
 
     //Попапы
 

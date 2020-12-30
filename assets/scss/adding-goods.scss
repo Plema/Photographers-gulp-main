@@ -225,7 +225,113 @@
 
 .profile-createProject {
     .create-body {
-        padding: 0px 0 28px;
+        padding: 0px 0 45px;
+
+        .autoreneval{
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            
+            p{
+              margin-right: 10px;
+            }
+            .explain{
+                margin-right: 55px;
+
+                &-img{
+                    cursor: pointer;
+                    img{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                &-text{
+                    width: 290;
+                    height: auto;
+
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    background-color: #d9dfea;
+                    border-radius: 2px;
+                    padding: 20px 7px;
+                    margin: 20px 15px 0 15px;
+
+                    position: absolute;
+                    left: 0;
+                    z-index: 10;
+
+                    span{
+                        font-weight: 600;
+                    }
+
+                    .explain-close{
+                        width: 13px;
+                        height: 13px;
+
+                        cursor: pointer;
+                        position: absolute;
+                        top: 8px;
+                        right: 8px;
+                        z-index: 100;
+                        &:before{
+                            display: block;
+                            content: '';
+                            width: 13px;
+                            height: 2px;
+                            background-color: #000;
+                            transform: rotate(-45deg);
+
+                            position: absolute;
+                        }
+                        &:after{
+                            display: block;
+                            content: '';
+                            width: 13px;
+                            height: 2px;
+                            background-color: #000;
+                            transform: rotate(45deg);
+
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+            .switch-btn {
+                display: inline-block;
+                width: 42px; /* ширина переключателя */
+                min-width: 42px;
+                height: 12px; /* высота переключателя */
+                border-radius: 6px; /* радиус скругления */
+                background: #d9dfea; /* цвет фона */
+                z-index: 0;
+                margin: 0;
+                padding: 0;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                transition-duration: 300ms; /* анимация */
+              }
+              .switch-btn::after {
+                content: "";
+                height: 20px; /* высота кнопки */
+                width: 20px; /* ширина кнопки */
+                border-radius: 50%; /* радиус кнопки */
+                background: #fff; /* цвет кнопки */
+                top: -5px; /* положение кнопки по вертикали относительно основы */
+                left: -5px; /* положение кнопки по горизонтали относительно основы */
+                transition-duration: 300ms; /* анимация */
+                box-shadow: 0 0 10px 0 #999999; /* тень */
+                position: absolute;
+                z-index: 1;
+              }
+              
+              .switch-on::after {
+                left: 25px;
+                background:#54559c;
+              }
+          }
     }
 
     .form-button {
@@ -315,4 +421,10 @@
             }
         }
     }
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
 }
