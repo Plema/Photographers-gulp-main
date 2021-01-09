@@ -44,9 +44,9 @@ $(document).ready(function () {
         $('#file-1').trigger('click');
     });
 
-    /* $("#file-1").on("click", function () {
+    $("#file-1").on("click", function () {
         $('.file-preview').append('<div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div>');
-    }); */
+    }); 
 
     //hover on mobile
     $('.create-promotion .item .title .tooltip').on('click', function () {

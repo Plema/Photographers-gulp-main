@@ -224,8 +224,11 @@
 }
 
 .profile-createProject {
+    
     .create-body {
         padding: 0px 0 45px;
+
+        position: relative;
 
         .autoreneval{
             display: flex;
@@ -246,7 +249,7 @@
                     }
                 }
                 &-text{
-                    width: 290;
+                    width: 290px;
                     height: auto;
 
                     font-size: 14px;
@@ -254,8 +257,8 @@
 
                     background-color: #d9dfea;
                     border-radius: 2px;
-                    padding: 20px 7px;
-                    margin: 20px 15px 0 15px;
+                    padding: 20px 7px 20px 10px;
+                    margin-top: -110px;
 
                     position: absolute;
                     left: 0;
@@ -271,7 +274,7 @@
 
                         cursor: pointer;
                         position: absolute;
-                        top: 8px;
+                        top: 12px;
                         right: 8px;
                         z-index: 100;
                         &:before{
@@ -352,25 +355,43 @@
 
 
 @media screen and (min-width: 768px) {
-    .profile-createProject .create-body {
-        .row {
-            max-width: 324px;
+    .profile-createProject {
+        .create-body {
+            .row {
+                max-width: 324px;
+            }
+    
+            .address {
+                max-width: 285px;
+            }
+    
+            .form-flex .item:nth-child(2) {
+                padding-right: 40px;
+            }
         }
-
-        .address {
-            max-width: 285px;
-        }
-
-        .form-flex .item:nth-child(2) {
-            padding-right: 40px;
-        }
+        
     }
+
 }
 
 @media screen and (min-width: 1024px) {
     .profile-createProject {
-        .create-body .form-input {
-            margin-bottom: 36px;
+        .create-body {
+            .form-input {
+                margin-bottom: 36px;
+            }
+            .autoreneval{
+                .explain{
+                    &-text{
+                        width: 415px;
+                        height: auto;
+                        left: 265px;
+
+                        margin-top: -85px;
+                    } 
+                }
+            }
+            
         }
 
         .form-button {

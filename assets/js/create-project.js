@@ -24,9 +24,16 @@ $(document).ready(function(){
             $(this).trigger('off.switch');
         }
     });
-    
-    $('.explain-img').on('click', function () {
+
+    function openModal () {
         $('.explain-text').addClass('show');
         $('.explain-text').removeClass('hide');
-    });
+    }
+    $('.explain-img').on('click', openModal);
+
+    function closeModal () {
+        $('.explain-text').addClass('hide');
+        $('.explain-text').removeClass('show');
+    }
+    $('.explain-close').on('click', closeModal);
 });
