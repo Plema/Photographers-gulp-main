@@ -257,6 +257,63 @@ div#kvFileinputModal {
                     }
                 }
             }
+            .adding-comments{
+                margin: 16px 0 30px 0;
+                .main-comments{
+                    display: flex;
+                    .title-comments{
+                        width: 190px;
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                    .switcher-comments{
+                        display: flex;
+                        align-items: center;
+                        .switch-btn {
+                            display: inline-block;
+                            width: 42px; /* ширина переключателя */
+                            min-width: 42px;
+                            height: 12px; /* высота переключателя */
+                            border-radius: 6px; /* радиус скругления */
+                            background: #d9dfea; /* цвет фона */
+                            z-index: 0;
+                            margin: 0;
+                            padding: 0;
+                            border: none;
+                            cursor: pointer;
+                            position: relative;
+                            transition-duration: 300ms; /* анимация */
+                        }
+                          .switch-btn::after {
+                            content: "";
+                            height: 20px; /* высота кнопки */
+                            width: 20px; /* ширина кнопки */
+                            border-radius: 50%; /* радиус кнопки */
+                            background: #fff; /* цвет кнопки */
+                            top: -5px; /* положение кнопки по вертикали относительно основы */
+                            left: -5px; /* положение кнопки по горизонтали относительно основы */
+                            transition-duration: 300ms; /* анимация */
+                            box-shadow: 0 0 10px 0 #999999; /* тень */
+                            position: absolute;
+                            z-index: 1;
+                            }
+                          
+                          .switch-on::after {
+                            left: 25px;
+                            background:#54559c;
+                            }
+                    }
+                    
+                }
+                .explain-comments{
+                    width: 190px;
+                    font-size: 12px;
+                    color: #9a9a9a;
+
+                    margin-top: 10px;
+                }
+            }
 
             .form-item {
                 display: flex;
@@ -450,6 +507,13 @@ div#kvFileinputModal {
             .attached-doc {
                 margin-bottom: 20px;
 
+                .kv-file-content {
+                    max-width: 180px;
+                    max-height: 140px;
+
+                    overflow: hidden;
+                }
+
                 p {
                     color: #222222;
                     font-size: 16px;
@@ -481,16 +545,17 @@ div#kvFileinputModal {
                 .file-preview-thumbnails {
                     display: flex;
                     flex-direction: column;
-                    /* flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: center; */
+
+                    .item-description{
+                        width: 100%;
+                    }
 
                     .file-preview-frame {
                         width: calc(50% - 10px);
                         position: relative;
-                        margin-bottom: 15px;
+                        margin-right: 40px;
                         width: 180px;
-                        height: 137px;
+                        height: 139px;
 
                         .file-caption-info {
                             white-space: nowrap;
@@ -499,6 +564,8 @@ div#kvFileinputModal {
                             text-align: left;
                             color: #222222;
                             font-size: 14px;
+
+                            margin-top: 10px;
                         }
 
                         .file-size-info,
@@ -744,8 +811,8 @@ div#kvFileinputModal {
                     height: 100%; */
 
                     .file-preview-frame {
-                        width: 100%;
-                        height: 100%;
+                        min-width: 180px;
+                        height: 137px;
                         position: relative;
                         margin-bottom: 15px;
 
@@ -1526,6 +1593,8 @@ div#kvFileinputModal {
     }
 }
 
+
+
 @media screen and (min-width: 480px) {
     .overlayPopup {
 
@@ -1676,6 +1745,7 @@ div#kvFileinputModal {
             float: right;
 
             .create-body{
+                position: relative;
                 .file-list{
                     .item-file{
                         display: flex;
@@ -1689,6 +1759,19 @@ div#kvFileinputModal {
                             margin-bottom: 45px;
                         }
                     }
+                }
+                .form-row{
+                    .title{
+                        margin-bottom: 40px;
+                    }
+                }
+                .adding-comments{
+                    position: absolute;
+                    top: 87%;
+                    left: 300px;
+                    z-index: 10;
+
+                    margin: 0;
                 }
             }
         }
@@ -1746,7 +1829,17 @@ div#kvFileinputModal {
         }
     }
 }
-
+@media screen and (min-width: 809px) {
+    .profile{
+        .createEvent{
+            .create-body{
+                .adding-comments{
+                    top: 86%;
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width: 1024px) {
     .desc {
         display: block;
@@ -1814,11 +1907,11 @@ div#kvFileinputModal {
                 }
 
                 .attached-doc {
-                    .kv-file-content {
+                    /* .kv-file-content {
                         max-height: 137px;
                         overflow: hidden;
                         margin-bottom: 9px;
-                    }
+                    } */
 
                     .file-preview {
                         margin-bottom: 25px;
@@ -1845,7 +1938,6 @@ div#kvFileinputModal {
                             min-height: 66px;
                             display: flex;
                             align-items: center;
-                            margin-left: 31px;
                         }
                     }
 
@@ -1879,6 +1971,13 @@ div#kvFileinputModal {
 
                 textarea {
                     height: 171px;
+                }
+
+                .adding-comments{
+                    position: absolute;
+                    top: 87%;
+                    left: 300px;
+                    z-index: 10;
                 }
             }
         }

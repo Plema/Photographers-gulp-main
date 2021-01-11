@@ -45,7 +45,10 @@ $(document).ready(function () {
     });
 
     $("#file-1").on("click", function () {
-        $('.file-preview').append('<div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div>');
+        var content = document.querySelector('.file-preview-frame');
+        $('.file-preview-thumbnails').prepend('<div class="added-file"><div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div></div>');
+        $(content).appendTo('.added-file');
+        $(content).remove();
     }); 
 
     //hover on mobile
@@ -59,7 +62,15 @@ $(document).ready(function () {
         $(this).parents(".item-file").css('display', 'none');
     });
 
-    
+    // Comments switcher
+    $('.switch-btn').click(function(){
+        $(this).toggleClass('switch-on');
+        if ($(this).hasClass('switch-on')) {
+            $(this).trigger('on.switch');
+        } else {
+            $(this).trigger('off.switch');
+        }
+    });
 
     //Попапы
 
