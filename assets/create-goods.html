@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Создание товара</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/create-goods.min.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.header_notification_popup-->
+    <include src="assets/templates/header-notification-popup.html"></include>
+    <!-- /build -->
+
+    <!-- build:section layout.userHeader-->
+    <include src="assets/templates/user-header.html"></include>
+    <!-- /build -->
+
+    <!-- Попап Удалить -->
+    <div class="overlay-remove overlayPopup">
+        <div class="close"></div>
+        <div class="createEvent__popup mCustomScrollbar">
+            <span class="close-popup closeBtn"></span>
+            <div class="mainInfo">
+                <p><span>Внимание</span>, событие будет немедленно удалено с портала.
+                    По умолчанию события автоматически удаляются
+                    через 30 дней после начала события!
+                </p>
+                <button class="remove" type="button">Удалить</button>
+                <button class="cancel" type="button">Отмена</button>
+            </div>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <!-- Попап УДалено -->
+    <div class="overlay-deleted overlayPopup">
+        <div class="close"></div>
+        <div class="createEvent__popup mCustomScrollbar">
+            <span class="close-popup closeBtn"></span>
+            <div class="mainInfo">
+                <p>Событие <span>Воркшоп по фотографии</span> будет удалено. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>События</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="profile-messages.html"><i
+                                class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                    <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="createEvent">
+                <div class="create-heading">
+                    <p>Добавление товара</p>
+                </div>
+                <form>
+                    <div class="create-body">
+                        <div class="form-input">
+                            <label>Название</label>
+                            <input type="text" placeholder="Фотоапарат Canon J50">
+                        </div>
+                        <div class="form-textarea">
+                            <label>Описание</label>
+                            <textarea class="main-description" maxlength="2000"></textarea>
+                            <p><span class="counter">0</span> из 2000</p>
+                        </div>
+                        <div class="attached-doc">
+                            <p><i class="icon-icon4"></i>Фотографии <span>(не более 10ти)</span></p>
+                            <div class="files" id="files">
+                                <div class="file-list">
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/product-item-img3.png)">
+                                            <a class="close" href="javascript:void(0)"></a>
+                                            <span>Основное фото</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/product-item-img3.png)">
+                                            <a class="close" href="javascript:void(0)"></a>
+                                        </div>
+                                </div>
+                                <div class="file-loading">
+                                    <input id="file-1" type="file" name="file-1[]" multiple>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            <div class="form-item">
+                                <div class="form-filters">
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Категория</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Оборудование</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Подкатегория</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Объективы</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Состояние</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Новый</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Произволитель</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Canon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Байонет</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Canon EF</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Тип</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Зум</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Минимальная диафрагма</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>f/2.5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Фокусное расстояние</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>7-14 мм</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-column type-sum">
+                                    <div class="form-select item">
+                                        <label>Тип объявления</label>
+                                        <select 
+                                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                            <option>Продажа</option>
+                                        </select>
+                                    </div>
+                                    <div class="cost">
+                                        <div class="cost-amount">
+                                            <label class="disabled">Стоимость</label>
+                                            <input class="cost-input" type="text" placeholder="0.00">
+                                        </div>
+                                        <div class="cost-currency">
+                                            <label class="disabled">Валюта</label>
+                                            <div class="cost-input">RUB</div>
+                                        </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-location">
+                                    <div class="form-input">
+                                        <label>Город</label>
+                                        <input class="input-location" type="text" placeholder="Новосибирск">
+                                    </div>
+                                    <div class="form-input">
+                                        <label>Указать адрес</label>
+                                        <input class="input-location" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="autoreneval">
+                            <p>Автопубликация</p>
+                            <div class="explain">
+                                <div class="explain-img">
+                                    <img src="../img/inf-icon.png" alt="">
+                                </div>
+                                <div class="explain-text hide">
+                                    <span>Как работает автопубликация</span>
+                                    <p>Когда срок размещения закончится, объявление опубликуется заново и поднимется в результатах поиска. Чтобы произошло произошла, у Вас должны остаться свободные размещения.
+                                    Объявление будет размещаться заново в течение полугода с момента первой публикации — или до тех пор, пока вы не закроете предложение. </p>
+                                    <div class="explain-close"></div>
+                                </div>
+                            </div>
+                            <div class="switch-btn switch-on"></div>
+                        </div>
+                    </div>
+                    <div class="create-heading">
+                        <p>Продвижение</p>
+                    </div>
+                    <div class="create-promotion">
+                        <div class="flex-wrap">
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-growth"></i>
+                                    </div>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="title">
+                                    <p>Поднять в поиске</p>
+                                </div>
+                                <div class="price">
+                                    <p>от 90 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-highlighter"></i>
+                                    </div>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="title">
+                                    <p>Выделить цветом</p>
+                                </div>
+                                <div class="price">
+                                    <p>от 90 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-pin"></i>
+                                    </div>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="title">
+                                    <p>Сделать VIP</p>
+                                </div>
+                                <div class="price">
+                                    <p>от 190 руб.</p>
+                                </div>
+                                <div class="item-status">
+                                    <p>Активно</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-icon17"></i>
+                                    </div>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="title">
+                                    <p>Турбо продвижение</p>
+                                </div>
+                                <div class="price">
+                                    <p>1550 руб. <span>вместо <span class="line-through">2590 руб.</span></span></p>
+                                </div>
+                                <div class="item-status">
+                                    <p>Активно</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-check">
+                                <div class="block">
+                                    <label><input type="checkbox" checked>Я соглашаюсь с <a href="#">Правилами 
+                                        публикации Товаров на сайте</a></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button">
+                            <p>Всего к оплате: <span>500 руб.</span></p>
+                            <button>Опубликовать</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <include src="assets/templates/footer.html"></include>
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <!-- <script src="../js/createEvent.min.js"></script> -->
+
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/create-goods.min.js"></script>
+
+</body>
+
+</html>

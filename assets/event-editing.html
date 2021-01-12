@@ -122,8 +122,8 @@
                                             <span>jpg. Пример_1</span>
                                         </div>
                                         <div class="item-description" id="item-description">
-                                            <textarea placeholder="Описание"></textarea>
-                                            <p>0 из 50</p>
+                                            <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
+                                            <p><span class="counter">0</span> из 50</p>
                                         </div>
                                     </div>
                                     <div class="item-file">
@@ -132,8 +132,8 @@
                                             <span>jpg. Пример_1</span>
                                         </div>
                                         <div class="item-description" id="item-description">
-                                            <textarea placeholder="Описание"></textarea>
-                                            <p>0 из 50</p>
+                                            <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
+                                            <p><span class="counter">0</span> из 50</p>
                                         </div>
                                     </div>
                                 </div>
@@ -159,13 +159,24 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-column">
+                                <div class="form-column type-sum">
                                     <div class="form-select item">
                                         <label class="disabled">Тип</label>
                                         <select disabled
                                             data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
                                             <option>Воркшоп</option>
                                         </select>
+                                    </div>
+                                    <div class="cost">
+                                        <div class="cost-amount">
+                                            <label class="disabled">Стоимость</label>
+                                            <input class="cost-input" type="text" placeholder="0.00">
+                                        </div>
+                                        <div class="cost-currency">
+                                            <label class="disabled">Валюта</label>
+                                            <div class="cost-input">RUB</div>
+                                        </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -194,26 +205,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row comments">
                             <div class="title">
                                 <p>Организатор</p>
                                 <span>Иван Иванов</span>
                             </div>
-                        </div>
-                        <div class="adding-comments">
-                            <div class="main-comments">
-                                <div class="title-comments">
-                                    <p>Включить/отключить комментирование</p>
+                            <div class="adding-comments">
+                                <div class="main-comments">
+                                    <div class="title-comments">
+                                        <p>Включить/отключить комментирование</p>
+                                    </div>
+                                    <div class="switcher-comments">
+                                        <div class="switch-btn switch-on"></div>
+                                    </div>     
                                 </div>
-                                <div class="switcher-comments">
-                                    <div class="switch-btn switch-on"></div>
-                                </div>     
-                            </div>
-                            <div class="explain-comments">
-                                <p>(коментарии к этому
-                                событию будут отключены)</p>
+                                <div class="explain-comments">
+                                    <p>(коментарии к этому
+                                    событию будут отключены)</p>
+                                </div>
                             </div>
                         </div>
+                        
                         <div class="form-input item-telephone">
                             <label class="disabled">Телефон (не обязательно)</label>
                             <input type="text" disabled>

@@ -44,12 +44,17 @@ $(document).ready(function () {
         $('#file-1').trigger('click');
     });
 
-    $("#file-1").on("click", function () {
-        var content = document.querySelector('.file-preview-frame');
-        $('.file-preview-thumbnails').prepend('<div class="added-file"><div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div></div>');
-        $(content).appendTo('.added-file');
-        $(content).remove();
-    }); 
+    // $("#file-1").on("click", function () {
+    //     var content = document.querySelector('.file-preview-frame');
+    //     $('.file-preview-thumbnails').prepend('<div class="added-file"><div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div></div>');
+    //     $(content).appendTo('.added-file');
+    //     $(content).remove();
+    // }); 
+
+    // Count of symbols
+    $('.textarea-description').keyup( function () {
+        $('.counter').text(this.value.replace(/{.*}/g, '').length);
+    });
 
     //hover on mobile
     $('.create-promotion .item .title .tooltip').on('click', function () {

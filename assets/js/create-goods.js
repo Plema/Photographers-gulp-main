@@ -25,13 +25,6 @@ $(document).ready(function () {
     }
     iOSversion();
 
-    // // добавление описания фото
-    // $('.open-photoDescr').on("click", function () {
-    //     $('.overlay-photoDescr').addClass('active');
-    // });
-    // $('.overlay-photoDescr .closeBtn, .overlay-photoDescr .close').on("click", function () {
-    //     $('.overlay-photoDescr').removeClass('active');
-    // });
 
     (function ($) {
         $(document).on("load", function () {
@@ -49,7 +42,7 @@ $(document).ready(function () {
 
     $('.add-image#files2, .add-video#files3, .add-files#files4').on('click', function () {
         $('#file-1').trigger('click');
-    })
+    });
 
     //hover on mobile
     $('.create-promotion .item .title .tooltip').on('click', function () {
@@ -57,42 +50,12 @@ $(document).ready(function () {
         $(this).toggleClass('close');
     });
 
+    //Remove added photo and textarea
     $('.item-file .close').on('click', function () {
-        $(this).parent().css('display', 'none');
+        $(this).parents(".item-file").css('display', 'none');
     });
 
-    $('#datepicker').on("click", function () {
-        $('#calendar').toggleClass('active');
-        $('a.ui-state-default').on("click", function () {
-            $('#calendar').removeClass('active');
-            console.log(this)
-        });
-        $(function () {
-            $('#calendar').datepicker({
-                altField: '#datepicker',
-                altFormat: 'yy-mm-dd',
-                inline: true,
-                firstDay: 1,
-                showOtherMonths: true,
-            });
-        });
-    });
-
-    $(function () {
-        $('#calendar').datepicker({
-            altField: '#datepicker',
-            altFormat: 'yy-mm-dd',
-            inline: true,
-            firstDay: 1,
-            showOtherMonths: true,
-        });
-    });
-
-    $('.title .form-select').on("click", function () {
-        $(this).addClass('active');
-    });
-
-    // Comments switcher
+    // switcher
     $('.switch-btn').click(function(){
         $(this).toggleClass('switch-on');
         if ($(this).hasClass('switch-on')) {
@@ -102,13 +65,31 @@ $(document).ready(function () {
         }
     });
 
-    //Remove added photo and textarea
-    $('.item-file .close-photo').on('click', function () {
-        $(this).parents(".item-file").css('display', 'none');
+    //modal
+    function openModal () {
+        $('.explain-text').addClass('show');
+        $('.explain-text').removeClass('hide');
+    }
+    $('.explain-img').on('click', openModal);
+
+    function closeModal () {
+        $('.explain-text').addClass('hide');
+        $('.explain-text').removeClass('show');
+    }
+    $('.explain-close').on('click', closeModal);
+
+    //Попапы
+
+    $('.remove').on("click", function () {
+        $('.overlay-remove').addClass('active');
+    });
+    $('.overlayPopup .closeBtn, .overlayPopup .close, .cancel').on("click", function () {
+        $('.overlayPopup').removeClass('active');
     });
 
-    // Count of symbols
-    $('.textarea-description').keyup( function () {
-        $('.counter').text(this.value.replace(/{.*}/g, '').length);
+    $('.overlay-remove .remove').on("click", function () {
+        $('.overlay-deleted').addClass('active');
+        $('.overlay-remove').removeClass('active');
     });
+
 });

@@ -10,6 +10,16 @@ $(document).ready(function(){
         $('#file-1').trigger('click');
     })
 
+    // Count of symbols
+    $('.textarea-description').keyup( function () {
+        $('.counter').text(this.value.replace(/{.*}/g, '').length);
+    });
+
+    //Remove added photo and textarea
+    $('.item-file .close').on('click', function () {
+        $(this).parents(".item-file").css('display', 'none');
+    });
+
     //hover on mobile
     $('.create-promotion .item .title .tooltip').on('click', function(){
         $(this).parent().find('.tooltip-text').toggle();
@@ -25,6 +35,7 @@ $(document).ready(function(){
         }
     });
 
+    //modal
     function openModal () {
         $('.explain-text').addClass('show');
         $('.explain-text').removeClass('hide');
