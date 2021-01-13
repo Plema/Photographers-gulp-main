@@ -14,9 +14,11 @@
 <body>
 
     <!-- build:section layout.header_notification_popup-->
+    <include src="assets/templates/header-notification-popup.html"></include>
     <!-- /build -->
 
     <!-- build:section layout.userHeader-->
+    <include src="assets/templates/user-header.html"></include>
     <!-- /build -->
 
     <div class="bread-crumbs">
@@ -69,7 +71,7 @@
                     </div>
                 </div>
                 <div class="reviews-content active tab-item customer">
-                    <div class="reviews-item">
+                    <div class="reviews-item reviews-item_own">
                         <a href="profile.html" class="link"></a>
                         <div class="avatar clearfix">
                             <img src="../img/messages-item1.png" alt="">
@@ -101,37 +103,6 @@
                                         <button class="writeComment">Отправить</button>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="reviews-answer">
-                                <div class="reviews-item">
-                                    <a href="profile.html" class="link"></a>
-                                    <div class="avatar clearfix">
-                                        <img src="../img/messages-item1.png" alt="">
-                                        <div class="avatar-text">
-                                            <h4><a href="profile.html"></a>Иван Иванов</h4>
-                                            <span>18 декабря в 18:09 </span>
-                                        </div>
-                                    </div>
-                                    <div class="reviews-right">
-                                        <div class="reviews-text">
-                                            <span class="like heart"><i class="icon-icon3"></i></span>
-                                            <p>Спасибо!</p>
-                                            <a href="javascript:void(0)" class="replyReview">Ответить</a>
-                                        </div>
-                                        <div class="write comment">
-                                            <div class="avatar">
-                                                <img src="../img/year-item-img4.png" alt="avatar">
-                                            </div>
-                                            <form>
-                                                <div class="writeMessage-text">
-                                                    <textarea class="checkTextarea" type="text"
-                                                        placeholder="Напишите сообщение"></textarea>
-                                                    <button class="writeComment">Отправить</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -269,6 +240,7 @@
                     </div>
 
                     <!-- build:section layout.pagination-->
+                    <include src="assets/templates/pagination.html"></include>
                     <!-- /build -->
                 </div>
                 <div class="reviews-content tab-item executor">
@@ -340,6 +312,7 @@
                     </div>
 
                     <!-- build:section layout.pagination-->
+                    <include src="assets/templates/pagination.html"></include>
                     <!-- /build -->
                 </div>
                 <div class="reviews-content tab-item goodsSold">
@@ -411,6 +384,7 @@
                     </div>
 
                     <!-- build:section layout.pagination-->
+                    <include src="assets/templates/pagination.html"></include>
                     <!-- /build -->
                 </div>
                 <div class="reviews-content tab-item myPurchases">
@@ -482,6 +456,7 @@
                     </div>
 
                     <!-- build:section layout.pagination-->
+                    <include src="assets/templates/pagination.html"></include>
                     <!-- /build -->
                 </div>
             </div>
@@ -489,6 +464,7 @@
     </section>
 
     <!-- build:section layout.footer-->
+    <include src="assets/templates/footer.html"></include>
     <!-- /build -->
 
     <script src="../js/jquery.min.js"></script>

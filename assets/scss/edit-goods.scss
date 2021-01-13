@@ -299,7 +299,6 @@ div#kvFileinputModal {
                 color: #222;
                 font-size: 16px;
                 display: block;
-                margin-bottom: 14px;
             }
 
             input {
@@ -1164,7 +1163,7 @@ div#kvFileinputModal {
             .autoreneval{
                 display: flex;
                 align-items: center;
-                margin: 35px 0 45px;
+                margin: 40px 0 45px;
                 
                 p{
                     font-size: 14px;
@@ -1309,6 +1308,9 @@ div#kvFileinputModal {
                     min-width: 272px;
                 }
             }
+            .save{
+                margin-top: 25px;
+            }
         }
     }
 
@@ -1329,26 +1331,36 @@ div#kvFileinputModal {
             }
 
             button {
-                padding: 17px 52px;
+                padding: 17px 66px;
                 margin: 0 auto;
             }
 
-            .remove {
-                background-color: #f7f7f7;
-                color: #022222;
-                padding: 17px 74px;
-
-                &:hover {
-                    background-color: #27283c;
-                    color: #fff;
-                }
-            }
 
             .reset {
                 background-color: #fff;
                 border: 2px solid #27283c;
                 color: #022222;
                 padding: 15px 26px;
+                margin: 22px auto 30px;
+
+                &:hover {
+                    background-color: #27283c;
+                    color: #fff;
+                }
+            }
+        }
+        .remove-button{
+            .remove {
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f7f7f7;
+                color: #022222;
+                width: 208px;
+                height: 55px;
+                padding: 0;
+                margin: 20px auto 0;
 
                 &:hover {
                     background-color: #27283c;
@@ -1952,6 +1964,7 @@ div#kvFileinputModal {
                 .item {
                     margin: 0 0 20px;
                     width: calc(50% - 20px);
+                    min-width: 230px;
 
                     .title {
                         .tooltip {
@@ -1971,25 +1984,6 @@ div#kvFileinputModal {
                             }
                         }
                     }
-                }
-            }
-            .form-button{
-                display: flex;
-                justify-content: flex-end;
-                
-                &:last-of-type{
-                    margin-top: 30px;
-
-                    p{
-                        margin: 0;
-                    }
-                }
-                p{
-                    display: flex;
-                    align-items: center;
-                }
-                button{
-                    margin: 0 0 0 25px;
                 }
             }
         }
@@ -2068,6 +2062,55 @@ div#kvFileinputModal {
         .create-promotion .flex-wrap .item {
             margin: 0 0 20px;
             width: calc(20% - 20px);
+        }
+
+        .create-promotion{
+            .flex-wrap{
+                .item{
+                    .new-price{
+                        text-align: center;
+                        p{
+                            width: 230px;
+                        }
+                    }
+                }
+            }
+            .list{
+                margin-top: 30px;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .form-button{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    margin-top: 0;
+
+                    p{
+                        margin: 0 22px 15px 0;
+                    }
+
+                    .form-button_items{
+                        display: flex;
+                        flex-direction: column-reverse;
+                        .reset{
+                            margin-bottom: 0;
+                        }
+                        .save{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .remove-button{
+                    .remove{
+                        margin-left: 0;
+                    }
+                }
+            }
         }
 
     }
