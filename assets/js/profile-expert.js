@@ -2,6 +2,59 @@ $(document).ready(function () {
 
     jcf.replaceAll();
 
+    //Filter slider
+    $('.filter-slider').slick({
+        responsive: [{
+            breakpoint: 99999,
+            settings: "unslick"
+        }, {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                infinite: false,
+                variableWidth: true,
+                nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+                prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                infinite: false,
+                slidesToShow: 2,
+                adaptiveHeight: true,
+                variableWidth: true,
+                nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+                prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+            }
+        }, ]
+    });
+
+    function windowSize(){
+        if ($(window).width() < '1024'){
+          var imgWidth = $('.gallery__img').width();
+          $('.gallery__img').css({
+            'height' : imgWidth
+          });
+        } else if ($(window).width() >= '768'){
+    
+        }
+      }
+    $(window).on('load',windowSize);
+    $(window).on('resize',windowSize);
+
+    $('.filter-items').on('click', function () {
+		var dataTab = $(this).data('tab');
+		$('.js-item').removeClass('active');
+		$('.js-content').removeClass('active');
+			
+
+		$(this).addClass('active');
+        $('#content-' + dataTab).addClass('active');
+        windowSize();
+        
+        
+    });
+
     // Резиновый textarea
     $('.checkTextarea').keyup(function () {
         $(this).css('height', '1px');

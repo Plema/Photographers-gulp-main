@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
     $('.likeBtn').on('click', function () {
         $(this).toggleClass('color');
     });
@@ -123,34 +122,36 @@ $(document).ready(function () {
     var gallery = $('.postItem_content-gallery').has('.gallery__image')
     $(gallery).each(function (i) {
         if (this.children.length == 1) {
-            $(this).addClass('single')
+            $(this).addClass('single');
         }
         if (this.children.length == 2) {
-            $(this).addClass('two-column')
+            $(this).addClass('two-column');
         }
         if (this.children.length == 3) {
-            $(this).addClass('three-column')
+            $(this).addClass('three-column');
         }
         if (this.children.length == 4) {
-            $(this).addClass('four-column')
+            $(this).addClass('four-column');
         }
         if (this.children.length == 5) {
-            $(this).addClass('five-column')
+            $(this).addClass('five-column');
         }
         if (this.children.length == 6) {
-            $(this).addClass('six-column')
+            $(this).addClass('six-column');
         }
         if (this.children.length == 7) {
-            $(this).addClass('seven-column')
+            $(this).addClass('seven-column');
         }
         if (this.children.length == 8) {
-            $(this).addClass('eight-column')
+            $(this).addClass('eight-column');
         }
         if (this.children.length == 9) {
-            $(this).addClass('nine-column')
+            $(this).addClass('nine-column');
         }
         if (this.children.length == 10) {
-            $(this).addClass('ten-column')
+            $(this).addClass('ten-column');
         }
     })
+
+    
 });

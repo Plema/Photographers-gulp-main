@@ -1,20 +1,22 @@
 $(document).ready(function () {
 
-  var imgWidth = $('.gallery__img').width();
-  $('.gallery__img').css({
-    'height' : imgWidth
-  });
-  
-});
 
-$(window).resize(function () {
+  function windowSize(){
+    if ($(window).width() < '1024'){
+      var imgWidth = $('.gallery__img').width();
+      $('.gallery__img').css({
+        'height' : imgWidth
+      });
+    } else if ($(window).width() >= '768'){
 
-  var imgWidth = $('.gallery__img').width();
-  $('.gallery__img').css({
-    'height' : imgWidth
-  });
-  
+    }
+  }
+
+  $(window).on('load',windowSize);
+  $(window).on('resize',windowSize);
 });
+  
+
 
 
 

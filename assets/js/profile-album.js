@@ -12,7 +12,7 @@ $(document).ready(function () {
     }
   }
 
-    $(window).on('load resize',windowSize);
+  $(window).on('load resize',windowSize);
 
 });
 
