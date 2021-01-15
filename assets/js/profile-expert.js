@@ -1,3 +1,20 @@
+function windowSize1(){
+    var imgWidth = $('.profile-expert .gallery__img').width();
+      $('.profile-expert .gallery__img').css({
+        'height' : imgWidth
+    });
+}
+function windowSize2(){
+    var imgWidth = $('.profile-albums .gallery__img').width();
+      $('.profile-albums .gallery__img').css({
+        'height' : imgWidth
+    });
+}
+$(window).on('load', windowSize1);
+$(window).on('resize', windowSize1);
+$(window).on('load', windowSize2);
+$(window).on('resize', windowSize2);
+
 $(document).ready(function () {
 
     jcf.replaceAll();
@@ -29,18 +46,7 @@ $(document).ready(function () {
         }, ]
     });
 
-    function windowSize(){
-        if ($(window).width() < '1024'){
-          var imgWidth = $('.gallery__img').width();
-          $('.gallery__img').css({
-            'height' : imgWidth
-          });
-        } else if ($(window).width() >= '768'){
-    
-        }
-      }
-    $(window).on('load',windowSize);
-    $(window).on('resize',windowSize);
+
 
     $('.filter-items').on('click', function () {
 		var dataTab = $(this).data('tab');
@@ -50,8 +56,10 @@ $(document).ready(function () {
 
 		$(this).addClass('active');
         $('#content-' + dataTab).addClass('active');
-        windowSize();
-        
+
+        windowSize1();
+        windowSize2();
+
         
     });
 

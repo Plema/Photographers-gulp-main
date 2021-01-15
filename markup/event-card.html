@@ -16,9 +16,415 @@
 <body>
 
     <!-- build:section layout.userHeader-->
+    <header>
+    <div class="header-content">
+        <div class="container clearfix">
+            <div class="userInfox clearfix">
+                <a class="likes" href="javascript:void(0)"><i class="icon-icon3"></i></a>
+                <a class="messages notifications_popup-open" href="javascript:void(0)">
+                    <i class="icon-icon10"></i>
+                    <span>21</span>
+                </a>
+                <a class="score mobile" href="projects.html">Проекты</a>
+                <a class="score desctop" href="score.html">Магазин</a>
+                <div class="info">
+                    <div class="userName">
+                        <p>Иван Иванов</p>
+                        <span class="arrow"><i class="icon-icon28"></i></span>
+                    </div>
+                    <ul class="headerSetting">
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-logo clearfix">
+                <span class="open-menu">
+                    <span></span>
+                </span>
+                <div class="mobile-mainMenu mobile-mainMenuUser" id="mobile-mainMenu">
+                    <span class="closeBtn"></span>
+                    <div class="mobile-content">
+                        <nav class="userMenu">
+                            <ul>
+                                <li><a href="javascript:void(0)"><i class="icon-icon5"></i>Моя страницы<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon15"></i>Новости<span></span></a>
+                                </li>
+                                <li class="active"><a href="javascript:void(0)"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Компании<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon17"></i>Проекты<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon14"></i>Фотографии<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon3"></i>Закладки<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                                <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="userMenu-2">
+                            <ul>
+                                <li class="active"><a href="specialists.html">Специалисты</a></li>
+                                <li><a href="organizations.html">Организации</a></li>
+                                <li><a href="events.html">События</a></li>
+                                <li><a href="media.html">Медиа</a></li>
+                                <li><a href="score.html">Магазин</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="social">
+                            <li><a href="javascript:void(0)"><i class="icon-icon34"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+                <form>
+                    <input type="text">
+                    <button><i class="icon-icon25"></i></button>
+                </form>
+                <nav class="desktop-mainMenu">
+                    <ul>
+                        <li class="active"><a href="specialists.html">Специалисты</a></li>
+                        <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="events.html">События</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="media.html">Медиа</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
     <!-- /build -->
 
     <!-- build:section layout.event_popup-->
+    <!-- Создание события -->
+<div class="overlay-createEvent overlayPopup">
+    <div class="close"></div>
+    <div class="createEvent__popup mCustomScrollbar">
+        <span class="close-popup closeBtn"></span>
+        <div class="heading">
+            <p>Создание события</p>
+        </div>
+        <div class="mainInfo">
+            <div class="description">
+                <p>
+                    Сообщите пользователям сайта о своем мастер-классе, воркшопе, лекции, курсе, семинаре или
+                    фототуре.
+                </p>
+                <p>
+                    <span>Внимание, размещение события – платное,</span> ознакомьтесь
+                    с правилами размещения событий.
+                </p>
+            </div>
+
+            <div class="profile-createEvent">
+                <form>
+                    <div class="create-body">
+                        <div class="attached-img">
+                            <p><i class="icon-icon26"></i> Загрузить фото</p>
+                            <div class="files" id="files-img">
+                                <div class="file-loading">
+                                    <input id="file-image" type="file" name="file-1[]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-textarea">
+                            <label>Описание события</label>
+                            <textarea></textarea>
+                            <div class="actions">
+                                <div class="style-btns">
+                                    <a href="javascript:void(0)" class="strong">
+                                        T
+                                    </a>
+                                    <a href="javascript:void(0)" class="underline">
+                                        T
+                                    </a>
+                                    <a href="javascript:void(0)" class="italic">
+                                        T
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attached-doc">
+                            <p><i class="icon-icon4"></i> Приклепленные документы</p>
+                            <div class="files" id="files">
+                                <div class="file-list">
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/event-img.jpg)">
+                                            <a class="close-photo" href="javascript:void(0)"></a>
+                                            <span>jpg. Пример_1</span>
+                                        </div>
+                                        <div class="item-description" id="item-description">
+                                            <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
+                                            <p><span class="counter">0</span> из 50</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-file">
+                                        <div class="item-body" style="background-image: url(../img/event-img-1.jpg)">
+                                            <a class="close-photo" href="javascript:void(0)"></a>
+                                            <span>jpg. Пример_1</span>
+                                        </div>
+                                        <div class="item-description" id="item-description">
+                                            <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
+                                            <p><span class="counter">0</span> из 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file-loading">
+                                    <input id="file-1" type="file" name="file-1[]" multiple="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-flex">
+                            <div class="form-select item">
+                                <label>Категория</label>
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>Фотография</option>
+                                    <option>Фотография</option>
+                                    <option>Фотография</option>
+                                </select>
+                            </div>
+                            <div class="form-select item">
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>Свадебная съемка</option>
+                                    <option>Свадебная съемка</option>
+                                    <option>Свадебная съемка</option>
+                                </select>
+                            </div>
+                            <div class="form-select item">
+                                <label>Тип</label>
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>Воркшоп</option>
+                                    <option>Воркшоп</option>
+                                    <option>Воркшоп</option>
+                                    <option>Воркшоп</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-input date item">
+                                    <label>Дата</label>
+                                    <div class="form-column">
+                                        <input type="text" id="datepicker" placeholder="Выберите дату">
+                                        <i class="icon-calendar"></i>
+                                        <div id="calendar"> </div>
+                                    </div>
+                                </div>
+                                <div class="form-column">
+                                    <p>в</p>
+                                    <div class="form-group">
+                                        <div class="form-select item">
+                                            <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                                <option>00</option>
+                                                <option>05</option>
+                                                <option>05</option>
+                                                <option>05</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-select item">
+                                            <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                                <option>00</option>
+                                                <option>05</option>
+                                                <option>05</option>
+                                                <option>05</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="title">
+                                <p>Организатор</p>
+                                <div class="form-select item">
+                                    <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <option>Иван Иванов</option>
+                                        <option>Компания “Фотокоманда”</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adding-comments">
+                            <div class="main-comments">
+                                <div class="title-comments">
+                                    <p>Включить/отключить комментирование</p>
+                                </div>
+                                <div class="switcher-comments">
+                                    <div class="switch-btn switch-on"></div>
+                                </div>     
+                            </div>
+                            <div class="explain-comments">
+                                <p>(коментарии к этому
+                                событию будут отключены)</p>
+                            </div>
+                        </div>
+                        <div class="form-input item">
+                            <label>Телефон (не обязательно)</label>
+                            <input type="tel" name="telephone">
+                        </div>
+                        <div class="form-row">
+                            <div class="title">
+                                <p>Адрес</p>
+                                <span class="add_address">Указать адрес</span>
+                            </div>
+                        </div>
+                        <div class="form-action">
+                            <button type="button" class="cancel">Отмена</button>
+                            <button type="button" class="confirm">Подтвердить размещение</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- конец Создание события -->
+
+<!-- Выбор Адреса -->
+<div class="overlay-address overlayPopup">
+    <div class="close"></div>
+    <div class="createEvent__popup mCustomScrollbar">
+        <span class="close-popup closeBtn"></span>
+        <div class="heading">
+            <p>Адрес</p>
+        </div>
+        <div class="mainInfo">
+            <div class="profile-createEvent">
+                <form>
+                    <div class="create-body">
+                        <div class="form-flex">
+                            <div class="form-select item">
+                                <label>Страна </label>
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>Страна </option>
+                                    <option>Страна </option>
+                                    <option>Страна </option>
+                                </select>
+                            </div>
+                            <div class="form-select item">
+                                <label>Город </label>
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>Город </option>
+                                    <option>Город </option>
+                                    <option>Город </option>
+                                </select>
+                            </div>
+                            <div class="form-input">
+                                <label>Адрес</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="form-action">
+                            <button type="button" class="confirm">Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Конец -->
+
+<!-- Выбор Оплаты -->
+<div class="overlay-payment overlayPopup">
+    <div class="close"></div>
+    <div class="createEvent__popup mCustomScrollbar">
+        <span class="close-popup closeBtn"></span>
+        <div class="heading">
+            <p>Создание события</p>
+        </div>
+        <div class="mainInfo">
+            <div class="description">
+                <p>Подтвердите размещение Вашего События на портале.</p>
+            </div>
+            <div class="profile-createEvent">
+                <form>
+                    <div class="create-body">
+                        <div class="form-flex">
+                            <div class="form-select item">
+                                <label>Способ оплаты</label>
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                    <option>прямой рассчет</option>
+                                    <option>прямой рассчет</option>
+                                    <option>прямой рассчет</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-input">
+                                    <label>Промокод</label>
+                                    <input type="text">
+                                </div>
+                                <div class="total">
+                                    <p>Всего к оплате:<span>500 руб.</span></p>
+                                </div>
+                            </div>
+                            <div class="check">
+                                <label><input type="checkbox" checked="">с правилами размещения событий
+                                    ознакомлен</label>
+                            </div>
+                        </div>
+                        <div class="form-action">
+                            <button type="button" class="cancel">Отмена</button>
+                            <button type="button" class="confirm">Оплатить размещение</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Конец -->
+
+<!-- Недостаточно средств Включает класс active-->
+<div class="overlay-insufficient-funds overlayPopup">
+    <div class="close"></div>
+    <div class="createEvent__popup mCustomScrollbar">
+        <span class="close-popup closeBtn"></span>
+        <div class="mainInfo">
+            <p>
+                На вашем счете недостаточно средств! <br>
+                <a href="#">Пополните Ваш счет</a>, чтобы оплатить размещение.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Конец -->
+
+<!-- Попап Успешно Включает класс active -->
+<div class="overlay-successfully overlayPopup">
+    <div class="close"></div>
+    <div class="createEvent__popup mCustomScrollbar">
+        <span class="close-popup closeBtn"></span>
+        <div class="mainInfo">
+            <p>Ваше событие успешно опубликовано. </p>
+        </div>
+    </div>
+</div>
+<!-- Конец -->
     <!-- /build -->
 
     <div class="bread-crumbs">
@@ -206,6 +612,29 @@
     </div>
 
     <!-- build:section layout.footer-->
+    <footer>
+    <div class="footer-container">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+            <div class="footer-content clearfix">
+                <nav>
+                    <ul>
+                        <li><a href="specialists.html">Специалисты</a></li>
+                        <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="events.html">События</a></li>
+                        <li><a href="score.html">Магазин</a></li>
+                    </ul>
+                </nav>
+                <ul class="sosial">
+                    <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                </ul>
+                <p>© 2018 Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- /build -->
 
     <script src="../js/jquery.min.js"></script>

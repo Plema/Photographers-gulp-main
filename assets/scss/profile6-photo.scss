@@ -249,6 +249,12 @@ span.jcf-fake-input {
         }
         .albums-content{
             height: auto;
+
+            &-title{
+                font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
             .description{
                 color: #222222;
                 font-size: 16px;
@@ -8822,9 +8828,19 @@ span.jcf-fake-input {
     .bread-crumbs {
         padding: 25px 0 9px;
     }
+    .crumb{
+        padding-left: 190px;
+        padding-bottom: 20px;
+    }
 
     .profile {
         padding-bottom: 60px;
+
+        .profile-albums{
+            .albums-content-title, .description{
+                padding-left: 190px;
+            }
+        }
 
         .profile-menu {
             width: 25%;

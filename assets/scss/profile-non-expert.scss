@@ -158,6 +158,58 @@
 .profile {
     padding-bottom: 30px;
 
+    .profile-albums{
+        .crumb{
+            padding-top: 0;
+            padding-bottom: 25px;
+
+            ul{
+                li{
+                    &:last-of-type{
+                        a{
+                            color: #9a9a9a;
+                        }
+                    }
+                }
+            }
+        }
+        .albums-content{
+            height: auto;
+
+            &-title{
+                font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+            .description{
+                color: #222222;
+                font-size: 16px;
+                font-weight: 300;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+            .album-photo{
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                margin: -0.75% -1.5%;
+                .gallery__img{
+                  overflow: hidden;
+                  width: 48%;
+                  margin: .75%;
+                  display: flex;
+                  img{
+                    object-fit: cover;
+                    flex: 1;
+                  }
+                }
+            }
+        }
+    }
+
     &__heading {
         margin-bottom: 15px;
 
@@ -918,6 +970,7 @@
 
 @media screen and (min-width: 768px) {
     .profile {
+
         &__heading {
             display: flex;
             flex-wrap: wrap;
@@ -1129,6 +1182,18 @@
 }
 @media screen and (min-width: 1024px) {
     .profile {
+        .profile-albums{
+            .albums-content{
+                .album-photo{
+                    .w28{
+                      width: 27%;
+                    }
+                    .w21{
+                      width: 20%;
+                    }
+                  }
+            }
+        }
         &__heading {
             .profile_info {
                 &-author {

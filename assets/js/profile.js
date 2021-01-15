@@ -9,15 +9,18 @@ $(document).ready(function () {
         }, {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
+                infinite: false,
+                variableWidth: true,
                 nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
                 prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
             }
         }, {
             breakpoint: 768,
             settings: {
-                infinite: true,
+                infinite: false,
                 slidesToShow: 2,
+                adaptiveHeight: true,
                 variableWidth: true,
                 nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
                 prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',

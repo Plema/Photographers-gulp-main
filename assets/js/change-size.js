@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  function windowSize(){
+  /* function windowSize(){
     if ($(window).width() < '1024'){
       var imgWidth = $('.gallery__img').width();
       $('.gallery__img').css({
@@ -13,7 +13,7 @@ $(document).ready(function () {
   }
 
   $(window).on('load',windowSize);
-  $(window).on('resize',windowSize);
+  $(window).on('resize',windowSize); */
 });
   
 
