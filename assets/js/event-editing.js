@@ -44,16 +44,15 @@ $(document).ready(function () {
         $('#file-1').trigger('click');
     });
 
-    // $("#file-1").on("click", function () {
-    //     var content = document.querySelector('.file-preview-frame');
-    //     $('.file-preview-thumbnails').prepend('<div class="added-file"><div class="item-description" id="item-description"><textarea placeholder="Описание"></textarea><p>0 из 50</p></div></div>');
-    //     $(content).appendTo('.added-file');
-    //     $(content).remove();
-    // }); 
-
     // Count of symbols
+    $('.item-description').click(function () {
+        $('.item-description').find('span').removeClass('counter');
+        $(this).find('span').addClass('counter');
+    });
+
     $('.textarea-description').keyup( function () {
-        $('.counter').text(this.value.replace(/{.*}/g, '').length);
+        var symbolsCount = $(this).val().length;
+        $('.counter').text(symbolsCount);
     });
 
     //hover on mobile

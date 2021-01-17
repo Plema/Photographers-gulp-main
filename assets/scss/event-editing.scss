@@ -328,9 +328,10 @@ div#kvFileinputModal {
 
             .form-item {
                 display: flex;
-                max-width: 708px;
+                flex-direction: column;
                 justify-content: space-between;
                 flex-wrap: wrap;
+                max-width: 708px;
 
                 .form-column {
                     width: 287px;
@@ -347,18 +348,17 @@ div#kvFileinputModal {
                         &-currency{
                             width: 135px;
                             margin-left: 25px;
-
-                            .cost-input{
-                                display: flex;
-                                align-items: center;
-                                height: 31px;
-                                font-size: 14px;
-                                color: #222;
-                                
-                                border: 1px solid #e1e1e1;
-                                padding: 0 15px;
-                                
-                            }
+                        }
+                        .cost-input{
+                            display: flex;
+                            align-items: center;
+                            height: 34px;
+                            font-size: 14px;
+                            color: #222;
+                            
+                            border: 1px solid #e1e1e1;
+                            padding: 0 15px;
+                            
                         }
                     }
                 }
@@ -402,6 +402,7 @@ div#kvFileinputModal {
                 color: #222222;
                 font-size: 14px;
                 padding: 15px;
+                resize: none;
             }
 
             .form-input {
@@ -739,7 +740,6 @@ div#kvFileinputModal {
                     flex-direction: column;
 
                     .input-group.file-caption-main {
-                        margin: 0 auto;
                         min-height: 66px;
                         display: flex;
                         align-items: center;
@@ -1047,10 +1047,6 @@ div#kvFileinputModal {
 
                     margin-bottom: 30px;
 
-                    &:last-of-type{
-                        margin-bottom: 0;
-                    }
-
                     .item-description{
                         display: flex;
                         flex-direction: column;
@@ -1065,7 +1061,7 @@ div#kvFileinputModal {
                             font-weight: 400;
                             color: #bababa;
                             
-                            .counter{
+                            span{
                                 font-size: 12px;
                                 font-weight: 700;
                                 color: #bababa;
@@ -1933,7 +1929,22 @@ div#kvFileinputModal {
 
             .create-body {
                 .form-item {
+                    max-width: 969px;
                     margin-bottom: 33px;
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    .type-sum{
+                        width: 640px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 40px;
+
+                        .item{
+                            width: 287px;
+                            margin-right: 40px;
+                        }
+                    }
                 }
 
                 .form-input.date {
@@ -1952,10 +1963,6 @@ div#kvFileinputModal {
                         margin-bottom: 9px;
                     } */
 
-                    .file-preview {
-                        margin-bottom: 25px;
-                    }
-
                     .file-preview-thumbnails {
                         max-width: 381px;
 
@@ -1973,7 +1980,6 @@ div#kvFileinputModal {
                         width: 100%;
 
                         .input-group.file-caption-main {
-                            margin: 0 auto;
                             min-height: 66px;
                             display: flex;
                             align-items: center;

@@ -154,19 +154,6 @@
                         <div class="form-textarea">
                             <label>Описание события</label>
                             <textarea></textarea>
-                            <div class="actions">
-                                <div class="style-btns">
-                                    <a href="javascript:void(0)" class="strong">
-                                        T
-                                    </a>
-                                    <a href="javascript:void(0)" class="underline">
-                                        T
-                                    </a>
-                                    <a href="javascript:void(0)" class="italic">
-                                        T
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                         <div class="attached-doc">
                             <p><i class="icon-icon4"></i> Приклепленные документы</p>
@@ -179,7 +166,7 @@
                                         </div>
                                         <div class="item-description" id="item-description">
                                             <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
-                                            <p><span class="counter">0</span> из 50</p>
+                                            <p><span>0</span> из 50</p>
                                         </div>
                                     </div>
                                     <div class="item-file">
@@ -189,7 +176,7 @@
                                         </div>
                                         <div class="item-description" id="item-description">
                                             <textarea class="textarea-description" placeholder="Описание" maxlength="50"></textarea>
-                                            <p><span class="counter">0</span> из 50</p>
+                                            <p><span>0</span> из 50</p>
                                         </div>
                                     </div>
                                 </div>
@@ -214,14 +201,24 @@
                                     <option>Свадебная съемка</option>
                                 </select>
                             </div>
-                            <div class="form-select item">
-                                <label>Тип</label>
-                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
-                                    <option>Воркшоп</option>
-                                    <option>Воркшоп</option>
-                                    <option>Воркшоп</option>
-                                    <option>Воркшоп</option>
-                                </select>
+                            <div class="form-column type-sum">
+                                <div class="form-select item">
+                                    <label class="disabled">Тип</label>
+                                    <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <option>Воркшоп</option>
+                                    </select>
+                                </div>
+                                <div class="cost">
+                                    <div class="cost-amount">
+                                        <label class="disabled">Стоимость</label>
+                                        <input class="cost-input" type="text" placeholder="0.00">
+                                    </div>
+                                    <div class="cost-currency">
+                                        <label class="disabled">Валюта</label>
+                                        <div class="cost-input">RUB</div>
+                                    
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-input date item">

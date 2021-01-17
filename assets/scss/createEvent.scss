@@ -230,6 +230,32 @@
                 .create-body {
                     padding: 30px 0 28px;
 
+                    .type-sum{
+                        .cost{
+                            display: flex;
+    
+                            margin-bottom: 25px;
+    
+                            &-amount{
+                                width: 135px;
+                            }
+                            &-currency{
+                                width: 135px;
+                                margin-left: 25px;
+                            }
+                            .cost-input{
+                                display: flex;
+                                align-items: center;
+                                height: 34px;
+                                font-size: 14px;
+                                color: #222;
+                                
+                                border: 1px solid #e1e1e1;
+                                padding: 0 15px;
+                                
+                            }
+                        }
+                    }
                     .form-group,
                     .form-row {
                         display: flex;
@@ -247,7 +273,7 @@
                         }
 
                         p {
-                            margin: 20px 17px;
+                            margin: 20px 17px 20px 0;
                             color: #222222;
                             font-size: 14px;
                             font-weight: 400;
@@ -412,6 +438,7 @@
                         width: 100%;
                         color: #222222;
                         font-size: 14px;
+                        resize: none;
                         padding: 15px;
                     }
 
@@ -646,7 +673,6 @@
                                     }
                                 }
 
-                                // .input-group-btn {}
                             }
                         }
 
@@ -819,7 +845,7 @@
                                     font-weight: 400;
                                     color: #bababa;
                                     
-                                    .counter{
+                                    span{
                                         font-size: 12px;
                                         font-weight: 700;
                                         color: #bababa;
@@ -1809,10 +1835,21 @@
                             .item-file{
                                 flex-direction: row;
 
+                                .item-description{
+                                    margin-bottom: 40px;
+                                }
+
                                 .item-body{
                                     min-width: 180px;
 
                                     margin-right: 40px;
+                                }
+                            }
+                        }
+                        .attached-doc{
+                            .files{
+                                .input-group.file-caption-main{
+                                    margin: 0;
                                 }
                             }
                         }
@@ -1901,9 +1938,20 @@
                     }
 
                     .create-body {
-                        .form-select {
-                            max-width: 287px;
+                        .type-sum{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            .cost{
+                                &-amount, &-currency{
+                                    width: 108px;
+                                }
+                            }
+                            .form-select {
+                                width: 287px;
+                            }
                         }
+                        
 
                         textarea {
                             height: 98px;
@@ -1930,6 +1978,11 @@
 
                         input {
                             max-width: 287px;
+                        }
+                        .form-row{
+                            p{
+                                margin: 20px 17px;
+                            }
                         }
                     }
                 }

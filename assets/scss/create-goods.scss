@@ -1870,6 +1870,7 @@ div#kvFileinputModal {
             .create-body{
                 position: relative;
                 .file-list{
+                    flex-wrap: nowrap;
                     .item-file{
                         width: 180px;
                         display: flex;
@@ -1877,6 +1878,12 @@ div#kvFileinputModal {
                         .item-body{
                             min-width: 180px;
                         }
+                    }
+                }
+                .attached-doc{
+                    .file-input{
+                        display: block;
+                        padding: 40px 0 0 40px;
                     }
                 }
                 .form-row{
@@ -1951,6 +1958,7 @@ div#kvFileinputModal {
 
                 .item {
                     margin: 0 0 20px;
+                    min-width: 230px;
                     width: calc(50% - 20px);
 
                     .title {
@@ -2119,10 +2127,9 @@ div#kvFileinputModal {
 
                     .file-input {
                         width: 100%;
-                        display: inline-flex;
-                        align-items: center;
-                        flex-wrap: wrap;
+                        padding: 15px 0 0 40px;
                         margin-bottom: 41px;
+
 
                     }
                 }

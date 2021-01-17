@@ -11,8 +11,14 @@ $(document).ready(function(){
     })
 
     // Count of symbols
+    $('.item-description').click(function () {
+        $('.item-description').find('span').removeClass('counter');
+        $(this).find('span').addClass('counter');
+    });
+
     $('.textarea-description').keyup( function () {
-        $('.counter').text(this.value.replace(/{.*}/g, '').length);
+        var symbolsCount = $(this).val().length;
+        $('.counter').text(symbolsCount);
     });
 
     //Remove added photo and textarea

@@ -4267,12 +4267,19 @@ span.jcf-fake-input {
                                         background-color: #d0d1d8;
     
                                         transition: background-color .2s linear;
+                                    }
+                                    
+                                    .dot-active{
+                                        background-color: #54559c;
+                                    }
 
-                                        
+                                    &:hover{
+                                        .dot{
+                                            background-color: #54559c;
+                                        }
                                     }
                                 }
                                 .avatar-popup{
-                                    display: none;
                                     width: 178px;
                                     height: 69px;
                                     border: 1px #54559c solid;
@@ -7999,6 +8006,7 @@ span.jcf-fake-input {
                 border: 1px solid #e1e1e1;
                 width: 100%;
                 color: #222222;
+                resize: none;
                 font-size: 14px;
                 padding: 15px;
             }
@@ -8372,10 +8380,6 @@ span.jcf-fake-input {
 
                     margin-bottom: 30px;
 
-                    &:last-of-type{
-                        margin-bottom: 0;
-                    }
-
                     .item-description{
                         display: flex;
                         flex-direction: column;
@@ -8390,7 +8394,7 @@ span.jcf-fake-input {
                             font-weight: 400;
                             color: #bababa;
                             
-                            .counter{
+                            span{
                                 font-size: 12px;
                                 font-weight: 700;
                                 color: #bababa;
@@ -10765,17 +10769,13 @@ span.jcf-fake-input {
                     }
                 }
 
-                /* .attached-doc {
-                    .file-preview-thumbnails {
-                        justify-content: flex-start;
-
-                        .file-preview-frame {
-                            width: auto;
-                            max-width: calc(100% / 3 - 15px);
-                            margin-right: 15px;
+                .attached-doc{
+                    .files{
+                        .input-group.file-caption-main{
+                            margin: 0;
                         }
                     }
-                } */
+                }
 
                 .form-flex {
                     display: flex;
