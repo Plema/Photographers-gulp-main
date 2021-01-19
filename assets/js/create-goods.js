@@ -92,4 +92,15 @@ $(document).ready(function () {
         $('.overlay-remove').removeClass('active');
     });
 
+    // Count of symbols
+    $('.form-textarea').click(function () {
+        $('.form-textarea').find('span').removeClass('counter');
+        $(this).find('span').addClass('counter');
+    });
+
+    $('.main-description').keyup( function () {
+        var symbolsCount = $(this).val().length;
+        $('.counter').text(symbolsCount);
+    });
+
 });

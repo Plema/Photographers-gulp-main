@@ -67,19 +67,6 @@
                         <div class="form-textarea">
                             <label>Описание проекта</label>
                             <textarea></textarea>
-                            <div class="actions">
-                                <div class="style-btns">
-                                    <a href="javascript:void(0)" class="strong">
-                                        T
-                                    </a>
-                                    <a href="javascript:void(0)" class="underline">
-                                        T
-                                    </a>
-                                    <a href="javascript:void(0)" class="italic">
-                                        T
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                         <div class="attached-doc">
                             <p><i class="icon-icon4"></i> Приклепленные документы</p>
@@ -112,47 +99,81 @@
                             </div>
                         </div>
                         <div class="form-flex">
-                            <div class="form-select item">
-                                <label>Категория</label>
-                                <select
-                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
-                                    <option>Все</option>
-                                    <option>Детская съемка</option>
-                                    <option>Коммерческая фотосъемка</option>
-                                    <option>Ню</option>
-                                    <option>Обработка фотографии</option>
-                                    <option>Портретная съемка</option>
-                                    <option>Предметная съемка</option>
-                                    <option>Репортажная съемка</option>
-                                    <option>Студийная съемка</option>
-                                    <option>Свадебная съемка</option>
-                                    <option>Семейная съемка</option>
-                                    <option>Тематическая съемка</option>
-                                </select>
-                            </div>
-                            <div class="form-input item">
-                                <label>Бюджет</label>
-                                <div class="wrap">
-                                    <input type="text">
-                                    <span>руб.</span>
+                            <div class="form-item">
+                                <div class="form-price">
+                                    <div class="form-column">
+                                        <div class="form-select item">
+                                            <label>Категория</label>
+                                            <select 
+                                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                <option>Все</option>
+                                                <option>Детская съемка</option>
+                                                <option>Коммерческая фотосъемка</option>
+                                                <option>Ню</option>
+                                                <option>Обработка фотографии</option>
+                                                <option>Портретная съемка</option>
+                                                <option>Предметная съемка</option>
+                                                <option>Репортажная съемка</option>
+                                                <option>Студийная съемка</option>
+                                                <option>Свадебная съемка</option>
+                                                <option>Семейная съемка</option>
+                                                <option>Тематическая съемка</option>
+                                            </select>
+                                        </div>
+                                        <div class="cost item">
+                                            <div class="cost-amount">
+                                                <label>Бюджет</label>
+                                                <input class="cost-input" type="text" placeholder="0.00">
+                                            </div>
+                                            <div class="cost-currency">
+                                                <div class="form-select item">
+                                                    <label>Валюта</label>
+                                                    <select
+                                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                                        <option>RUB</option>
+                                                        <option>USD</option>
+                                                        <option>EUR</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-location">
+                                    <div class="form-column">
+                                        <div class="form-input">
+                                            <label>Город</label>
+                                            <input class="input-location" type="text" placeholder="Новосибирск">
+                                        </div>
+                                        <div class="form-input date">
+                                            <label>Актуально до</label>
+                                            <input type="date" id="datepicker">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-input item">
-                                <label>Город</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-input date item">
-                                <label>Актуально до</label>
-                                <i class="icon-calendar"></i>
-                                <input type="date" id="datepicker">
-                            </div>
                         </div>
-                        <div class="form-checkbox">
-                            <div class="title">
-                                <p>Коллективный проект</p>
-                                <span>(в проекте может принимать участие несколько человек)</span>
+                        <div class="switch-buttons">
+                            <div class="form-checkbox">
+                                <div class="title">
+                                    <p>Коллективный проект</p>
+                                    <span>(в проекте может принимать участие несколько человек)</span>
+                                </div>
+                                <div class="switch-btn switch-on"></div>
                             </div>
-                            <div class="input"><input type="checkbox" checked></div>
+                            <div class="form-checkbox">
+                                <div class="title">
+                                    <p>Вакансия</p>
+                                    <span>(проект является вакансией)</span>
+                                </div>
+                                <div class="switch-btn switch-on"></div>
+                            </div>
+                            <div class="form-checkbox">
+                                <div class="title">
+                                    <p>TFP-проект</p>
+                                </div>
+                                <div class="switch-btn switch-on"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="create-heading">
@@ -163,57 +184,15 @@
                             <div class="item">
                                 <div class="item-top">
                                     <div class="icon">
-                                        <i class="icon-pin"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Закрепить в ТОП</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="select">
-                                    <span>на</span>
-                                    <select
-                                        data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                    <span>дней</span>
-                                </div>
-                                <div class="price">
-                                    <p><span>Стоимость: </span>500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
                                         <i class="icon-growth"></i>
                                     </div>
-                                    <input type="checkbox">
+                                    <input type="checkbox" checked>
                                 </div>
                                 <div class="title">
                                     <p>Поднять в поиске</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="price">
-                                    <p>500 руб.</p>
+                                    <p>от 190 руб.</p>
                                 </div>
                             </div>
                             <div class="item">
@@ -221,21 +200,27 @@
                                     <div class="icon">
                                         <i class="icon-highlighter"></i>
                                     </div>
-                                    <input type="checkbox">
+                                    <input type="checkbox" checked>
                                 </div>
                                 <div class="title">
                                     <p>Выделить цветом</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="price">
-                                    <p>от 500 руб.</p>
+                                    <p>от 190 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-pin"></i>
+                                    </div>
+                                    <input type="checkbox" checked>
+                                </div>
+                                <div class="title">
+                                    <p>Закрепить в ТОП</p>
+                                </div>
+                                <div class="price">
+                                    <p>от 390 руб.</p>
                                 </div>
                             </div>
                             <div class="item">
@@ -243,49 +228,54 @@
                                     <div class="icon">
                                         <i class="icon-icon17"></i>
                                     </div>
-                                    <input type="checkbox">
+                                    <input type="checkbox" checked>
                                 </div>
                                 <div class="title">
                                     <p>Турбо продвижение</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="price">
-                                    <p>500 руб.</p>
+                                    <p>1720 руб. <span>вместо <span class="line-through">3830 руб.</span></span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="list">
                             <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
                             <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>открыть только для специалистов</label>
+                                <div class="block block-options">
+                                    <input type="checkbox" checked>
+                                    <label>открыть проект для 
+                                        Специалистов и Организаций</label>
                                 </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                            <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>открыть только для специалистов со статусом
-                                        “Pro” и “Top”</label>
-                                </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
+                                <div class="block block-price">
+                                    <span>490 руб.</span>
                                 </div>
                             </div>
                             <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked>скрыть от поисковых систем</label>
+                                <div class="block block-options">
+                                    <input type="checkbox" checked>
+                                    <label>открыть проект для 
+                                        Специалистов и Организаций со статусом “Pro” и “Top”</label>
                                 </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
+                                <div class="block block-price">
+                                    <span>490 руб.</span>
+                                </div>
+                            </div>
+                            <div class="list-check">
+                                <div class="block block-options">
+                                    <input type="checkbox" checked>
+                                    <label>скрыть от поисковых систем</label>
+                                </div>
+                                <div class="block block-price">
+                                    <span>490 руб.</span>
+                                </div>
+                            </div>
+                            <div class="list-check agree">
+                                <div class="block block-agree">
+                                    <input type="checkbox">
+                                    <label>
+                                        <p>Я соглашаюсь с <a href="#">Правилами 
+                                        публикации Проектов на сайте</a></p>
+                                    </label>
                                 </div>
                             </div>
                         </div>

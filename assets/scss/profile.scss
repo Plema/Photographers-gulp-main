@@ -1168,6 +1168,7 @@ span.jcf-fake-input {
                                 color: #022222;
                                 font-size: 14px;
                                 padding-right: 5px;
+                                
                             }
                         }
                     }
@@ -4249,14 +4250,15 @@ span.jcf-fake-input {
 
                             .avatar-menu{
                                 display: flex;
-                                margin-top: 7px;
+                                z-index: 5;
 
                                 .avatar-button{
                                     width: 29px;
-                                    height: auto;
+                                    height: 22px;
                                     display: flex;
                                     flex-direction: row;
                                     justify-content: space-around;
+                                    align-items: center;
                                     cursor: pointer;
 
                                     .dot{
@@ -4272,14 +4274,9 @@ span.jcf-fake-input {
                                     .dot-active{
                                         background-color: #54559c;
                                     }
-
-                                    &:hover{
-                                        .dot{
-                                            background-color: #54559c;
-                                        }
-                                    }
                                 }
                                 .avatar-popup{
+                                    display: none;
                                     width: 178px;
                                     height: 69px;
                                     border: 1px #54559c solid;
@@ -4299,10 +4296,24 @@ span.jcf-fake-input {
                                             font-size: 16px;
                                             font-weight: 400;
                                             color: #54559c;
+                                            text-decoration: none
                                         }
 
                                         &:last-child{
                                             margin-bottom: 0;
+                                        }
+                                        &:hover{
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    .avatar-popup{
+                                        display: block;
+                                    }
+                                    .avatar-button{
+                                        .dot{
+                                            background-color: #54559c;
                                         }
                                     }
                                 }
@@ -7961,8 +7972,7 @@ span.jcf-fake-input {
     &-createProject {
         .create-heading {
             border-bottom: 1px solid #e1e1e1;
-            margin: 0 -15px;
-            padding: 0 15px 14px;
+            padding: 0 0 14px 0;
 
             p {
                 color: #222222;
@@ -7984,16 +7994,61 @@ span.jcf-fake-input {
 
         .create-body {
             padding: 30px 0 28px;
+            
+            .form-item {
+                display: flex;
+                max-width: 708px;
+                justify-content: space-between;
+                flex-wrap: wrap;
 
+                .form-filters{
+                    margin-top: 30px;
+                }
+
+                .form-column {
+                    width: 287px;
+
+                    .cost{
+                        display: flex;
+
+                        &-amount{
+                            width: 135px;
+                        }
+                        &-currency{
+                            width: 135px;
+                            margin-left: 25px;
+
+                            .cost-input{
+                                display: flex;
+                                align-items: center;
+                                height: 34px;
+                                font-size: 14px;
+                                color: #222;
+                                
+                                border: 1px solid #e1e1e1;
+                                padding: 0 15px;
+                                
+                            }
+                        }
+                    }
+                }
+                .form-location{
+                    .form-input{
+                        .input-location{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             label {
                 color: #222222;
                 font-size: 16px;
                 display: block;
-                margin-bottom: 5px;
+                margin-bottom: 15px;
             }
 
             input {
-                height: 31px;
+                height: 34px;
                 border: 1px solid #e1e1e1;
                 width: 100%;
                 color: #222222;
@@ -8014,6 +8069,8 @@ span.jcf-fake-input {
             .form-input {
                 margin-bottom: 15px;
                 position: relative;
+
+
 
                 &.disable {
                     input {
@@ -8036,7 +8093,6 @@ span.jcf-fake-input {
                     }
 
                     input {
-                        padding: 0 35px;
                         background-color: transparent;
                     }
                 }
@@ -8052,6 +8108,9 @@ span.jcf-fake-input {
                         margin-left: 10px;
                     }
                 }
+            }
+            .date{
+                margin-bottom: 0;
             }
 
             .form-textarea {
@@ -8465,7 +8524,7 @@ span.jcf-fake-input {
             }
 
             .form-select {
-                margin-bottom: 15px;
+                margin-bottom: 25px;
                 position: relative;
 
                 &.disable {
@@ -8532,7 +8591,7 @@ span.jcf-fake-input {
             .form-checkbox {
                 display: flex;
                 max-width: 300px;
-                margin-top: 20px;
+                margin-top: 30px;
 
                 .title {
                     width: 200px;
@@ -8587,6 +8646,39 @@ span.jcf-fake-input {
                         }
                     }
                 }
+                .switch-btn {
+                    display: inline-block;
+                    width: 42px; /* ширина переключателя */
+                    min-width: 42px;
+                    height: 12px; /* высота переключателя */
+                    border-radius: 6px; /* радиус скругления */
+                    background: #d9dfea; /* цвет фона */
+                    z-index: 0;
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+                    position: relative;
+                    transition-duration: 300ms; /* анимация */
+                  }
+                  .switch-btn::after {
+                    content: "";
+                    height: 20px; /* высота кнопки */
+                    width: 20px; /* ширина кнопки */
+                    border-radius: 50%; /* радиус кнопки */
+                    background: #fff; /* цвет кнопки */
+                    top: -5px; /* положение кнопки по вертикали относительно основы */
+                    left: -5px; /* положение кнопки по горизонтали относительно основы */
+                    transition-duration: 300ms; /* анимация */
+                    box-shadow: 0 0 10px 0 #999999; /* тень */
+                    position: absolute;
+                    z-index: 1;
+                  }
+                  
+                  .switch-on::after {
+                    left: 25px;
+                    background:#54559c;
+                  }
             }
         }
 
@@ -8594,8 +8686,12 @@ span.jcf-fake-input {
             margin-top: 20px;
 
             .item {
-                width: 175px;
+                width: 225px;
                 margin: 0 auto 40px;
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
 
                 &-top {
                     position: relative;
@@ -8624,7 +8720,7 @@ span.jcf-fake-input {
                         cursor: pointer;
                         position: absolute;
                         top: 0;
-                        right: 0;
+                        right: 20px;
                         z-index: 1;
 
                         input {
@@ -8789,20 +8885,21 @@ span.jcf-fake-input {
                         font-size: 16px;
 
                         span {
+                            font-family: 'Conv_PROXIMANOVA-BOLD';
                             color: #022222;
                             font-size: 14px;
                             padding-right: 5px;
+
+                            .line-through{
+                                text-decoration: line-through;
+                            }
                         }
                     }
                 }
             }
 
-            .flex-wrap {
-                border-bottom: 1px solid #e4e4e4;
-            }
-
             .list {
-                margin-top: 20px;
+                margin-top: 30px;
 
                 p {
                     color: #022222;
@@ -8829,6 +8926,7 @@ span.jcf-fake-input {
                         position: absolute;
                         left: 0;
                         top: 0;
+                        z-index: 5;
 
                         input {
                             display: none;
@@ -8860,6 +8958,7 @@ span.jcf-fake-input {
 
                 .block {
                     display: flex;
+                    position: relative;
 
                     &:last-of-type {
                         padding-left: 46px;
@@ -8880,15 +8979,40 @@ span.jcf-fake-input {
                     padding: 0 0 0 40px;
                     position: relative;
                 }
+                .agree{
+                    padding-top: 9px;
+                    p {
+                        color: #9a9a9a;
+                        font-size: 15px;
+                    }
+                    label {
+                        color: #9a9a9a;
+                        font-size: 16px;
+                        width: calc(100% - 31px);
+                        position: relative;
+                        width: 100%;
+                        padding: 0;
+        
+                        a{
+                            color: #54559c;
+                            text-decoration: underline;
+                        }
+                        p{
+                            margin-bottom: 0;
+                        };
+                    }
+                }
             }
         }
 
         .form-button {
-            margin-top: 40px;
+            margin-top: 35px;
+            text-align: center;
 
             p {
                 color: #022222;
                 font-size: 14px;
+                text-align: start;
 
                 span {
                     color: #54559c;
@@ -8899,6 +9023,7 @@ span.jcf-fake-input {
             }
 
             button {
+                width: 207px;
                 color: #fffefe;
                 font-size: 16px;
                 display: inline-block;
@@ -9006,6 +9131,46 @@ span.jcf-fake-input {
                     .reviews-text{
                         a{
                             width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px) {
+    .profile{
+        &-createProject{
+            .create-body{
+                .form-item{
+                    .form-column{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        max-width: 445px;
+                        margin-bottom: 30px;
+
+                        .item, .form-input{
+                            width: 220px;
+                            margin-right: 20px;
+
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                        .cost{
+                            width: 212.5px;
+
+                            &-currency{
+                                .form-select{
+                                    width: 94px;
+                                }
+                            }
+                        }
+                    }
+                    .form-location{
+                        .form-column{
+                            margin-bottom: 0;
                         }
                     }
                 }
@@ -9941,7 +10106,28 @@ span.jcf-fake-input {
                             }
                         }
                     }
+                    .reviews-answer{
+                        margin: 20px 0;
 
+                        .reviews-item{
+                            padding-left: 48px;
+                        }
+                    }
+                    .reviews-buttons{
+                        align-items: center;
+                        .reviews-action{
+                            display: flex;
+                            align-items: center;
+                            max-width: 235px;
+                            width: auto;
+
+                            .reviews-prop{
+                                margin-right: 18px;
+                                margin-bottom: 0;
+                            }
+
+                        }
+                    }
                     .reviews-right {
                         margin-left: 75px;
                         margin-top: -10px;
@@ -10787,7 +10973,6 @@ span.jcf-fake-input {
                     .item {
                         width: calc(50% - 20px);
                         max-width: 325px;
-                        padding-right: 40px;
 
                         &:nth-child(2) {
                             padding-right: 0;
@@ -10795,6 +10980,47 @@ span.jcf-fake-input {
 
                         &:nth-child(5) {
                             margin-top: 50px;
+                        }
+                    }
+                }
+                .form-item{
+                    .form-filters, .form-price, .form-location{
+                        width: 100%;
+                    }
+                    .form-column{
+                        width: 100%;
+                        max-width: 708px;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 50px;
+
+                        .item, .form-input{
+                            width: 50%;
+                            max-width: 287px;
+
+                            margin-right: 10px;
+
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                        .cost{
+                            max-width: 287px;
+
+                            &-currency{
+                                margin-left: 10px;
+
+                                .form-select{
+                                    width: 135px;
+                                }
+                            }
+                        }
+                    }
+                    .form-price{
+                        padding-top: 50px;
+
+                        .form-column{
+                            margin-bottom: 25px;
                         }
                     }
                 }
@@ -10827,7 +11053,64 @@ span.jcf-fake-input {
                                     top: 0;
                                 }
                             }
+                            .jcf-checkbox{
+                                width: 11px;
+                                height: 11px;
+                                right: 60px;
+    
+                                span{
+                                    line-height: 11px;
+    
+                                    &:before{
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
+                .list{
+                    &-check{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        
+                        .block-price{
+                            &:last-of-type{
+                                min-width: 65px;
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                        }
+                        .block-options{
+                            .jcf-checkbox{
+                                width: 11px;
+                                height: 11px;
+        
+                                span{
+                                    line-height: 11px;
+        
+                                    &:before{
+                                        font-size: 9px;
+                                    }
+                                }
+                            }
+                        }
+                        .block-agree{
+                            .jcf-checkbox{
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    label{
+                        width: 100%;
+                    }
+                    .agree{
+                        display: flex;
+                        justify-content: center;
+    
+                        padding-top: 32px;
                     }
                 }
             }
@@ -11553,7 +11836,7 @@ span.jcf-fake-input {
                     padding: 0 30px 0 12px;
 
                     &_own{
-                        padding-top: 20px;
+                        padding: 20px 45px 0 12px;
                     }
 
                     .avatar {
@@ -11717,8 +12000,6 @@ span.jcf-fake-input {
                     }
                 }
             }
-
-            .news-content {}
         }
 
         .profile-expert {
@@ -12094,8 +12375,6 @@ span.jcf-fake-input {
 
                 .form-flex {
                     .item {
-                        margin-bottom: 51px;
-
                         &:nth-child(3),
                         &:nth-child(4) {
                             margin-bottom: 0;
@@ -12137,7 +12416,7 @@ span.jcf-fake-input {
                     .item {
                         margin: 0;
                         width: calc(25% - 20px);
-                        max-width: 150px;
+                        max-width: 215px;
 
                         &-top {
                             .icon {
@@ -12149,6 +12428,9 @@ span.jcf-fake-input {
                                     font-size: 20px;
                                 }
                             }
+                            .jcf-checkbox{
+                                right: 40px;
+                            }
                         }
                     }
                 }
@@ -12158,37 +12440,14 @@ span.jcf-fake-input {
                     justify-content: space-between;
                     align-items: center;
 
-                    .jcf-checkbox {
-                        margin-top: 0;
-                    }
 
                     .block {
                         align-items: center;
-
-                        &:last-of-type {
-                            margin-top: 0;
-                            padding: 0;
-                        }
-                    }
-                }
-
-                .item-top {
-                    .jcf-checkbox {
-                        width: 8px;
-                        height: 8px;
-
-                        span {
-                            line-height: 8px;
-
-                            &:before {
-                                font-size: 7px;
-                            }
-                        }
                     }
                 }
 
                 .list {
-                    margin-top: 57px;
+                    margin-top: 90px;
 
                     p {
                         margin-bottom: 28px;
@@ -12197,46 +12456,18 @@ span.jcf-fake-input {
                     &-check {
                         margin-bottom: 14px;
 
-                        .jcf-checkbox {
-                            width: 8px;
-                            height: 8px;
-                            top: 5px;
-
-                            span {
-                                line-height: 8px;
-
-                                &:before {
-                                    font-size: 7px;
-                                }
-                            }
-                        }
                     }
 
                     label {
-                        width: calc(100% - 33px);
                         padding-left: 27px;
                         cursor: pointer;
                     }
 
-                    .block {
-                        &:first-of-type {
-                            width: 80%;
-                        }
-
-                        &:last-of-type {
-                            width: 20%;
-                            text-align: right;
-
-                            span {
-                                margin-left: auto;
-                            }
-                        }
-                    }
                 }
             }
 
             .form-button {
-                margin-top: 59px;
+                margin-top: 45px;
 
                 button {
                     padding: 17px 53px;
@@ -12484,6 +12715,19 @@ span.jcf-fake-input {
 
         &-createProject {
             width: 83%;
+
+            .create-body{
+                .switch-buttons{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .form-checkbox{
+                        .switch-btn{
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

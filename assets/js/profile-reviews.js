@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     //Поп-ап avatar-menu
 
-    $('.avatar-button').click(function () {
+    /* $('.avatar-button').click(function () {
         $('.avatar-button').find('.dot').removeClass('dot-active');
         $('.avatar-button').find('.avatar-popup').removeClass('show');
         $('.avatar-button').find('.avatar-popup').addClass('hide');
@@ -25,9 +25,5 @@ $(document).ready(function () {
             $('.avatar-button').find('.avatar-popup').removeClass('show');
             $('.avatar-button').find('.avatar-popup').addClass('hide');
         }
-    })
-    /* $('.avatar-button').click(function() {
-        $(this).siblings(".avatar-popup").toggle();
-    });
- */
+    }); */
 });

@@ -1,5 +1,13 @@
 .bread-crumbs {
-  padding: 15px 0 25px;
+  padding: 15px 0 30px;
+
+  ul{
+    li:last-of-type{
+      a{
+        color: #a1a1a1;
+      }
+    }
+  }
 }
 .page-content{
   padding-bottom: 150px;
@@ -49,7 +57,7 @@ h5{
 	font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .description{
   color: #222222;
@@ -58,7 +66,7 @@ h5{
   font-style: normal;
   letter-spacing: normal;
   line-height: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .album-photo{
@@ -87,10 +95,20 @@ h5{
   }
   .crumb{
     padding-top: 20px;
+    padding-bottom: 30px;
   }
   .profile-album{
     width: 74%;
     float: right;
+  }
+  .top-block-album{
+    h4{
+      padding-left: 0;
+      &:before{
+        left: 0;
+        width: 120px;
+      }
+    }
   }
 }
 
@@ -100,7 +118,7 @@ h5{
     margin: 0;
   }
   h5{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .album-photo{
     .w28{
@@ -137,6 +155,9 @@ h5{
   .album-photo{
     width: 83%;
     margin: 0;
+  }
+  .crumb, .description, h5{
+    margin-left: .75%;
   }
   .description{
     width: 83%;

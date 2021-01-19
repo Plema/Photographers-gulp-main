@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
     <link rel="stylesheet" href="../css/profile_menu.min.css">
     <link rel="stylesheet" href="../css/profile-menuFin.min.css">
     <link rel="stylesheet" href="../css/profile-tovar.min.css">
@@ -150,7 +151,7 @@
 
         <div class="profile-tovar">
             <div class="top-tabsTovar">
-                <div class="filter-slider2" id="filter-slider">
+                <div class="filter-slider" id="filter-slider">
                     <div class="filter-items js-item active" data-items="act">
                         <p>Активные</p>
                     </div>
@@ -164,8 +165,21 @@
                         <p>На модерации</p>
                     </div>
                 </div>
+                <div class="button-add desktop hide">
+                    <a href="javascript:void(0)" class="create-btn">Добавить товар</a>
+                </div>
             </div>
-
+            <div class="button-add">
+                <a href="javascript:void(0)" class="create-btn">Добавить товар</a>
+            </div>
+            <div class="tovar-search">
+                <form class="clearfix">
+                    <div class="search">
+                        <input type="text" placeholder="Название товара">
+                        <div class="search-btn"><i class="icon-icon25"></i></div>
+                    </div>
+                </form>
+            </div>
             <div class="tovar_page-content js-content active" id="act">
                 <div class="one-tovar">
                     <div class="tovar">

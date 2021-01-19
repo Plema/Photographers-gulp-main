@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  $('.filter-slider2').slick({
+  $('.filter-slider').slick({
     responsive: [{
         breakpoint: 99999,
         settings: "unslick"

@@ -299,6 +299,10 @@ div#kvFileinputModal {
                 color: #222;
                 font-size: 16px;
                 display: block;
+
+                p{
+                    color: #989898;
+                }
             }
 
             input {
@@ -1392,8 +1396,8 @@ div#kvFileinputModal {
                 }
 
                 .jcf-checkbox {
-                    width: 21px;
-                    height: 21px;
+                    width: 20px;
+                    height: 20px;
                     border-radius: 3px;
                     background-color: #d9dfea;
                     display: block;
@@ -1410,7 +1414,7 @@ div#kvFileinputModal {
                     span {
                         display: block;
                         text-align: center;
-                        line-height: 21px;
+                        line-height: 20px;
 
                         &:before {
                             content: '\e827';
@@ -1630,6 +1634,7 @@ div#kvFileinputModal {
                     position: absolute;
                     left: 0;
                     top: 0;
+                    z-index: 100;
 
                     input {
                         display: none;
@@ -1661,6 +1666,7 @@ div#kvFileinputModal {
 
             .block {
                 display: flex;
+                position: relative;
 
                 &:last-of-type {
                     margin-top: 4px;
@@ -1984,6 +1990,22 @@ div#kvFileinputModal {
                     }
 
                     &-top {
+                        .icon{
+                            width: 40px;
+                            height: 40px;
+                        }
+                        .jcf-checkbox{
+                            width: 11px;
+                            height: 11px;
+                            right: 45px;
+                        }
+                        span{
+                            line-height: 11px;
+
+                            &:before{
+                                font-size: 9px;
+                            }
+                        }
                         &:hover {
                             &+.title .tooltip-text {
                                 display: block;

@@ -220,8 +220,8 @@
                     <div class="create-body">
                         <div class="attached-img" style="background-image: url(../img/adding_photo.jpg)"></div>
                         <div class="form-input">
-                            <label class="disabled">Название</label>
-                            <input type="text" disabled="">
+                            <label>Название</label>
+                            <input type="text">
                         </div>
                         <div class="form-textarea">
                             <label>Описание события</label>
@@ -261,54 +261,59 @@
                             <div class="form-item">
                                 <div class="form-column">
                                     <div class="form-select item">
-                                        <label class="disabled">Тематика</label>
-                                        <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <label>Тематика</label>
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
                                             <option>Фотография</option>
                                         </select>
                                     </div>
                                     <div class="form-select item">
-                                        <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
                                             <option>Свадебная съемка</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-column type-sum">
                                     <div class="form-select item">
-                                        <label class="disabled">Тип</label>
-                                        <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <label>Тип</label>
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
                                             <option>Воркшоп</option>
                                         </select>
                                     </div>
                                     <div class="cost">
                                         <div class="cost-amount">
-                                            <label class="disabled">Стоимость</label>
+                                            <label>Стоимость</label>
                                             <input class="cost-input" type="text" placeholder="0.00">
                                         </div>
                                         <div class="cost-currency">
-                                            <label class="disabled">Валюта</label>
-                                            <div class="cost-input">RUB</div>
-                                        
+                                            <div class="form-select item">
+                                                <label>Валюта</label>
+                                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                                    <option>RUB</option>
+                                                    <option>USD</option>
+                                                    <option>EUR</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-input date item">
-                                    <label class="disabled">Дата</label>
+                                    <label>Дата</label>
                                     <div class="form-column">
-                                        <input type="text" id="datepicker" disabled="" placeholder="Выберите дату">
+                                        <input type="text" id="datepicker" placeholder="Выберите дату">
                                         <i class="icon-calendar"></i>
                                     </div>
                                 </div>
                                 <p>в</p>
                                 <div class="form-group">
                                     <div class="form-select item">
-                                        <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
                                             <option>00</option>
                                         </select>
                                     </div>
                                     <div class="form-select item">
-                                        <select disabled="" data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
                                             <option>00</option>
                                         </select>
                                     </div>
@@ -337,8 +342,8 @@
                         </div>
                         
                         <div class="form-input item-telephone">
-                            <label class="disabled">Телефон (не обязательно)</label>
-                            <input type="text" disabled="">
+                            <label>Телефон (не обязательно)</label>
+                            <input type="text">
                         </div>
                         <div class="form-row">
                             <div class="title">
@@ -355,78 +360,29 @@
                             <div class="item">
                                 <div class="item-top">
                                     <div class="icon">
-                                        <i class="icon-pin"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Закрепить в ТОП</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="select">
-                                    <span>на</span>
-                                    <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                    <span>дней</span>
-                                </div>
-                                <div class="price">
-                                    <p><span>Стоимость: </span>500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
-                                        <i class="icon-growth"></i>
-                                    </div>
-                                    <input type="checkbox">
-                                </div>
-                                <div class="title">
-                                    <p>Поднять в поиске</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="price">
-                                    <p>500 руб.</p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-top">
-                                    <div class="icon">
                                         <i class="icon-highlighter"></i>
                                     </div>
                                     <input type="checkbox">
                                 </div>
                                 <div class="title">
                                     <p>Выделить цветом</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="price">
-                                    <p>от 500 руб.</p>
+                                    <p>от 190 руб.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-top">
+                                    <div class="icon">
+                                        <i class="icon-pin"></i>
+                                    </div>
+                                    <input type="checkbox">
+                                </div>
+                                <div class="title">
+                                    <p>Закрепить в ТОП</p>
+                                </div>
+                                <div class="price">
+                                    <p>от 390 руб.</p>
                                 </div>
                             </div>
                             <div class="item">
@@ -438,57 +394,69 @@
                                 </div>
                                 <div class="title">
                                     <p>Турбо продвижение</p>
-                                    <span class="tooltip"></span>
-                                    <div class="tooltip-text">
-                                        <ul>
-                                            <li>закрепление в ТОП на 24 часа </li>
-                                            <li>7 поднятий </li>
-                                            <li>выделение цветом на 7 дней</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="price">
-                                    <p>500 руб.</p>
+                                    <p>2430 руб. <span>вместо <span>4 060 руб.</span></span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="list">
                             <p>А также Вы можете выбрать кто будет просматривать Ваш проект:</p>
                             <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked="">открыть только для специалистов</label>
+                                <div class="block block-options">
+                                    <input type="checkbox" checked="">
+                                    <label>
+                                        открыть событие для Специалистов и Организаций
+                                    </label>
                                 </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
-                                </div>
-                            </div>
-                            <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked="">открыть только для специалистов со статусом
-                                        “Pro” и “Top”</label>
-                                </div>
-                                <div class="block">
-                                    <span>500 руб.</span>
+                                <div class="block block-price">
+                                    <span>490 руб.</span>
                                 </div>
                             </div>
                             <div class="list-check">
-                                <div class="block">
-                                    <label><input type="checkbox" checked="">скрыть от поисковых систем</label>
+                                <div class="block block-options">
+                                    <input type="checkbox" checked="">
+                                    <label>
+                                        открыть событие для Специалистов и Организаций со статусом “Pro” и “Top”
+                                    </label>
                                 </div>
-                                <div class="block">
+                                <div class="block block-price">
+                                    <span>490 руб.</span>
+                                </div>
+                            </div>
+                            <div class="list-check">
+                                <div class="block block-options">
+                                    <input type="checkbox" checked="">
+                                    <label>
+                                        скрыть от поисковых систем
+                                    </label>
+                                </div>
+                                <div class="block block-pice">
                                     <span>500 руб.</span>
+                                </div>
+                            </div>
+                            <div class="list-check agree">
+                                <div class="block block-agree">
+                                    <input type="checkbox">
+                                    <label>
+                                        <p>Я соглашаюсь с <a href="#">Правилами 
+                                        публикации Событий на сайте</a></p>
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-action">
+                        <div class="buttons">
                             <div class="form-button">
                                 <p>Всего к оплате: <span>500 руб.</span></p>
-                                <button>Сохранить</button>
-                                <button class="reset">Сбросить изменения</button>
+                                <div class="form-button_items">
+                                    <button class="save">Сохранить</button>
+                                    <button class="reset">Сбросить изменения</button>
+                                </div>
                             </div>
-                            <div class="form-button">
-                                <p>Вы можете удалить страницу События</p>
-                                <button class="remove" type="button">Удалить</button>
+                            <div class="remove-button">
+                                <p>Вы можете удалить страницу События
+                                </p>
+                                <button class="remove">Удалить</button>
                             </div>
                         </div>
                     </div>
