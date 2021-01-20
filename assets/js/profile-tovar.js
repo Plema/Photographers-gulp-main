@@ -40,4 +40,22 @@ $(document).ready(function () {
     $(this).parent().parent().parent().parent().find('.open-sett').toggleClass('block')
   });
 
-})
+  // Filters
+  $('.header-arrow').on('click', function () {
+    var body = $('.filters-body');
+    var arrow = $('.header-arrow');
+
+    if(body.hasClass('hide') && arrow.hasClass('close')) {
+      body.removeClass('hide');
+      body.addClass('show');
+      arrow.removeClass('close');
+      arrow.addClass('open');
+    } else if(body.hasClass('show') && arrow.hasClass('open')) {
+      body.removeClass('show');
+      body.addClass('hide');
+      arrow.removeClass('open');
+      arrow.addClass('close');
+    }
+  });
+
+});

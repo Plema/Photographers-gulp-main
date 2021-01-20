@@ -58,7 +58,7 @@ a.ui-button:active,
                     border-radius: 3px;
                     border: 1px solid #b0b0aa;
                     width: 100%;
-                    margin-right: 14px;
+                    margin-right: 1px;
 
                     input {
                         width: 100%;
@@ -110,10 +110,23 @@ a.ui-button:active,
                 }
 
                 .openBtn {
-                    color: #222222;
-                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 80px;
+                    height: 35px;
+                    color: #fff;
+                    font-size: 14px;
                     line-height: 22px;
                     text-align: center;
+                    cursor: pointer;
+                    background-color: #54559c;
+
+                    transition: background-color .2s linear;
+
+                    &:hover{
+                        background-color: #27283c;
+                    }
                 }
 
                 position: relative;
@@ -632,7 +645,7 @@ a.ui-button:active,
                 .item_content {
                     border-radius: 0 0 3px 3px;
                     background-color: #f7f7f7;
-                    padding: 16px 15px 15px;
+                    padding: 9px 15px 15px;
 
                     &-title {
                         color: #222222;
@@ -671,13 +684,45 @@ a.ui-button:active,
                             margin-right: 8px;
                         }
                     }
+                    &-price {
+                        color: #222222;
+                        font-size: 16px;
+
+                        &::before {
+                            content: '\E833';
+                            font-family: 'fontello';
+                            color: #54559c;
+                            font-size: 16px;
+                            margin-right: 8px;
+                        }
+                    }
 
                     &-text {
                         color: #575757;
                         font-size: 16px;
                         margin-top: 5px;
                     }
+                    .icon-pin:before{
+                        content: '\E83f';
+                        font-family: 'fontello';
+                        font-size: 14px;
+                        color: #54559c;
+                        margin-bottom: 9px;
+                    }
+                    .icon-highlighter:before{
+                        content: '\E83c';
+                        font-family: 'fontello';
+                        font-size: 14px;
+                        color: #54559c;
+                        margin-bottom: 9px;
+                    }
                 }
+                .pin{
+                    background-color: #eef1f5;
+                }
+            }
+            .highlight{
+                border: 1px solid #54559c;
             }
         }
     }

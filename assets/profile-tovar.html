@@ -68,20 +68,89 @@
                         <p>На модерации</p>
                     </div>
                 </div>
-                <div class="button-add desktop hide">
+                <div class="button-add desktop-btn">
                     <a href="javascript:void(0)" class="create-btn">Добавить товар</a>
                 </div>
             </div>
-            <div class="button-add">
+            <div class="button-add mobile-btn">
                 <a href="javascript:void(0)" class="create-btn">Добавить товар</a>
             </div>
-            <div class="tovar-search">
-                <form class="clearfix">
-                    <div class="search">
-                        <input type="text" placeholder="Название товара">
-                        <div class="search-btn"><i class="icon-icon25"></i></div>
+            <div class="tovar_search-filters">
+                <div class="tovar-search">
+                    <form class="clearfix">
+                        <div class="search">
+                            <input type="text" placeholder="Название товара">
+                            <div class="search-btn"><i class="icon-icon25"></i></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tovar-filters">
+                    <div class="filters-header">
+                        <p class="header-name">Фильтры</p>
+                        <img class="header-arrow close" src="../img/arrow-filter.png" alt="">
                     </div>
-                </form>
+                </div>
+            </div>
+            <div class="filters-body hide">
+                <div class="filters-block">
+                    <h3 class="filters-block_header">Оборудование</h3>
+                    <ul class="filters-list">
+                        <li class="filters-item"><a href="#">- фотоаппараты</a></li>
+                        <li class="filters-item"><a href="#">- видеокамеры</a></li>
+                        <li class="filters-item"><a href="#">- объективы</a></li>
+                        <li class="filters-item"><a href="#">- кинообъективы</a></li>
+                        <li class="filters-item"><a href="#">- фотовспышки</a></li>
+                        <li class="filters-item"><a href="#">- аксессуары для фототехники</a></li>
+                        <li class="filters-item"><a href="#">- видеооборудование</a></li>
+                        <li class="filters-item"><a href="#">- студийное оборудование</a></li>
+                        <li class="filters-item"><a href="#">- квадракоптеры</a></li>
+                        <li class="filters-item"><a href="#">- прочее</a></li>
+                    </ul>
+                </div>
+                <div class="filters-block">
+                    <h3 class="filters-block_header">Декор и аксессуары</h3>
+                    <ul class="filters-list">
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                    </ul>
+                </div>
+                <div class="filters-block">
+                    <h3 class="filters-block_header">Одежда</h3>
+                    <ul class="filters-list">
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                    </ul>
+                </div>
+                <div class="filters-block">
+                    <h3 class="filters-block_header">Транспорт</h3>
+                    <ul class="filters-list">
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                    </ul>
+                </div>
+                <div class="filters-block">
+                    <h3 class="filters-block_header">Фотосессия с животными</h3>
+                    <ul class="filters-list">
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                        <li class="filters-item"><a href="#">- Рыба текст</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="tovar_page-content js-content active" id="act">
                 <div class="one-tovar">
@@ -239,13 +308,44 @@
                             <h6 class="price">3000 RUB</h6>
                         </div>
                     </div>
-                    <div class="ready-options">
-                        <div class="one-roption">
-                            <img src="../img/pin22.png" alt="">
-                            <h4>Закрепить в ТОП</h4>
-                            <p>на 5 дней <a href="">продлить</a></p>
+                    <form class="open-sett">
+                        <div class="options">
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers.png" alt="">
+                                <h4>Поднять в поиске</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/3-layers2.png" alt="">
+                                <h4>Выделить цветом</h4>
+                                <p  class="open-priceServ"><strong>от 90 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox" checked>
+                                <img src="../img/pin22.png" alt="">
+                                <h4>Сделать VIP</h4>
+                                <p  class="open-priceServ"><strong>от 190 руб.</strong></p>
+                            </div>
+                            <div class="one-option">
+                                <input type="checkbox">
+                                <img src="../img/raketa.png" alt="">
+                                <h4>Турбо продвижение</h4>
+                                <p  class="open-priceServ"><strong>1 550 руб.</strong> вместо <span>2 590 руб.</span></p>
+                            </div>
                         </div>
-                        <div class="one-roption">
+                        <div class="price-butt">
+                            <p>Всего к оплате:<strong>500 руб.</strong></p>
+                            <button>Оплатить</button>
+                        </div>
+                    </form>
+                    <div class="ready-options">
+                        <div class="one-option">
+                            <img src="../img/pin22.png" alt="">
+                            <h4>Закрепить VIP (7 дней)</h4>
+                        </div>
+                        <div class="one-option">
                             <img src="../img/3-layers.png" alt="">
                             <h4>Поднять в поиске</h4>
                         </div>

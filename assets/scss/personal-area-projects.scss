@@ -18,17 +18,8 @@
 
         &__name {
             margin: 0 auto;
-            width: 185px;
-
-            .nikename {
-                font-size: 14px;
-                font-weight: 400;
-                color: rgba(0, 0, 0, 0.7);
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
+            width: 186px;
+            margin-bottom: 10px;
 
             p {
                 color: #222222;
@@ -50,7 +41,7 @@
         }
 
         &__online {
-            margin: 0 auto 10px;
+            margin: 0 auto 20px;
             width: 185px;
 
             p {
@@ -60,8 +51,10 @@
         }
 
         &__btns {
+            width: 233px;
+            height: 95px;
             margin: 0 auto;
-            margin-bottom: 29px;
+            margin-bottom: 36px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -109,12 +102,6 @@
                 -ms-transition: all 0.5s;
                 -o-transition: all 0.5s;
                 transition: all 0.5s;
-
-                &:nth-of-type(2) {
-                    width: 206px;
-                    margin: 0;
-                    margin-left: 10px;
-                }
 
                 &:hover {
                     color: #fff;
@@ -219,6 +206,7 @@
                     }
 
                     p {
+                        width: 260px;
                         color: #515254;
                         font-size: 16px;
                     }
@@ -302,8 +290,14 @@
                     .place {
                         display: flex;
 
-                        p {
-                            padding-left: 14px;
+                        .location{
+                            p {
+                                padding-left: 14px;
+
+                                &:last-of-type{
+                                    margin-bottom: 0;
+                                }
+                            }
                         }
 
                         i {
@@ -321,7 +315,7 @@
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #e1e1e1;
-            margin: 20px -15px 30px;
+            margin: 50px -15px 30px;
             padding: 0 15px;
 
             .filter-items {
@@ -349,7 +343,6 @@
 
             &.tab-item3 {
                 h4 {
-                    text-align: center;
                     color: #222222;
                     font-size: 18px;
 
@@ -602,6 +595,77 @@
                 }
             }
         }
+        .raiting-item{
+            padding-top: 15px;
+            padding-bottom: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #c9c9c9;
+
+            .heading{
+                display: flex;
+
+                img{
+                    width: 54px;
+                    height: 54px;
+                    margin-right: 19px;
+                }
+
+                .avatar-text{
+                    .avatar-info{
+                        h4{
+                            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                        .role{
+                            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #54559c;
+                        }
+                    }
+                    .date{
+                        color: #a7a7a7;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .raiting-text{
+                padding: 19px 0;
+
+                p {
+                    color: #575757;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+            .mark{
+                display: flex;
+                justify-content: flex-end;
+                height: 24px;
+                &-text{
+                    display: flex;
+                    align-items: flex-end;
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+                .good{
+                    color: #54559c;
+                }
+                .bad{
+                    align-items: flex-start;
+
+                }
+
+                .mark-img{
+                    height: 20px;
+                }
+                .unlike{
+                    margin-top: 5px;
+                }
+            }
+            
+        }
 
         .table {
             margin-top: 30px;
@@ -642,7 +706,7 @@
 
             &__name {
                 margin: 0 auto;
-                width: 215px;
+                width: 217px;
 
                 p {
                     font-size: 20px;
@@ -659,13 +723,15 @@
             }
 
             &__online {
-                margin-bottom: 22px;
+                margin-bottom: 0;
                 width: 215px;
             }
 
             &__btns {
                 display: flex;
                 justify-content: center;
+                flex-direction: row;
+                width: auto;
                 margin-bottom: 58px;
                 max-width: none;
                 align-items: center;
@@ -675,7 +741,7 @@
                     width: 181px;
                     padding: 6px 0;
 
-                    &:first-of-type {
+                    &:first-of-type{
                         margin-right: 15px;
                     }
 
@@ -701,6 +767,8 @@
 
             &__wrap {
                 display: flex;
+                justify-content: center;
+                width: 100%;
 
                 ul {
                     padding-bottom: 20px;
@@ -709,12 +777,14 @@
 
                 .item {
                     &:first-of-type {
-                        width: 376px;
+                        width: 50%;
+                        max-width: 376px;
                     }
 
                     &:last-of-type {
-                        width: calc(100% - 376px);
-                        padding-left: 60px;
+                        width: 50%;
+                        max-width: 376px;
+                        margin-left: 60px;
                     }
                 }
 
@@ -876,6 +946,30 @@
                     margin-top: -26px;
                 }
             }
+            .raiting-item{
+                position: relative;
+                .heading{
+                    .avatar-text{
+                        .avatar-info{
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: 10px;
+
+                            h4{
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                }
+                .raiting-text{
+                    padding-left: 73px;
+                }
+                .mark{
+                    position: absolute;
+                    top: 11px;
+                    right: 0;
+                }
+            }
 
             .table {
                 display: flex;
@@ -915,7 +1009,7 @@
             &__wrap {
                 .item {
                     &:last-of-type {
-                        padding-left: 119px;
+                        margin-left: 119px;
                     }
                 }
 
