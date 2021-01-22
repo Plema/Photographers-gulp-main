@@ -4443,6 +4443,10 @@ span.jcf-fake-input {
                 border: none;
                 margin: 0 -15px 25px;
                 padding: 25px 15px 20px;
+
+                .reviews-buttons{
+                    justify-content: flex-end;
+                }
             }
         }
     }
@@ -11836,7 +11840,7 @@ span.jcf-fake-input {
                     padding: 0 30px 0 12px;
 
                     &_own{
-                        padding: 20px 45px 0 12px;
+                        padding: 20px 45px 0 27px;
                     }
 
                     .avatar {

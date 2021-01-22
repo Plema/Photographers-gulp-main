@@ -198,34 +198,28 @@ div#kvFileinputModal {
         .create-body {
             padding: 30px 0 7px;
 
-            /* input:disabled,
-            label+input:disabled {
-                opacity: 0.6;
-                background-color: inherit;
-            } */
-
-            /* select:disabled {
-                opacity: 0.6;
-                background-color: inherit;
-            } */
-
             .title {
                 display: flex;
                 align-items: baseline;
             }
 
-            .form-group,
             .form-row {
                 display: flex;
                 flex-wrap: wrap;
                 align-items: flex-end;
+                padding-bottom: 7px;
 
                 .form-column {
-                    width: 287px;
+                    display: flex;
+                    align-items: baseline;
+
+                    .form-select.item {
+                        margin-bottom: 20px;
+                    }
                 }
 
                 p {
-                    margin: 20px 17px;
+                    margin: 10px 17px 20px 0;
                     color: #222222;
                     font-size: 14px;
                     font-weight: 400;
@@ -255,6 +249,10 @@ div#kvFileinputModal {
                         color: #696aa8;
                     }
                 }
+            }
+            .form-group{
+                display: flex;
+                align-items: center;
             }
             .comments{
                 display: flex;
@@ -332,24 +330,19 @@ div#kvFileinputModal {
                 flex-wrap: wrap;
                 max-width: 708px;
 
-                .form-column {
-                    width: 287px;
-                }
                 .type-sum{
                     .cost{
                         display: flex;
 
-                        margin-bottom: 25px;
-
                         &-amount{
-                            width: 135px;
+                            width: 50%;
                         }
                         &-currency{
-                            width: 135px;
+                            width: 50%;
                             margin-left: 25px;
 
                             .form-select{
-                                width: 135px;
+                                width: 100%;
                             }
                         }
                         .cost-input{
@@ -367,10 +360,6 @@ div#kvFileinputModal {
                 }
             }
 
-            label.disabled {
-                // opacity: 0.6;
-            }
-
             label {
                 color: #222222;
                 font-size: 16px;
@@ -379,24 +368,13 @@ div#kvFileinputModal {
             }
 
             input {
-                height: 31px;
+                height: 34px;
                 border: 1px solid #e1e1e1;
                 width: 100%;
                 color: #222222;
                 font-size: 14px;
                 padding: 0 15px;
             }
-
-            /* input:disabled,
-            label+input:disabled {
-                opacity: 0.6;
-                background-color: inherit;
-            }
-
-            select:disabled {
-                opacity: 0.6;
-                background-color: inherit;
-            } */
 
             textarea {
                 height: 241px;
@@ -425,6 +403,7 @@ div#kvFileinputModal {
 
                 &.date {
                     margin-bottom: 12px;
+                    width: 287px;
 
                     i {
                         position: absolute;
@@ -1134,9 +1113,9 @@ div#kvFileinputModal {
             }
 
             .form-select {
-                margin-bottom: 15px;
+                margin-bottom: 12px;
                 position: relative;
-                max-width: 287px;
+                width: 100%;
 
                 &.disable {
                     label {
@@ -1725,6 +1704,9 @@ div#kvFileinputModal {
             }
         }
     }
+    .profile .createEvent .create-body .form-input.date{
+        margin-right: 17px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1857,6 +1839,9 @@ div#kvFileinputModal {
                         }
                     }
                 }
+                .form-select{
+                    width: 287px;
+                }
                 .form-row{
                     .title{
                         margin-bottom: 23px;
@@ -1870,6 +1855,30 @@ div#kvFileinputModal {
                 }
                 .item-telephone{
                     margin-top: -30px;
+                }
+                .form-item{
+                    .type-sum{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .cost{
+                            &-amount, &-currency{
+                                width: 108px;
+    
+                                .form-select{
+                                    width: 108px;
+                                }
+                            }
+                        }
+                        .form-select {
+                            width: 287px;
+                        }
+                    }
+                }
+                .form-group{
+                    .form-select{
+                        width: auto;
+                    }
                 }
             }
         }

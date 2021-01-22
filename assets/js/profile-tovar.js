@@ -41,7 +41,7 @@ $(document).ready(function () {
   });
 
   // Filters
-  $('.header-arrow').on('click', function () {
+  $('.filters-header').on('click', function () {
     var body = $('.filters-body');
     var arrow = $('.header-arrow');
 

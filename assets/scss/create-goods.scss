@@ -255,21 +255,28 @@ div#kvFileinputModal {
 
                 .form-filters{
                     margin-top: 30px;
+                    width: 100%;
                 }
-
+                .form-price{
+                    border-top: 1px #e1e1e1 solid;
+                    width: 100%;
+                    padding-top: 20px;
+                    margin-top: 10px;
+                }
+                .form-location{
+                    width: 100%;
+                }
                 .form-column {
-                    width: 287px;
+                    min-width: 287px;
 
                     .cost{
                         display: flex;
 
-                        margin-bottom: 25px;
-
                         &-amount{
-                            width: 135px;
+                            width: 50%;
                         }
                         &-currency{
-                            width: 135px;
+                            width: 50%;
                             margin-left: 25px;
 
                             .cost-input{
@@ -288,6 +295,7 @@ div#kvFileinputModal {
                 }
                 .form-location{
                     .form-input{
+
                         .input-location{
                             width: 100%;
                         }
@@ -327,7 +335,7 @@ div#kvFileinputModal {
             .form-input {
                 margin-bottom: 30px;
                 position: relative;
-                max-width: 658px;
+                // max-width: 658px;
 
                 &:last-child{
                     margin-bottom: 0;
@@ -1041,7 +1049,7 @@ div#kvFileinputModal {
             .form-select {
                 margin-bottom: 15px;
                 position: relative;
-                max-width: 287px;
+                width: 100%;
 
                 &.disable {
                     label {
@@ -1723,38 +1731,6 @@ div#kvFileinputModal {
             }
         }
     }
-    .profile{
-        .createEvent{
-            .create-body{
-                .form-item{
-                    .form-column{
-                        display: flex;
-                        justify-content: space-between;
-                        width: 100%;
-                        max-width: 445px;
-                        margin-bottom: 30px;
-
-                        .item, .form-input{
-                            width: 220px;
-                            margin-right: 20px;
-
-                            &:last-child{
-                                margin-right: 0;
-                            }
-                        }
-                        .cost{
-                            width: 212.5px;
-                        }
-                    }
-                    .form-location{
-                        .form-column{
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 
@@ -1932,12 +1908,21 @@ div#kvFileinputModal {
 
                             .cost-currency{
                                 margin-left: 10px;
+
+                                .form-select{
+                                    width: auto;
+                                }
                             }
                         }
                     }
                     .form-price{
-                        border-top: 1px #e1e1e1 solid;
+                        margin-top: 0;
                         padding-top: 50px;
+                    }
+                    .form-location{
+                        .form-column{
+                            margin-bottom: 0;
+                        }
                     }
                 }
                 .attached-doc{

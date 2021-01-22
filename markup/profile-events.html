@@ -211,7 +211,7 @@
                                 <div class="cost">
                                     <div class="cost-amount">
                                         <label class="disabled">Стоимость</label>
-                                        <input class="cost-input" type="text" placeholder="0.00">
+                                        <input class="cost-input" type="number" placeholder="0.00">
                                     </div>
                                     <div class="cost-currency">
                                         <label class="disabled">Валюта</label>
@@ -232,28 +232,20 @@
                                     <div class="form-column">
                                         <input type="text" id="datepicker" placeholder="Выберите дату">
                                         <i class="icon-calendar"></i>
-                                        <div id="calendar"> </div>
                                     </div>
                                 </div>
-                                <div class="form-column">
+                                
+                                <div class="form-group">
                                     <p>в</p>
-                                    <div class="form-group">
-                                        <div class="form-select item">
-                                            <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
-                                                <option>00</option>
-                                                <option>05</option>
-                                                <option>05</option>
-                                                <option>05</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-select item">
-                                            <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
-                                                <option>00</option>
-                                                <option>05</option>
-                                                <option>05</option>
-                                                <option>05</option>
-                                            </select>
-                                        </div>
+                                    <div class="form-select item-hour">
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                            <option>00</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-select item-minutes">
+                                        <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                            <option>00</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +291,7 @@
                                     <input type="checkbox">
                                     <label>
                                         <p>Я соглашаюсь с <a href="#">Правилами 
-                                        публикации Товаров на сайте</a></p>
+                                        публикации Событий на сайте</a></p>
                                     </label>
                                 </div>
                             </div>
