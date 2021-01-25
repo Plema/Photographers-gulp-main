@@ -610,7 +610,6 @@ a.ui-button:active,
                     background-size: cover;
                     background-position: 50% 50%;
                     position: relative;
-                    border-radius: 3px 3px 0 0;
 
                     .likeBtn {
                         display: block;
@@ -725,7 +724,7 @@ a.ui-button:active,
             }
             .highlight{
                 border: 1px solid #54559c;
-                border-radius: 4px;
+                border-radius: 0px 0px 4px 4px;
             }
         }
     }
