@@ -8043,6 +8043,24 @@ span.jcf-fake-input {
                         }
                     }
                 }
+                .form-date{
+                    position: relative;
+
+                    &-inner{
+                        .form-column{
+                            i{
+                                font-size: 15px;
+                                position: absolute;
+                                // z-index: -1;
+                                right: 16px;
+                                bottom: 7px;
+                                pointer-events: none;
+                                opacity: .3;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
             }
             label {
                 color: #222222;
@@ -8114,7 +8132,7 @@ span.jcf-fake-input {
                 }
             }
             .date{
-                margin-bottom: 0;
+                margin-bottom: 15px;
             }
 
             .form-textarea {
@@ -11027,6 +11045,21 @@ span.jcf-fake-input {
                             margin-bottom: 25px;
                         }
                     }
+                    .form-location{
+                        .form-column{
+                            margin-bottom: 35px;
+                        }
+                    }
+                    .form-date{
+                        width: 268px;
+                        margin-bottom: 20px;
+
+                        &-inner{
+                            .form-column{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -12382,6 +12415,16 @@ span.jcf-fake-input {
                         &:nth-child(3),
                         &:nth-child(4) {
                             margin-bottom: 0;
+                        }
+                    }
+                    .form-item{
+                        .form-location{
+                            .form-column{
+                                margin-bottom: 16px;
+                            }
+                        }
+                        .form-date{
+                            width: 287px;
                         }
                     }
                 }

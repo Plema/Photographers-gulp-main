@@ -231,6 +231,9 @@
             margin-top: 15px;
 
             &-author {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
                 margin-bottom: 15px;
 
@@ -247,6 +250,14 @@
                     font-size: 12px;
                     background-color: #54559c;
                     padding: 0 4px;
+
+                    margin-left: 12px;
+                }
+                .verify-icon{
+                    width: 15px;
+                    height: 15px;
+
+                    margin-left: 13px;
                 }
             }
 
@@ -1005,10 +1016,16 @@
                 padding-left: 25px;
 
                 &-author {
+                    justify-content: flex-start;
                     text-align: left;
 
                     .label {
                         margin-left: 14px;
+                    }
+                    .verify-icon{
+                        width: 24px;
+                        height: 24px;
+                        margin-left: 15px;
                     }
                 }
 

@@ -277,12 +277,6 @@
                     }
                 }
 
-                &.applications {
-                    margin-right: 30px;
-                    padding-right: 30px;
-                    border-right: 1px solid #d2d2d2;
-                }
-
                 &.participants {
                     font-size: 15px;
                     width: 100%;
@@ -290,6 +284,33 @@
                     span {
                         color: #54559c;
                         font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                    }
+                }
+            }
+            .date{
+                span{
+                    color: #54559c;
+                    font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                    font-size: 16px;
+                }
+            }
+            .applications-counter{
+                display: flex;
+
+                .applications{
+                    padding-right: 22px;
+                    margin-right: 16px;
+                    border-right: 1px solid #d2d2d2;
+                }
+                .days-counter{
+                    color: #54559c;
+                    font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                    font-size: 16px;
+
+                    span{
+                        color: #222222;
+                        font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+                        font-size: 16px;
                     }
                 }
             }
@@ -2301,12 +2322,23 @@
             }
 
             &-bottom {
+                .info{
+                    display: flex;
+                    align-items: center;
+                }
                 p {
+                    margin-bottom: 0px;
+
                     &.price {
                         width: auto;
                         margin-bottom: 0;
-                        margin-right: 55px;
-                        padding-right: 56px;
+                        margin-right: 16px;
+                        padding-right: 16px;
+                        border-right: 1px solid #d2d2d2;
+                    }
+                    &.date{
+                        margin-right: 16px;
+                        padding-right: 16px;
                         border-right: 1px solid #d2d2d2;
                     }
 
@@ -2317,8 +2349,7 @@
 
                     &.applications {
                         margin-bottom: 0;
-                        padding-right: 41px;
-                        margin-right: 35px;
+                        padding-right: 16px;
                     }
 
                     &.openDays {
@@ -2863,6 +2894,56 @@
                         padding-bottom: 11px;
                     }
                 }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .projectsCard {
+        &__content {
+
+            &-bottom {
+                .info{
+                    display: flex;
+                    align-items: center;
+                }
+                p {
+                    margin-bottom: 0px;
+
+                    &.price {
+                        width: auto;
+                        margin-bottom: 0;
+                        margin-right: 31px;
+                        padding-right: 36px;
+                        border-right: 1px solid #d2d2d2;
+                    }
+                    &.date{
+                        margin-right: 31px;
+                        padding-right: 36px;
+                        border-right: 1px solid #d2d2d2;
+                    }
+
+                    &.participants {
+                        width: auto;
+                        margin-bottom: 0;
+                    }
+
+                }
+                .applications-counter{
+                    .applications {
+                        margin-bottom: 0;
+                        margin-right: 31px;
+                        padding-right: 36px;
+                    }
+                }
+
+                .parameters {
+                    width: auto;
+                    border: none;
+                    padding-top: 0;
+                    margin-left: auto;
+                }
+
             }
         }
     }

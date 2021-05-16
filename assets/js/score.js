@@ -51,6 +51,56 @@ $(document).ready(function () {
         }, ]
     });
 
+    //Слайдер для карточек 
+    $('.product-item-slider').slick({
+        arrow: true,
+        infinite: true,
+        dots: true,
+        nextArrow: '<button class="slick-arrow next"><i class="icon-icon28"></i></button>',
+        prevArrow: '<button class="slick-arrow prev"><i class="icon-icon28"></i></button>',
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    swipe: false,
+                    speed: 150,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    swipe: true
+                }
+            }
+        ]
+    });
+
+    $('.slick-dots li').on('mouseover', function() {
+        $(this).parents('.product-item-slider').slick('goTo', $(this).index());
+    });
+    // $('.slick-dots li').on('mouseleave', function() {
+    //     $('.slick-dots li').removeClass('slick-active');
+    //     $('.slick-dots li:first-child').addClass('slick-active');
+    //     $('.product-item-slider').slick('slickGoTo', 0);
+    // });
+    $('.slick-dots li:nth-child(4)').on('mouseover', function() {
+        $('.slick-dots li:nth-child(4)').addClass('last-item');
+        $('.slider-item').find('.photo-info').removeClass('photo-info');
+        $('.product-item-slider .slick-current .slider-item').append('<div class="photo-info"><p>Ещё <br><span>2</span> фото</p></div>');
+    });
+    $('.slick-dots li:nth-child(4)').on('mouseleave', function() {
+        $('.slick-dots li:nth-child(4)').removeClass('last-item');
+        $('.photo-info').remove();
+    });
+
     //js для сайдбара с фильтрами
     $('.openBtn').on('click', function () {
         $(this).parent().addClass('active');
@@ -68,5 +118,22 @@ $(document).ready(function () {
     $('.heart').on('click', function () {
         $(this).find('.icon-icon3').toggleClass('color');
     });
+
+    //выпадашка для settings
+    $('.settings').on('click', function(e){
+        $('.settings-inner').toggle();
+        $('.dot').addClass('active-dot');
+
+        if($('.settings-inner').css('display') == 'none'){
+            $('.dot').removeClass('active-dot');
+        }
+    });
+    $('body').on('click', function(e){
+        if (!$('.settings').is(e.target) && $('.settings').has(e.target).length === 0){
+            $('.settings-inner').css({'display': 'none'});
+            $('.dot').removeClass('active-dot');
+        }
+    });
+
 
 });
