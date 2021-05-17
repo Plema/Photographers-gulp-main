@@ -86,19 +86,57 @@ $(document).ready(function () {
     $('.slick-dots li').on('mouseover', function() {
         $(this).parents('.product-item-slider').slick('goTo', $(this).index());
     });
+
+    $('.product-item').on('mouseenter', function(){
+        var href = $(this).find('.product-item-btn-desktop a').attr('href');
+
+        $('.link-item').remove();
+        $('.slick-dots li').append("<a href='' class='link-item'></a>");
+        $('.link-item').attr('href', href);
+
+        $('.photo-item').attr('href', href);
+
+        $(this).find('.slick-dots li:nth-child(4)').on('mouseover', function() {
+            $(this).addClass('last-item');
+            $('.slider-item').find('.photo-info').remove();
+            $(this).parents('.product-item-slider').find('.slick-current .slider-item').append('<div class="photo-info"><p>Ещё <br><span>2</span> фото</p></div>');
+        });
+        $(this).find('.slick-dots li:nth-child(4)').on('mouseleave', function() {
+            $('.slick-dots li:nth-child(4)').removeClass('last-item');
+            $('.photo-info').remove();
+        });
+    });
+    
+
     // $('.slick-dots li').on('mouseleave', function() {
     //     $('.slick-dots li').removeClass('slick-active');
     //     $('.slick-dots li:first-child').addClass('slick-active');
     //     $('.product-item-slider').slick('slickGoTo', 0);
     // });
-    $('.slick-dots li:nth-child(4)').on('mouseover', function() {
-        $('.slick-dots li:nth-child(4)').addClass('last-item');
-        $('.slider-item').find('.photo-info').removeClass('photo-info');
-        $('.product-item-slider .slick-current .slider-item').append('<div class="photo-info"><p>Ещё <br><span>2</span> фото</p></div>');
-    });
-    $('.slick-dots li:nth-child(4)').on('mouseleave', function() {
-        $('.slick-dots li:nth-child(4)').removeClass('last-item');
-        $('.photo-info').remove();
+
+    //Cut string
+    $(".product-item-text p").text(function(i, text) {
+        if($(window).width() < 1000){
+
+            if (text.length >= 70) {
+                text = text.substring(0, 70);
+                var lastIndex = text.lastIndexOf(" ");       // позиция последнего пробела
+                text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
+            }
+              
+            $(this).text(text);
+
+        }else if($(window).width() > 1000){
+
+            if (text.length >= 200) {
+                text = text.substring(0, 200);
+                var lastIndex = text.lastIndexOf(" ");       // позиция последнего пробела
+                text = text.substring(0, lastIndex) + '...'; // обрезаем до последнего слова
+            }
+              
+            $(this).text(text);
+
+        }
     });
 
     //js для сайдбара с фильтрами
