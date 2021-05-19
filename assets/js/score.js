@@ -157,6 +157,10 @@ $(document).ready(function () {
         $(this).find('.icon-icon3').toggleClass('color');
     });
 
+    $('.like-settings li:first-child').on('click', function () {
+        $(this).find('.icon-icon3').toggleClass('color');
+    });
+
     //выпадашка для settings
     $('.settings').on('click', function(e){
         $('.settings-inner').toggle();
