@@ -657,13 +657,36 @@
         }
     }
 
+    .header-desc{
+        display: flex;
+        flex-direction: column;
+    }
+
     &__heading {
         font-size: 20px;
         font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
         line-height: 22px;
         margin: 5px 0 23px;
         display: inline-block;
-        width: 100%;
+        width: auto;
+    }
+    .desc{
+        width: 38px;
+        height: 20px;
+
+        margin-top: -13px;
+        margin-bottom: 10px;
+
+        border: 1px #696969 solid;
+        border-radius: 2px;
+
+        p{
+            font-family: 'Conv_PROXIMANOVA-SEMIBOLD';
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #696969;
+        }
     }
 
     &__action {
@@ -1275,7 +1298,25 @@
                 }
             }
         }
+        .header-desc{
+            flex-direction: row;
+            align-items: center;
+        }
+        .desc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            width: 51px;
+            height: 20px;
+
+            margin: 5px 0 23px 25px;
+
+            p{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
         &__content {
             &-top {
                 display: flex;
@@ -1449,11 +1490,13 @@
                 margin-bottom: 85px;
             }
         }
-
+        .desc{
+            margin-bottom: 26px;
+        }
         &__heading {
             font-size: 24px;
             margin-bottom: 26px;
-            width: 49%;
+            width: auto;
         }
 
         &_header {
