@@ -6,17 +6,10 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
-    //проверка на IOS Safari
-    function iOSversion() {
+    //100vh с учетом строк состояния в моб устройствах
 
-        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-        var iOS = /iPhone/.test(navigator.userAgent) && !window.MSStream;
-
-        if (isSafari && iOS) {
-            $('.projectsPopup__popup').addClass('ios');
-        }
-    }
-    iOSversion();
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
 
     // попап в проектах
     $('.open-projectsPopup').on("click", function () {

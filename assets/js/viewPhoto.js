@@ -30,17 +30,21 @@ $(document).ready(function () {
     });
 
     //проверка на IOS Safari
-    function iOSversion() {
+    // function iOSversion() {
 
-        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-        var iOS = /iPhone/.test(navigator.userAgent) && !window.MSStream;
+    //     var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    //     var iOS = /iPhone/.test(navigator.userAgent) && !window.MSStream;
 
-        if (isSafari && iOS) {
-            $('.viewPhoto__popup').addClass('ios');
-        }
-    }
-    iOSversion();
+    //     if (isSafari && iOS) {
+    //         $('.viewPhoto__popup').addClass('ios');
+    //     }
+    // }
+    // iOSversion();
 
+    //100vh с учетом строк состояния в моб устройствах
+
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
 
 
     //проверка на пустой инпут при добавлении комментария
@@ -58,16 +62,16 @@ $(document).ready(function () {
         scrollTop;
 
     $.lockBody = function () {
-        if (window.pageYOffset) {
-            scrollTop = window.pageYOffset;
+        // if (window.pageYOffset) {
+        //     scrollTop = window.pageYOffset;
 
-            $wrap.css({
-                top: -(scrollTop)
-            });
-        }
+        //     // $wrap.css({
+        //     //     top: -(scrollTop)
+        //     // });
+        // }
 
         $docEl.css({
-            height: "100%",
+            height: "100vh",
             overflow: "hidden"
         });
     }
@@ -112,5 +116,16 @@ $(document).ready(function () {
             }
         });
     });
+
+    // показать все комментарии
+    $('.show-all-comments').on("click", function(){
+        $(this).parent().find('.comment').addClass('active');
+
+        $(this).hide()
+    })
+    $('.show-all-subcomments').on("click", function(){
+        $(this).parent().find('.subcomment').addClass('active');
+        $(this).hide()
+    })
 
 });

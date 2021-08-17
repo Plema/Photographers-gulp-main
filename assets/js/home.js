@@ -108,6 +108,14 @@ $(document).ready(function () {
         $('.banner').height($(window).height() - headerHeight);
     }
 
+    $(".projects-item h4").each(function(i){
+        len=$(this).text().length;
+        if(len>24)
+        {
+          $(this).text($(this).text().substr(0,24)+'...');
+        }
+    }); 
+
 });
 
 $(window).resize(function () {

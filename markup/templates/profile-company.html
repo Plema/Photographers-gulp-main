@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photographers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/profile_menu.min.css">
+    <link rel="stylesheet" href="../css/profile.min.css">
+    <link rel="stylesheet" href="../css/createCompany.min.css">
+</head>
+
+<body>
+
+    <!-- build:section layout.header_notification_popup-->
+    <div class="notifications_popup">
+    <div class="closeBtn"></div>
+    <div class="heading">
+        <p>Мои уведомления</p>
+    </div>
+    <div class="content">
+        <div class="item">
+            <div class="item-img">
+                <img src="../img/search_page/publication-avatar.png" alt="avatar">
+            </div>
+            <div class="item-msg">
+                <p class="author">
+                    Иван Иванов
+                </p>
+                <p class="text">А возможна ли выездная съем...</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-img">
+                <img src="../img/search_page/publication-avatar.png" alt="avatar">
+            </div>
+            <div class="item-msg">
+                <p class="author">
+                    Иван Иванов
+                </p>
+                <div class="text">
+                    <p>А возможна ли выездная съем...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- /build -->
+
+    <!-- build:section layout.userHeader-->
+    <header>
+    <div class="header-content">
+        <div class="container clearfix">
+            <div class="userInfox clearfix">
+                <a class="likes" href="javascript:void(0)"><i class="icon-icon3"></i></a>
+                <a class="messages notifications_popup-open" href="javascript:void(0)">
+                    <i class="icon-icon10"></i>
+                    <span>21</span>
+                </a>
+                <a class="score mobile" href="projects.html">Проекты</a>
+                <a class="score desctop" href="score.html">Магазин</a>
+                <div class="info">
+                    <div class="userName">
+                        <p>Иван Иванов</p>
+                        <span class="arrow"><i class="icon-icon28"></i></span>
+                    </div>
+                    <ul class="headerSetting">
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Мои сообщения</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-logo clearfix">
+                <span class="open-menu">
+                    <span></span>
+                </span>
+                <div class="mobile-mainMenu mobile-mainMenuUser" id="mobile-mainMenu">
+                    <span class="closeBtn"></span>
+                    <div class="mobile-content">
+                        <nav class="userMenu">
+                            <ul>
+                                <li><a href="javascript:void(0)"><i class="icon-icon5"></i>Моя страницы<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon15"></i>Новости<span></span></a>
+                                </li>
+                                <li class="active"><a href="javascript:void(0)"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Компании<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon17"></i>Проекты<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon14"></i>Фотографии<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon3"></i>Закладки<span></span></a>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                                <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="userMenu-2">
+                            <ul>
+                                <li class="active"><a href="specialists.html">Специалисты</a></li>
+                                <li><a href="organizations.html">Организации</a></li>
+                                <li><a href="events.html">События</a></li>
+                                <li><a href="media.html">Медиа</a></li>
+                                <li><a href="score.html">Магазин</a></li>
+                            </ul>
+                        </nav>
+                        <ul class="social">
+                            <li><a href="javascript:void(0)"><i class="icon-icon34"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+                <form>
+                    <input type="text">
+                    <button><i class="icon-icon25"></i></button>
+                </form>
+                <nav class="desktop-mainMenu">
+                    <ul>
+                        <li class="active"><a href="specialists.html">Специалисты</a></li>
+                        <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="events.html">События</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="media.html">Медиа</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- /build -->
+
+    <!-- build:section layout.company_popup-->
+    <!-- /build -->
+
+    <!-- Выбор Адреса -->
+    <div class="overlay-address overlayPopup">
+        <div class="close"></div>
+        <div class="createEvent__popup mCustomScrollbar">
+            <span class="close-popup closeBtn"></span>
+            <div class="heading">
+                <p>Адрес</p>
+            </div>
+            <div class="mainInfo">
+                <div class="profile-createEvent">
+                    <form>
+                        <div class="create-body">
+                            <div class="form-flex">
+                                <div class="form-select item">
+                                    <label>Страна </label>
+                                    <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <option>Страна </option>
+                                        <option>Страна </option>
+                                        <option>Страна </option>
+                                    </select>
+                                </div>
+                                <div class="form-select item">
+                                    <label>Город </label>
+                                    <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false, &quot;fakeDropInBody&quot;: false, &quot;useCustomScroll&quot;: true}">
+                                        <option>Город </option>
+                                        <option>Город </option>
+                                        <option>Город </option>
+                                    </select>
+                                </div>
+                                <div class="form-input">
+                                    <label>Адрес</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="form-action">
+                                <button type="button" class="confirm">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Профиль</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="profile">
+        <div class="container clearfix">
+            <div class="profile-menu">
+                <ul>
+                    <li><a href="profile-expert.html"><i class="icon-icon5"></i>Моя страницы<span></span></a></li>
+                    <li><a href="profile-news.html"><i class="icon-icon15"></i>Новости<span></span></a></li>
+                    <li class="active"><a href="profile-messages.html"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
+                    <li><a href="profile-friends.html"><i class="icon-icon13"></i>Друзья<span></span></a></li>
+                    <li><a href="profile-company.html"><i class="icon-icon13"></i>Компании<span></span></a></li>
+                    <li><a href="profile.html"><i class="icon-icon17"></i>Проекты<span></span></a></li>
+                    <li><a href="profile-foto.html"><i class="icon-icon14"></i>Фотографии<span></span></a></li>
+                    <li><a href="profile-video.html"><i class="icon-icon19"></i>Видео<span></span></a></li>
+                    <li><a href="profile-products.html"><i class="icon-icon7"></i>Товары<span></span></a></li>
+                    <li><a href="profile-bookmarks.html"><i class="icon-icon3"></i>Закладки<span></span></a></li>
+                    <li><a href="profile-reviews.html"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
+                    <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a></li>
+                </ul>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner.jpg" alt="banner">
+                </a>
+                <a href="javascript:void(0)" class="banner">
+                    <img src="../img/banner2.png" alt="banner">
+                </a>
+            </div>
+            <div class="profile-company">
+                <div class="projects-nav">
+                    <div class="nav">
+                        <ul>
+                            <li class="filter-items filter-items active" data-tab="allTab"><a href="javascript:void(0)">Все компании 260</a></li>
+                            <li class="filter-items filter-items" data-tab="singleTab"><a href="javascript:void(0)">Управление 2</a></li>
+                        </ul>
+                        <a class="desc create-project add_company" href="javascript:void(0)">Создать сообщество</a>
+                    </div>
+                </div>
+                <div class="company-content active tab-item allTab">
+                    <div class="projects-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Название проекта">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                            <div class="select">
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false}">
+                                    <option>Параметры</option>
+                                    <option>Параметры 1</option>
+                                    <option>Параметры 2</option>
+                                    <option>Параметры 3</option>
+                                    <option>Параметры 4</option>
+                                    <option>Параметры 5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <a class="mabile create-project" href="javascript:void(0)">Создать сообщество</a>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img1.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-1.png">
+                                <img src="../img/company-foto1-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-2.png">
+                                <img src="../img/company-foto1-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-3.png">
+                                <img src="../img/company-foto1-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-4.png">
+                                <img src="../img/company-foto1-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-5.png">
+                                <img src="../img/company-foto1-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img2.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-1.png">
+                                <img src="../img/company-foto2-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-2.png">
+                                <img src="../img/company-foto2-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-3.png">
+                                <img src="../img/company-foto2-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-4.png">
+                                <img src="../img/company-foto2-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-5.png">
+                                <img src="../img/company-foto2-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img3.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-1.png">
+                                <img src="../img/company-foto3-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-2.png">
+                                <img src="../img/company-foto3-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-3.png">
+                                <img src="../img/company-foto3-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-4.png">
+                                <img src="../img/company-foto3-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-5.png">
+                                <img src="../img/company-foto3-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img4.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-1.png">
+                                <img src="../img/company-foto4-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-2.png">
+                                <img src="../img/company-foto4-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-3.png">
+                                <img src="../img/company-foto4-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-4.png">
+                                <img src="../img/company-foto4-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-5.png">
+                                <img src="../img/company-foto4-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img5.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-1.png">
+                                <img src="../img/company-foto5-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-2.png">
+                                <img src="../img/company-foto5-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-3.png">
+                                <img src="../img/company-foto5-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-4.png">
+                                <img src="../img/company-foto5-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-5.png">
+                                <img src="../img/company-foto5-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img6.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-1.png">
+                                <img src="../img/company-foto6-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-2.png">
+                                <img src="../img/company-foto6-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-3.png">
+                                <img src="../img/company-foto6-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-4.png">
+                                <img src="../img/company-foto6-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-5.png">
+                                <img src="../img/company-foto6-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img7.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-1.png">
+                                <img src="../img/company-foto7-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-2.png">
+                                <img src="../img/company-foto7-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-3.png">
+                                <img src="../img/company-foto7-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-4.png">
+                                <img src="../img/company-foto7-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-5.png">
+                                <img src="../img/company-foto7-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-content tab-item singleTab">
+                    <div class="projects-search">
+                        <form class="clearfix">
+                            <div class="search">
+                                <input type="text" placeholder="Название проекта">
+                                <button><i class="icon-icon25"></i></button>
+                            </div>
+                            <div class="select">
+                                <select data-jcf="{&quot;wrapNative&quot;: false, &quot;wrapNativeOnMobile&quot;: false}">
+                                    <option>Параметры</option>
+                                    <option>Параметры 1</option>
+                                    <option>Параметры 2</option>
+                                    <option>Параметры 3</option>
+                                    <option>Параметры 4</option>
+                                    <option>Параметры 5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <a class="mabile create-project" href="javascript:void(0)">Создать сообщество</a>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img1.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue22</h4>
+                                <p>Фотостудия22</p>
+                                <span>Москва22</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-1.png">
+                                <img src="../img/company-foto1-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-2.png">
+                                <img src="../img/company-foto1-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-3.png">
+                                <img src="../img/company-foto1-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-4.png">
+                                <img src="../img/company-foto1-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto1-5.png">
+                                <img src="../img/company-foto1-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img2.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-1.png">
+                                <img src="../img/company-foto2-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-2.png">
+                                <img src="../img/company-foto2-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-3.png">
+                                <img src="../img/company-foto2-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-4.png">
+                                <img src="../img/company-foto2-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto2-5.png">
+                                <img src="../img/company-foto2-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img3.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-1.png">
+                                <img src="../img/company-foto3-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-2.png">
+                                <img src="../img/company-foto3-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-3.png">
+                                <img src="../img/company-foto3-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-4.png">
+                                <img src="../img/company-foto3-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto3-5.png">
+                                <img src="../img/company-foto3-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img4.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-1.png">
+                                <img src="../img/company-foto4-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-2.png">
+                                <img src="../img/company-foto4-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-3.png">
+                                <img src="../img/company-foto4-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-4.png">
+                                <img src="../img/company-foto4-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto4-5.png">
+                                <img src="../img/company-foto4-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img5.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-1.png">
+                                <img src="../img/company-foto5-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-2.png">
+                                <img src="../img/company-foto5-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-3.png">
+                                <img src="../img/company-foto5-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-4.png">
+                                <img src="../img/company-foto5-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto5-5.png">
+                                <img src="../img/company-foto5-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img6.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-1.png">
+                                <img src="../img/company-foto6-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-2.png">
+                                <img src="../img/company-foto6-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-3.png">
+                                <img src="../img/company-foto6-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-4.png">
+                                <img src="../img/company-foto6-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto6-5.png">
+                                <img src="../img/company-foto6-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="company-item clearfix">
+                        <div class="option">
+                            <div class="option-cintent">
+                                <ul>
+                                    <li><a href="javascript:void(0)">Отписаться</a></li>
+                                    <li><a href="javascript:void(0)">Удалить из закладок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="avatar clearfix">
+                            <a href="#" class="link"></a>
+                            <img src="../img/company-img7.png" alt="">
+                            <div class="avatar-text">
+                                <h4><a href="#"></a>Declic Revue</h4>
+                                <p>Фотостудия</p>
+                                <span>Москва</span>
+                            </div>
+                        </div>
+                        <div class="company-foto">
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-1.png">
+                                <img src="../img/company-foto7-1.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-2.png">
+                                <img src="../img/company-foto7-2.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-3.png">
+                                <img src="../img/company-foto7-3.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-4.png">
+                                <img src="../img/company-foto7-4.png" alt="">
+                            </a>
+                            <a class="imgLink" data-fancybox="gallery" href="../img/company-foto7-5.png">
+                                <img src="../img/company-foto7-5.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- build:section layout.footer-->
+    <footer>
+    <div class="footer-container">
+        <div class="container">
+            <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+            <div class="footer-content clearfix">
+                <nav>
+                    <ul>
+                        <li><a href="specialists.html">Специалисты</a></li>
+                        <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="events.html">События</a></li>
+                        <li><a href="score.html">Магазин</a></li>
+                    </ul>
+                </nav>
+                <ul class="sosial">
+                    <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
+                </ul>
+                <p>© 2018 Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- /build -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jquery.matchHeight.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/script.min.js"></script>
+    <script src="../js/profile.min.js"></script>
+</body>
+
+</html>

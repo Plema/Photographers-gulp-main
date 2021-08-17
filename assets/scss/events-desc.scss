@@ -1,0 +1,36 @@
+.events{
+    &_page{
+        &-content{
+            .events-item{
+                .item_content{
+                    position: relative;
+                    padding-bottom: 100px;
+                    .item_content-text{
+                        height: 158px;
+                        overflow: hidden
+                    }
+                    .item-content-wrapper{
+                        position: absolute;
+                        bottom: 20px;
+                    }
+                }
+                .pin{
+                    background-color: #f7f7f7;
+                    .item_content-text{
+                        height: 144px;
+                        overflow: hidden
+                    }
+                }
+            }
+            .highlight-shadow{
+                filter: drop-shadow(1px 1px 8px #c2cece);
+                .item_content{
+                    .item_content-title{
+                        color: #55559D;
+                    }
+                }
+            }
+            
+        }
+    }
+}

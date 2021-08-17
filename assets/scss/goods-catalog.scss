@@ -45,9 +45,9 @@
     }
 
     .score-filter {
-        
+        padding: 0 15px;
         .filterTop {
-            padding: 0 14px;
+            
 
             .user{
 
@@ -153,10 +153,10 @@
                 border-radius: 3px;
                 border: 1px solid #b0b0aa;
                 width: 100%;
-
+                margin: 32px 0px 26px;
                 input {
                     width: 100%;
-                    height: 35px;
+                    height: 46px;
                     padding: 0 34px 0 16px;
                     border: none;
                     color: #222222;
@@ -921,6 +921,7 @@
     }
 }
 
+
 .page-content {
     margin: 0 -15px;
 }
@@ -1429,10 +1430,9 @@
 
         .score-filter {
             padding: 0 0 10px 0;
-            background-color: #d9dfea;
 
             .filterTop {
-                display: none;
+                // display: none;
             }
 
             form {
@@ -1637,58 +1637,21 @@
 
         .score-filter {
             border-radius: 10px;
-            form {
-                .heading {
-                    margin-bottom: 8px;
-                }
-
-                .search {
-                    padding: 18px 55px 0 16px;
-
-                    button {
-                        top: 65%;
-                        right: 25px;
-
-                        i {
-                            font-size: 24px;
+            .filterTop {
+                .user{
+                    &-header{    
+                        flex-wrap: wrap;
+                        .user-avatar{
+                            width: 139px;
+                            height: 139px;
                         }
-                    }
-                }
-
-                .filter-input {
-                    padding: 15px 10px 24px 15px;
-
-                    input {
-                        width: calc(100% - 12px);
-                    }
-                }
-
-                .checkbox {
-                    padding: 8px 15px 0 0;
-
-                    .checkbox-item {
-                        margin-bottom: 10px;
-                        padding: 2px 0 0 23px;
-                    }
-                }
-
-                .sum {
-                    padding: 30px 10px 40px;
-
-                    .sum-number {
-                        padding: 8px 0 8px;
-                    }
-
-                    .ui-slider {
-                        .ui-slider-handle {
-                            width: 14px;
-                            height: 14px;
-                        }
-                    }
-
-                    .ui-slider-horizontal {
-                        .ui-slider-handle {
-                            top: -6px;
+                        .user-name{
+                            margin-left: 0;
+                            width: 100%;
+                            margin: 9px 0 19px;
+                            span{
+                                display: inline;
+                            }
                         }
                     }
                 }
@@ -1701,9 +1664,9 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 width: 100%;
-
                 padding: 29px 33px;
-                margin-bottom: 24px;
+                margin: 24px 0;
+
 
                 &-info{
                     width: 54.5%;

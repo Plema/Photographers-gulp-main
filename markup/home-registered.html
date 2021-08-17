@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.min.css">
-    <link rel="stylesheet" href="../css/profile_menu.min.css"><!--Стили для хедера зарегистрированного пользователя-->
     <link rel="stylesheet" href="../css/home.min.css">
-    <link rel="stylesheet" href="../css/user-header.min.css"><!--Стили для хедера зарегистрированного пользователя-->
+    <link rel="stylesheet" href="../css/profile_menu.min.css"><!--Стили для хедера зарегистрированного пользователя-->
+    <!-- <link rel="stylesheet" href="../css/user-header.min.css">Стили для хедера зарегистрированного пользователя -->
 </head>
 
 <body>
@@ -24,8 +24,9 @@
                     <i class="icon-icon10"></i>
                     <span>21</span>
                 </a>
-                <a class="score mobile" href="projects.html">Проекты</a>
-                <a class="score desctop" href="score.html">Магазин</a>
+                
+                <a class="score mobile" href="media.html">Медиа</a>
+                <a class="score desctop" href="media.html">Медиа</a>
                 <div class="info">
                     <div class="userName">
                         <p>Иван Иванов</p>
@@ -50,70 +51,54 @@
                     </ul>
                 </div>
             </div>
-            <div class="menu-logo clearfix">
-                <span class="open-menu">
-                    <span></span>
-                </span>
-                <div class="mobile-mainMenu mobile-mainMenuUser" id="mobile-mainMenu">
+            <div class="menu-logo">
+                
+                <div class="mobile-mainMenu" id="mobile-mainMenu">
                     <span class="closeBtn"></span>
                     <div class="mobile-content">
-                        <nav class="userMenu">
-                            <ul>
-                                <li><a href="javascript:void(0)"><i class="icon-icon5"></i>Моя страницы<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon15"></i>Новости<span></span></a>
-                                </li>
-                                <li class="active"><a href="javascript:void(0)"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Друзья<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Компании<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon17"></i>Проекты<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon14"></i>Фотографии<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon19"></i>Видео<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon7"></i>Товары<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon3"></i>Закладки<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
-                                <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="userMenu-2">
+                        <nav>
                             <ul>
                                 <li class="active"><a href="specialists.html">Специалисты</a></li>
                                 <li><a href="organizations.html">Организации</a></li>
                                 <li><a href="events.html">События</a></li>
-                                <li><a href="media.html">Медиа</a></li>
+                                <li><a href="projects.html">Проекты</a></li>
                                 <li><a href="score.html">Магазин</a></li>
+                                <!-- <li><a href="media.html">Медиа</a></li> -->
                             </ul>
                         </nav>
                         <ul class="social">
-                            <li><a href="javascript:void(0)"><i class="icon-icon34"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
                             <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
                             <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
-                <form>
-                    <input type="text">
-                    <button><i class="icon-icon25"></i></button>
-                </form>
+                <a class="logo" href="index.html"><span>Photoindustry</span></a>
                 <nav class="desktop-mainMenu">
                     <ul>
                         <li class="active"><a href="specialists.html">Специалисты</a></li>
                         <li><a href="organizations.html">Организации</a></li>
                         <li><a href="events.html">События</a></li>
                         <li><a href="projects.html">Проекты</a></li>
-                        <li><a href="media.html">Медиа</a></li>
+                        <li><a href="score.html">Магазин</a></li>
+                        <!-- <li><a href="media.html">Медиа</a></li> -->
                     </ul>
                 </nav>
+                <a class="search-icon" href="javascript:void(0)"><i class="icon-icon25"></i></a>
+                <span class="open-menu">
+                    <span></span>
+                </span>
             </div>
+        </div>
+        <div class="search-panel">
+            <div class="search-wrapper">
+                <input type="text">
+                <button>Поиск</button>
+            </div>      
         </div>
     </div>
 </header>
+
     <!-- /build -->
 
     <section class="banner">
@@ -1039,59 +1024,51 @@
                         <div class="sliders clearfix">
                             <div class="projects-item">
                                 <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
+                                <h4>Ищем фотографа</h4>
+                                <span>Семейная съемка</span>
                                 <p>Кайо Ларго, Куба <span>10 ноября</span></p>
                                 <strong>6 000 RUB</strong>
-                                <i class="icon-icon20"></i>
+                                <img src="../img/group455.png" alt="">
                             </div>
                             <div class="projects-item">
                                 <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на семейную съемку</h4>
+                                <h4>ИЩЕМ ВИДЕОГРАФА</h4>
+                                <span>Лав стори</span>
                                 <p>Herceg Novi, Черногория <span>12 ноября</span></p>
                                 <strong>80 000 RUB</strong>
-                                <i class="icon-icon19"></i>
+                                <img src="../img/group456.png" alt="">
                             </div>
                             <div class="projects-item">
                                 <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
+                                <h4>ИЩЕМ МОДЕЛЬ</h4>
+                                <span>Мужчина</span>
+                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
+                                <strong>60 000 RUB</strong>
+                                <img src="../img/group457.png" alt="">
+                            </div>
+                            <div class="projects-item">
+                                <a href="project_сard.html"></a>
+                                <h4>ИЩЕМ БЬЮТИ-СТИЛИСТА</h4>
+                                <span>На съемку</span>
+                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
+                                <strong>60 000 RUB</strong>
+                                <img src="../img/group458.png" alt="">
+                            </div>
+                            <div class="projects-item">
+                                <a href="project_сard.html"></a>
+                                <h4>ИЩЕМ СВАДЕБНОГО ... </h4>
+                                <span>Лав стори</span>
                                 <p>Кайо Ларго, Куба <span>10 ноября</span></p>
                                 <strong>6 000 RUB</strong>
-                                <i class="icon-icon23"></i>
+                                <img src="../img/group459.png" alt="">
                             </div>
                             <div class="projects-item">
                                 <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
-                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
-                                <strong>6 000 RUB</strong>
-                                <i class="icon-icon22"></i>
-                            </div>
-                            <div class="projects-item">
-                                <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
-                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
-                                <strong>6 000 RUB</strong>
-                                <i class="icon-icon20"></i>
-                            </div>
-                            <div class="projects-item">
-                                <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на семейную съемку</h4>
+                                <h4>ИЩЕМ СПЕЦИАЛИСТА</h4>
+                                <span>Лав стори</span>
                                 <p>Herceg Novi, Черногория <span>12 ноября</span></p>
                                 <strong>80 000 RUB</strong>
-                                <i class="icon-icon19"></i>
-                            </div>
-                            <div class="projects-item">
-                                <a href="project_сard.html)"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
-                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
-                                <strong>6 000 RUB</strong>
-                                <i class="icon-icon23"></i>
-                            </div>
-                            <div class="projects-item">
-                                <a href="project_сard.html"></a>
-                                <h4>Ищем фотографа на лав стори</h4>
-                                <p>Кайо Ларго, Куба <span>10 ноября</span></p>
-                                <strong>6 000 RUB</strong>
-                                <i class="icon-icon22"></i>
+                                <img src="../img/group460.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1186,22 +1163,27 @@
     <footer>
     <div class="footer-container">
         <div class="container">
-            <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+            <!-- <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a> -->
             <div class="footer-content clearfix">
                 <nav>
                     <ul>
                         <li><a href="specialists.html">Специалисты</a></li>
                         <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="organizations.html">Проекты</a></li>
+                        <li><a href="organizations.html">Товары</a></li>
                         <li><a href="events.html">События</a></li>
-                        <li><a href="score.html">Магазин</a></li>
+                        <li><a href="events.html">Медиа</a></li>
+                        <li><a href="score.html">О компании</a></li>
+                        <li><a href="score.html">Сервис</a></li>
                     </ul>
+                    
                 </nav>
                 <ul class="sosial">
                     <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
                     <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
                     <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
                 </ul>
-                <p>© 2018 Все права защищены</p>
+                <p>© <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Все права защищены</p>
             </div>
         </div>
     </div>

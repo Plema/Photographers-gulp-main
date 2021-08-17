@@ -937,6 +937,48 @@
         padding: 5px 15px;
     }
 }
+.slick-arrow {
+    top: -11px;
+    width: 15px;
+    height: 140%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: #d9dfea;
+    padding: 0;
+
+    i {
+        top: 50%;
+        left: 50%;
+        font-size: 16px;
+        color: #7284a3;
+        position: absolute;
+    }
+}
+
+.next {
+    right: -15px;
+
+    i {
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.prev {
+    left: -15px;
+
+    i {
+        -webkit-transform: translate(-50%, -50%) rotate(180deg);
+        -moz-transform: translate(-50%, -50%) rotate(180deg);
+        -ms-transform: translate(-50%, -50%) rotate(180deg);
+        -o-transform: translate(-50%, -50%) rotate(180deg);
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+}
 
 .postItem {
     .hideVideo.hiden {

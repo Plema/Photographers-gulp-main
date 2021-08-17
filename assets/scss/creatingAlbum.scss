@@ -4,10 +4,16 @@
     z-index: 101;
     width: 100%;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: none;
     position: fixed;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.7);
+
+    .delete-buttons{
+        display: flex;
+        justify-content: center;
+    }
 
     &.active {
         display: block;
@@ -81,10 +87,6 @@
         overflow: auto;
         -webkit-overflow-scrolling: touch;
 
-        &.ios {
-            padding-bottom: 100px
-        }
-
         .heading {
             background-color: #696aa8;
             padding: 15px 45px;
@@ -129,6 +131,7 @@
         textarea {
             height: 98px;
             padding: 15px;
+            resize: none;
         }
 
         form {
@@ -231,6 +234,87 @@
             }
         }
     }
+    .form__button{
+        margin-top: 15px;
+        margin-right: 15px;
+        button{
+            border: 1px solid #55559d;
+        }
+        &:last-of-type{
+            margin-right: 0;
+            button{
+                background-color: transparent;
+                border: 1px solid #55559d;
+                color: #222;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .question-delete-popup{
+        background-color: rgba(0,0,0,.75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 4;
+        display: none;
+        .content{
+            padding: 15px;
+            min-height: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e1e1e1;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .form__button{
+                margin-right: 30px;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+        }
+    }
+    .thanks{
+        background-color: rgba(0,0,0,.75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+        display: none;
+        .content{
+            padding: 15px;
+            min-width: 350px;
+            min-height: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e1e1e1;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .form__button{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .active{
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -249,7 +333,7 @@
 
         .creatingAlbum__popup {
             .mainInfo {
-                padding: 70px 15px 100px;
+                padding: 70px 15px;
             }
 
             label {

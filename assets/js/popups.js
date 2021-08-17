@@ -33,6 +33,15 @@ $(document).ready(function () {
         $('.overlay-photoDescr').removeClass('active');
     });
 
+     // добавление описания видео
+    $('.open-videoDescr').on("click", function () {
+        console.log(111)
+        $('.overlay-videoDescr').addClass('active');
+    });
+    $('.overlay-videoDescr .closeBtn, .overlay-videoDescr .close').on("click", function () {
+        $('.overlay-videoDescr').removeClass('active');
+    });
+
     // просмотр фото
     $('.open-viewPhoto').on("click", function () {
         $('.overlay-viewPhoto').addClass('active');

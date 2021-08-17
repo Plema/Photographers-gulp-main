@@ -30,6 +30,10 @@ $(document).ready(function () {
         $('#mobile-mainMenu').removeClass('show');
     });
 
+    $('.search-icon').on('click', function () {
+        $('.search-panel').toggleClass('active');
+    });
+
     //full width search
     $('header form input').focus(function () {
         $(this).parent().addClass('full');

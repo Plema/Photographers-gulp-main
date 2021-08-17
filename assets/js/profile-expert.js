@@ -145,6 +145,10 @@ $(document).ready(function () {
         $('.overlayPopupThanks').removeClass('active');
     });
 
+    
+
+    
+
     //Конец
 
 
@@ -210,6 +214,8 @@ $(document).ready(function () {
     $('.videoPopup-slider').on('click touch', function () {
         $(event.target).toggleClass('selected');
     });
+
+    
 
 
 });

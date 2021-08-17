@@ -58,8 +58,9 @@
                     <i class="icon-icon10"></i>
                     <span>21</span>
                 </a>
-                <a class="score mobile" href="projects.html">Проекты</a>
-                <a class="score desctop" href="score.html">Магазин</a>
+                
+                <a class="score mobile" href="media.html">Медиа</a>
+                <a class="score desctop" href="media.html">Медиа</a>
                 <div class="info">
                     <div class="userName">
                         <p>Иван Иванов</p>
@@ -84,101 +85,86 @@
                     </ul>
                 </div>
             </div>
-            <div class="menu-logo clearfix">
-                <span class="open-menu">
-                    <span></span>
-                </span>
-                <div class="mobile-mainMenu mobile-mainMenuUser" id="mobile-mainMenu">
+            <div class="menu-logo">
+                
+                <div class="mobile-mainMenu" id="mobile-mainMenu">
                     <span class="closeBtn"></span>
                     <div class="mobile-content">
-                        <nav class="userMenu">
-                            <ul>
-                                <li><a href="javascript:void(0)"><i class="icon-icon5"></i>Моя страницы<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon15"></i>Новости<span></span></a>
-                                </li>
-                                <li class="active"><a href="javascript:void(0)"><i class="icon-icon10"></i>Сообщения<span>3</span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Друзья<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon13"></i>Компании<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon17"></i>Проекты<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon14"></i>Фотографии<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon19"></i>Видео<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon7"></i>Товары<span></span></a></li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon3"></i>Закладки<span></span></a>
-                                </li>
-                                <li><a href="javascript:void(0)"><i class="icon-icon16"></i>Отзывы<span></span></a></li>
-                                <li><a href="profile-events.html"><i class="icon-calendar"></i>События<span></span></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <nav class="userMenu-2">
+                        <nav>
                             <ul>
                                 <li class="active"><a href="specialists.html">Специалисты</a></li>
                                 <li><a href="organizations.html">Организации</a></li>
                                 <li><a href="events.html">События</a></li>
-                                <li><a href="media.html">Медиа</a></li>
+                                <li><a href="projects.html">Проекты</a></li>
                                 <li><a href="score.html">Магазин</a></li>
+                                <!-- <li><a href="media.html">Медиа</a></li> -->
                             </ul>
                         </nav>
                         <ul class="social">
-                            <li><a href="javascript:void(0)"><i class="icon-icon34"></i></a></li>
+                            <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
                             <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
                             <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
-                <form>
-                    <input type="text">
-                    <button><i class="icon-icon25"></i></button>
-                </form>
+                <a class="logo" href="index.html"><span>Photoindustry</span></a>
                 <nav class="desktop-mainMenu">
                     <ul>
                         <li class="active"><a href="specialists.html">Специалисты</a></li>
                         <li><a href="organizations.html">Организации</a></li>
                         <li><a href="events.html">События</a></li>
                         <li><a href="projects.html">Проекты</a></li>
-                        <li><a href="media.html">Медиа</a></li>
+                        <li><a href="score.html">Магазин</a></li>
+                        <!-- <li><a href="media.html">Медиа</a></li> -->
                     </ul>
                 </nav>
+                <a class="search-icon" href="javascript:void(0)"><i class="icon-icon25"></i></a>
+                <span class="open-menu">
+                    <span></span>
+                </span>
             </div>
+        </div>
+        <div class="search-panel">
+            <div class="search-wrapper">
+                <input type="text">
+                <button>Поиск</button>
+            </div>      
         </div>
     </div>
 </header>
+
     <!-- /build -->
 
     <!-- build:section layout.popup_share-->
     <div class="overlayPopup share_popup-overlay">
     <div class="close"></div>
-    <div class="share_popup mCustomScrollbar">
+    <div class="share_popup ">
         <div class="closeBtn"></div>
         <div class="heading">
             <p>Поделиться</p>
         </div>
-        <div class="checkbox">
+        <!-- <div class="checkbox">
             <input id="profile" type="checkbox">
             <label for="profile">
                 на моей странице
             </label>
         </div>
         <div class="checkbox">
-            <input id="message" type="checkbox" checked="">
+            <input id="message" type="checkbox" checked>
             <label for="message">
                 в личном сообщении
             </label>
-        </div>
+        </div> -->
         <div class="recipients">
             <div class="name">
                 <span>Иван Иванов</span>
                 <div class="remove"></div>
             </div>
             <div class="recipient">
-                <div class="dropdown" id="dropdown">Введите имя получателя </div>
+                <!-- <div class='dropdown' id='dropdown'>Введите имя получателя </div> -->
+                <input type="text" placeholder="Введите имя получателя " id="dropdown" class="dropdown">
                 <div class="content">
-                    <div class="usersList mCustomScrollbar">
+                    <div class="usersList">
                         <div class="checkbox-item">
                             <label for="user1">
                                 <img src="../img/messages-item1.png" alt="">
@@ -242,8 +228,8 @@
                 <label for="text">
                     Ваше сообщение
                 </label>
-                <textarea id="text"></textarea>
-                <div class="write">
+                <textarea id="text" maxlength="100"></textarea>
+                <!-- <div class="write">
                     <div class="write-file">
                         <input type="file" name="file" id="file" class="inputfile" accept="image/*">
                         <label for="file" class="labelfile"><i class="icon-icon26"></i></label>
@@ -271,7 +257,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="flex-wrap">
                     <div class="form-button">
                         <button class="button-send" type="button">Отправить</button>
@@ -1340,22 +1326,27 @@
     <footer>
     <div class="footer-container">
         <div class="container">
-            <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a>
+            <!-- <a class="logo" href="index.html"><img src="../img/logo.png" alt=""></a> -->
             <div class="footer-content clearfix">
                 <nav>
                     <ul>
                         <li><a href="specialists.html">Специалисты</a></li>
                         <li><a href="organizations.html">Организации</a></li>
+                        <li><a href="organizations.html">Проекты</a></li>
+                        <li><a href="organizations.html">Товары</a></li>
                         <li><a href="events.html">События</a></li>
-                        <li><a href="score.html">Магазин</a></li>
+                        <li><a href="events.html">Медиа</a></li>
+                        <li><a href="score.html">О компании</a></li>
+                        <li><a href="score.html">Сервис</a></li>
                     </ul>
+                    
                 </nav>
                 <ul class="sosial">
                     <li><a href="javascript:void(0)"><i class="icon-icon12"></i></a></li>
                     <li><a href="javascript:void(0)"><i class="icon-icon2"></i></a></li>
                     <li><a href="javascript:void(0)"><i class="icon-icon18"></i></a></li>
                 </ul>
-                <p>© 2018 Все права защищены</p>
+                <p>© <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Все права защищены</p>
             </div>
         </div>
     </div>

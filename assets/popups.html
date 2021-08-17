@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/photoDescr.min.css">
     <!-- просмотр фото -->
     <link rel="stylesheet" href="../css/viewPhoto.min.css">
+    <link rel="stylesheet" href="../css/viewPhoto.min.css">
     <!-- просмотр video -->
     <link rel="stylesheet" href="../css/viewVideo.min.css">
     <!-- end styles -->
@@ -30,30 +31,34 @@
     <title>Popups</title>
 </head>
 
-<body>
+<body >
     <!-- popups -->
     <!-- .closeBtn - закрывает попап -->
     <!-- .open-* - открывает попап -->
     <ul>
         <li><a href="javascript:void(0)" class="open-projectsPopup">Попап в проектах</a></li>
-        <li><a href="javascript:void(0)" class="open-creatingAlbum">Создание альбома</a></li>
-        <li><a href="javascript:void(0)" class="open-photoDescr">Добавление описания фото</a></li>
-        <li><a href="javascript:void(0)" class="open-viewPhoto">Просмотр фото слайды <strong
-                    style="color: red;">Изменено</strong></a></li>
+        <li><a href="javascript:void(0)" class="open-creatingAlbum">Поп-ап создания альбома</a></li>
+        <li><a href="javascript:void(0)" class="open-editAlbum">Поп-ап редактирования альбома</a></li>
+        <li><a href="javascript:void(0)" class="open-photoDescr">Поп-ап добавления и редактирования описания фото</a></li>
+        <li><a href="javascript:void(0)" class="open-videoDescr">Поп-ап добавления и редактирования описания видео</a></li>
+        <li><a href="javascript:void(0)" class="open-viewPhoto">Поп-ап просмотра фото и видео <strong
+                    style="color: red;">Изменено июль 2021</strong></a></li>
         <li><a href="javascript:void(0)" class="open-viewPhotoOne">Просмотр фото(Одно фото) <strong
-                    style="color: red;">Изменено</strong></a></li>
+                    style="color: red;">не актуально</strong></a></li>
         <li><a href="javascript:void(0)" class="open-viewVideo">Просмотр видео <strong
-                    style="color: red;">Изменено</strong></a></li>
+                    style="color: red;">не актуально</strong></a></li>
         <li><a href="javascript:void(0)" class="open-complaint">Попап Жалоба</a></li>
         <li><a href="javascript:void(0)" class="open-leaveFeedback">Попап Отзыв</a></li>
         <li><a href="javascript:void(0)" class="open-leaveFeedbackNext">Попап Отзыв 2 вариант</a></li>
     </ul>
 
+    <include src="assets/templates/popup-share.html"></include>
+
 
     <!-- попап в проектах -->
     <div class="overlay-projectsPopup overlayPopup">
         <div class="close"></div>
-        <div class="projectsPopup__popup mCustomScrollbar">
+        <div class="projectsPopup__popup ">
             <span class="close-popup closeBtn"></span>
             <div class="heading">
                 <p>Информация об исполнителе</p>
@@ -121,7 +126,7 @@
     <!-- создание альбома -->
     <div class="overlay-creatingAlbum overlayPopup">
         <div class="close"></div>
-        <div class="creatingAlbum__popup mCustomScrollbar">
+        <div class="creatingAlbum__popup">
             <span class="close-popup closeBtn"></span>
             <div class="heading">
                 <p>Создание альбома</p>
@@ -130,13 +135,13 @@
                 <form>
                     <div class="form__input">
                         <label for="album_name">Название альбома</label>
-                        <input type="text" id="album_name">
+                        <input type="text" id="album_name" maxlength="25">
                     </div>
                     <div class="form__textarea">
                         <label for="album_description">Описание альбома</label>
-                        <textarea id="album_description"></textarea>
+                        <textarea id="album_description" maxlength="250" ></textarea>
                     </div>
-                    <div class="form__select">
+                    <!-- <div class="form__select">
                         <label for="album_comments">Кто может комментировать фотографии?</label>
                         <div class="select">
                             <select id="album_comments"
@@ -149,8 +154,8 @@
                                 <option>Только зарегистрированные пользователи</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form__select">
+                    </div> -->
+                    <!-- <div class="form__select">
                         <label for="album_view">Кто может просматривать этот альбом?</label>
                         <div class="select">
                             <select id="album_view"
@@ -163,7 +168,7 @@
                                 <option>Только зарегистрированные пользователи</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="form__button">
                         <button>Сохранить</button>
                     </div>
@@ -173,10 +178,92 @@
     </div>
     <!-- конец создание альбома -->
 
+     <!-- Редактирование альбома -->
+     <div class="overlay-editAlbum overlayPopup">
+        <div class="close"></div>
+        <div class="creatingAlbum__popup ">
+            <span class="close-popup closeBtn"></span>
+            <div class="heading">
+                <p>Редактирование альбома</p>
+            </div>
+            <div class="mainInfo">
+                <form>
+                    <div class="form__input">
+                        <label for="album_name">Название альбома</label>
+                        <input type="text" id="album_name" maxlength="25">
+                    </div>
+                    <div class="form__textarea">
+                        <label for="album_description">Описание альбома</label>
+                        <textarea id="album_description" maxlength="250" ></textarea>
+                    </div>
+                    <!-- <div class="form__select">
+                        <label for="album_comments">Кто может комментировать фотографии?</label>
+                        <div class="select">
+                            <select id="album_comments"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <!-- <div class="form__select">
+                        <label for="album_view">Кто может просматривать этот альбом?</label>
+                        <div class="select">
+                            <select id="album_view"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <div class="delete-buttons">
+                        <div class="form__button delete-btn">
+                            <button type="button">Удалить альбом</button>
+                        </div>
+                        <div class="form__button ">
+                            <button>Сохранить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="question-delete-popup">
+            <div class="content">
+                <p>Удалить альбом? </p>
+                <p>Альбом удалится со всеми вложенными фотографиями.</p>
+                <form>
+                    <div class="form__button delete-btn-yes">
+                        <button type="button">Удалить</button>
+                    </div>
+                    <div class="form__button cancel-btn">
+                        <button type="button">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="thanks">
+            <div class="content">
+                <p>Альбом удален</p>
+                <div class="form__button thanks-btn">
+                    <button type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- конец Редактирование альбома -->
+
     <!-- добавление описания фото -->
     <div class="overlay-photoDescr overlayPopup">
         <div class="close"></div>
-        <div class="photoDescr__popup mCustomScrollbar">
+        <div class="photoDescr__popup ">
             <span class="close-popup closeBtn"></span>
             <div class="heading">
                 <p>Описание фото</p>
@@ -188,11 +275,11 @@
                 <form>
                     <div class="form__input">
                         <label for="album-name">Название фотографии</label>
-                        <input type="text" id="album-name">
+                        <input type="text" id="album-name" maxlength='50'>
                     </div>
                     <div class="form__textarea">
                         <label for="album-description">Описание фотографии</label>
-                        <textarea id="album-description"></textarea>
+                        <textarea id="album-description" maxlength="100"></textarea>
                     </div>
                     <div class="form__hashtags">
                         <label>Хэш-теги</label>
@@ -249,20 +336,20 @@
                     <div class="form__checkbox">
                         <div class="item">
                             <label class="wrap">
-                                <input type="checkbox" checked="checked">
+                                <input type="checkbox">
                                 <span class="checkmark"></span>
                                 Сделать обложкой альбома
                             </label>
                         </div>
-                        <div class="item">
+                        <!-- <div class="item">
                             <label class="wrap">
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
                                 Отображать дату загрузки
                             </label>
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="form__select">
+                    <!-- <div class="form__select">
                         <label for="album-comments">Кто может просматривать фотографию?</label>
                         <div class="select">
                             <select id="album-comments"
@@ -289,7 +376,7 @@
                                 <option>Только зарегистрированные пользователи</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="form__button">
                         <button>Сохранить</button>
                     </div>
@@ -299,11 +386,144 @@
     </div>
     <!-- конец добавление описания фото -->
 
-    <!-- просмотр фото -->
+    <!-- добавление описания видео -->
+    <div class="overlay-videoDescr overlayPopup">
+        <div class="close"></div>
+        <div class="photoDescr__popup ">
+            <span class="close-popup closeBtn"></span>
+            <div class="heading">
+                <p>Описание видео</p>
+            </div>
+            <div class="mainInfo">
+                <div class="attached-img">
+                    <p><i class="icon-icon26"></i> Загрузить обложку</p>
+                    <div class="files" id="files-img">
+                        <div class="file-loading">
+                            <input id="file-image" type="file" name="file-1[]">
+                        </div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form__input">
+                        <label for="album-name">Название видео</label>
+                        <input type="text" id="album-name" maxlength='50'>
+                    </div>
+                    <div class="form__textarea">
+                        <label for="album-description">Описание видео</label>
+                        <textarea id="album-description" maxlength="100"></textarea>
+                    </div>
+                    <div class="form__hashtags">
+                        <label>Хэш-теги</label>
+                        <div class="wrapper">
+                            <div class="hashtag">
+                                <a href="javascript:void(0)">LookBook02</a>
+                            </div>
+                            <div class="hashtag">
+                                <a href="javascript:void(0)">Введите хэш-тег</a>
+                            </div>
+                            <div class="hashtag">
+                                <select class="c-custom-select"
+                                    data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                    <option>Выберите хэш-тег</option>
+                                    <option>Марка фотоаппарата</option>
+                                    <option>Сюжет</option>
+                                    <option>Цвета</option>
+                                    <option>Настроение</option>
+                                    <option>Стиль съемки</option>
+                                    <option>Другие опции</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__category">
+                        <label for="category">Категория</label>
+                        <select id="category" class="c-custom-select"
+                            data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                            <option>Все</option>
+                            <option>Детская съемка</option>
+                            <option>Коммерческая фотосъемка</option>
+                            <option>Ню</option>
+                            <option>Обработка фотографии</option>
+                            <option>Портретная съемка</option>
+                            <option>Предметная съемка</option>
+                            <option>Репортажная съемка</option>
+                            <option>Студийная съемка</option>
+                            <option>Свадебная съемка</option>
+                            <option>Семейная съемка</option>
+                            <option>Тематическая съемка</option>
+                        </select>
+                    </div>
+                    <!-- <div class="form__select">
+                        <label for="moveto">Переместить видео в альбом</label>
+                        <div class="select">
+                            <select id="moveto"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Свадьбы 2019</option>
+                                <option>Свадьбы 2018</option>
+                                <option>Свадьбы 2017</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <div class="form__checkbox">
+                        <!-- <div class="item">
+                            <label class="wrap">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Сделать обложкой альбома
+                            </label>
+                        </div> -->
+                        <!-- <div class="item">
+                            <label class="wrap">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Отображать дату загрузки
+                            </label>
+                        </div> -->
+                    </div>
+                    <!-- <div class="form__select">
+                        <label for="album-comments">Кто может просматривать фотографию?</label>
+                        <div class="select">
+                            <select id="album-comments"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__select">
+                        <label for="album-view">Кто может комментировать фотографию? </label>
+                        <div class="select">
+                            <select id="album-view"
+                                data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false, "fakeDropInBody": false, "useCustomScroll": true}'>
+                                <option>Только друзья</option>
+                                <option>Все пользователи</option>
+                                <option>Только друзья</option>
+                                <option>Только специалисты</option>
+                                <option>Только я</option>
+                                <option>Только зарегистрированные пользователи</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <div class="form__button">
+                        <button>Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- конец добавление описания видео -->
+
+    <!-- просмотр фото и видео-->
     <div class="overlay-viewPhoto overlayPopup">
         <div class="close"></div>
-        <span class="close-popup closeBtn"></span>
-        <div class="viewPhoto__popup mCustomScrollbar">
+        <!-- <span class="close-popup closeBtn"></span> -->
+        <div class="viewPhoto__popup ">
+            <span class="close-popup closeBtn"></span>
+            
             <div class="media">
                 <div class="holder-btn" id="holder-btn"></div>
                 <div class="image">
@@ -316,17 +536,17 @@
                     <div class="img-holder">
                         <img src="../img/foto8.png" alt="photo">
                     </div>
-                    <div class="img-holder">
+                    <!-- <div class="img-holder">
                         <video width="320" height="180" class="video-js vjs-default-skin" controls id="video1"
                             data-setup='{}'>
                             <source src="../img/search_page/videos/video.mp4" type="video/mp4">
                             <source src="../img/search_page/videos/video.mp4" type="video/webm">
                             <source src="../img/search_page/videos/video.mp4" type="video/ogg">
                         </video>
-                    </div>
+                    </div> -->
                 </div>
 
-                <a href="javascript:void(0)" class="mark"><i class="icon-icon5"></i></a>
+                <!-- <a href="javascript:void(0)" class="mark"><i class="icon-icon5"></i></a> -->
             </div>
             <div class="content mCustomScrollbar">
                 <div class="heading">
@@ -339,7 +559,7 @@
                             <i class="icon-icon10"></i>
                             <span>3</span>
                         </a>
-                        <a href="javascript:void(0)">
+                        <a href="javascript:void(0)" class="shareBtn">
                             <i class="icon-icon9"></i>
                         </a>
                         <div class="option">
@@ -399,30 +619,240 @@
                         </div>
                     </div>
                 </form>
-                <div class="comment">
-                    <div class="left">
-                        <div class="user">
-                            <a href="javascript:void(0)" class="user__avatar">
-                                <img src="../img/pa-project.png" alt="avatar">
-                            </a>
-                            <div class="user__info">
-                                <a href="javascript:void(0)">Иван Иванов (Вы) </a>
-                                <span>30 октября </span>
+                <div class="show-comments active">
+                    <div class="messages-item show">
+                        <div class="item-content">
+                            <div class="comment active">
+                                <div class="left">
+                                    <div class="user">
+                                        <a href="javascript:void(0)" class="user__avatar">
+                                            <img src="../img/pa-project.png" alt="avatar">
+                                        </a>
+                                        <div class="user__info">
+                                            <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                                            <span>30 октября </span>
+                                        </div>
+                                    </div>
+                                    <div class="comment__text">
+                                        <p class="text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною 
+                                            рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+                                            "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному верстуванні, залишаючись 
+                                            по суті незмінною.</p>
+                                        <a href="javascript:void(0)">Ответить</a>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="option-cintent">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">Удалить</a></li>
+                                            <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="comment__text">
-                            <p class="text">Потрясающе!</p>
-                        </div>
-                    </div>
-                    <div class="option">
-                        <div class="option-cintent">
-                            <ul>
-                                <li><a href="javascript:void(0)">Удалить</a></li>
-                                <li><a href="javascript:void(0)" class="editBtn">Изменить</a></li>
-                            </ul>
+                            <div class="comment-wrapper">
+                                <div class="comment active">
+                                    <div class="left">
+                                        <div class="user">
+                                            <a href="javascript:void(0)" class="user__avatar">
+                                                <img src="../img/pa-project.png" alt="avatar">
+                                            </a>
+                                            <div class="user__info">
+                                                <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                                                <span>30 октября </span>
+                                            </div>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p class="text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною 
+                                                рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+                                                "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному верстуванні, залишаючись 
+                                                по суті незмінною.</p>
+                                            <a href="javascript:void(0)">Ответить</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                                <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subcomment active">
+                                    <div class="left">
+                                        <div class="user">
+                                            <a href="javascript:void(0)" class="user__avatar">
+                                                <img src="../img/pa-project.png" alt="avatar">
+                                            </a>
+                                            <div class="user__info">
+                                                <a href="javascript:void(0)">Иван Иванов</a>
+                                                <span>30 октября </span>
+                                            </div>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p class="text"> <a href="javascript:void(0)">Иван Иванов,</a> Потрясающе!</p>
+                                            <a href="javascript:void(0)">Ответить</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                                <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subcomment active">
+                                    <div class="left">
+                                        <div class="user">
+                                            <a href="javascript:void(0)" class="user__avatar">
+                                                <img src="../img/pa-project.png" alt="avatar">
+                                            </a>
+                                            <div class="user__info">
+                                                <a href="javascript:void(0)">Иван Иванов</a>
+                                                <span>30 октября </span>
+                                            </div>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p class="text"> <a href="javascript:void(0)">Иван Иванов,</a> Потрясающе!</p>
+                                            <a href="javascript:void(0)">Ответить</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                                <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subcomment">
+                                    <div class="left">
+                                        <div class="user">
+                                            <a href="javascript:void(0)" class="user__avatar">
+                                                <img src="../img/pa-project.png" alt="avatar">
+                                            </a>
+                                            <div class="user__info">
+                                                <a href="javascript:void(0)">Иван Иванов</a>
+                                                <span>30 октября </span>
+                                            </div>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p class="text"> <a href="javascript:void(0)">Иван Иванов,</a> Потрясающе!</p>
+                                            <a href="javascript:void(0)">Ответить</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                                <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subcomment">
+                                    <div class="left">
+                                        <div class="user">
+                                            <a href="javascript:void(0)" class="user__avatar">
+                                                <img src="../img/pa-project.png" alt="avatar">
+                                            </a>
+                                            <div class="user__info">
+                                                <a href="javascript:void(0)">Иван Иванов</a>
+                                                <span>30 октября </span>
+                                            </div>
+                                        </div>
+                                        <div class="comment__text">
+                                            <p class="text"> <a href="javascript:void(0)">Иван Иванов,</a> Потрясающе!</p>
+                                            <a href="javascript:void(0)">Ответить</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-cintent">
+                                            <ul>
+                                                <li><a href="javascript:void(0)">Удалить</a></li>
+                                                <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="show-all-subcomments">Показать еще ответы</a>
+                            <div class="comment active">
+                                <div class="left">
+                                    <div class="user">
+                                        <a href="javascript:void(0)" class="user__avatar">
+                                            <img src="../img/pa-project.png" alt="avatar">
+                                        </a>
+                                        <div class="user__info">
+                                            <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                                            <span>30 октября </span>
+                                        </div>
+                                    </div>
+                                    <div class="comment__text">
+                                        <p class="text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною 
+                                            рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+                                            "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному верстуванні, залишаючись 
+                                            по суті незмінною.</p>
+                                        <a href="javascript:void(0)">Ответить</a>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="option-cintent">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">Удалить</a></li>
+                                            <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="left">
+                                    <div class="user">
+                                        <a href="javascript:void(0)" class="user__avatar">
+                                            <img src="../img/pa-project.png" alt="avatar">
+                                        </a>
+                                        <div class="user__info">
+                                            <a href="javascript:void(0)">Иван Иванов (Вы) </a>
+                                            <span>30 октября </span>
+                                        </div>
+                                    </div>
+                                    <div class="comment__text">
+                                        <p class="text">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною 
+                                            рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+                                            "Риба" не тільки успішно пережила пять століть, але й прижилася в електронному верстуванні, залишаючись 
+                                            по суті незмінною.</p>
+                                        <a href="javascript:void(0)">Ответить</a>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <div class="option-cintent">
+                                        <ul>
+                                            <li><a href="javascript:void(0)">Удалить</a></li>
+                                            <li><a href="javascript:void(0)">Пожаловаться</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0)" class="show-all-comments">Показать еще комментарии</a>
                         </div>
                     </div>
                 </div>
+                <!-- <div class="write comment active">
+                    <div class="avatar">
+                        <img src="../img/year-item-img4.png" alt="avatar">
+                    </div>
+                    <form>
+                        <div class="writeMessage-text">
+                            <textarea class="checkTextarea" type="text" placeholder="Напишите комментарий"></textarea>
+                            <button class="writeComment" name="data" type="button">Отправить</button>
+                        </div>
+                    </form>
+                </div> -->
+            
             </div>
         </div>
     </div>
@@ -432,14 +862,13 @@
     <div class="overlay-viewPhotoOne overlayPopup">
         <div class="close"></div>
         <span class="close-popup closeBtn"></span>
-        <div class="viewPhoto__popup mCustomScrollbar">
+        <div class="viewPhoto__popup ">
             <div class="media">
                 <div class="image">
                     <div class="img-holder">
                         <img src="../img/banner2.png" alt="photo">
                     </div>
                 </div>
-                <a href="javascript:void(0)" class="mark"><i class="icon-icon5"></i></a>
             </div>
             <div class="content mCustomScrollbar">
                 <div class="heading">
@@ -545,7 +974,7 @@
     <div class="overlay-viewVideo overlayPopup">
         <div class="close"></div>
         <span class="close-popup closeBtn"></span>
-        <div class="viewVideo__popup mCustomScrollbar">
+        <div class="viewVideo__popup ">
             <div class="media">
                 <video width="320" height="180" class="video-js vjs-default-skin" controls id="video1" data-setup='{}'>
                     <source src="../img/search_page/videos/video.mp4" type="video/mp4">
@@ -662,7 +1091,7 @@
     <!-- Попап Жалоба -->
     <div class="overlay-complaint overlayPopup">
         <div class="close"></div>
-        <div class="complaint__popup mCustomScrollbar">
+        <div class="complaint__popup ">
             <span class="close-popup closeBtn"></span>
             <div class="heading">
                 <p>Жалоба</p>
@@ -867,13 +1296,19 @@
     </div>
     <!--  -->
 
+    
+
     <!-- скрипты для всех -->
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <!-- <script src="../js/jquery.mCustomScrollbar.min.js"></script> -->
+    <script src="../js/profile-expert.min.js"></script>
+    <script src="../js/post-changes.min.js"></script>
 
 
     <!--  для попапов 'создание альбома', 'добавление описания фото','Попап Жалоба'  -->
-    <script src="../js/jcf.min.js"></script>
+    
     <script src="../js/jcf.select.min.js"></script>
     <!---->
 
@@ -883,11 +1318,15 @@
     <!-- создание альбома -->
     <script src="../js/creatingAlbum.min.js"></script>
 
+    <!-- Редактирование альбома -->
+    <script src="../js/editAlbum.min.js"></script>
+    <script src="../js/fileinput.min.js"></script>
+
     <!-- добавление описания фото -->
     <script src="../js/photoDescr.min.js"></script>
 
     <!-- просмотр фото -->
-    <script src="../js/viewPhoto.min.js"></script>
+    <script src="../js/viewPhoto_popup.min.js"></script>
     <script src="../js/slick.min.js"></script>
 
     <!-- просмотр video -->
@@ -899,6 +1338,9 @@
 
     <!-- Попап Отзыв -->
     <script src="../js/feedback.min.js"></script>
+
+
+    
 
     <!--конец скрипты -->
 </body>
